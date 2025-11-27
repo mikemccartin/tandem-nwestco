@@ -455,17 +455,35 @@ section h3 {
 
 /* Blue Background Sections */
 .section-blue {
-  background-color: var(--nwestco-blue);
+  background: linear-gradient(135deg, var(--nwestco-blue) 0%, var(--nwestco-blue-dark) 100%);
   color: var(--nwestco-white);
 }
 
 .section-blue h2,
 .section-blue h3 {
   color: var(--nwestco-white);
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.section-blue p {
+  color: var(--nwestco-white);
+  opacity: 0.95;
 }
 
 .section-blue .section-label {
   color: var(--nwestco-green-light);
+  font-weight: var(--font-bold);
+}
+
+/* Content sections on blue background */
+.content-section.section-blue h2 {
+  color: var(--nwestco-white);
+}
+
+.content-section.section-blue p,
+.content-section.section-blue li {
+  color: var(--nwestco-white);
+  opacity: 0.95;
 }
 
 
@@ -1022,24 +1040,29 @@ section h3 {
 .page-header {
   background: linear-gradient(135deg, var(--nwestco-blue) 0%, var(--nwestco-blue-dark) 100%);
   color: var(--nwestco-white);
-  padding: calc(var(--header-height) + var(--space-12)) 0 var(--space-12);
+  padding: calc(var(--header-height) + var(--space-16)) 0 var(--space-16);
   text-align: center;
 }
 
 .page-header h1 {
   font-family: var(--font-primary);
-  font-size: var(--text-5xl);
+  font-size: clamp(2.5rem, 5vw + 1rem, 4rem);  /* 40px → 64px responsive */
   font-weight: var(--font-black);
-  margin: 0 0 var(--space-4);
+  margin: 0 0 var(--space-6);
   color: var(--nwestco-white);
+  line-height: 1.1;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  letter-spacing: -0.02em;
 }
 
 .page-header .subtitle {
-  font-size: var(--text-xl);
-  color: rgba(255, 255, 255, 0.9);
-  max-width: 700px;
+  font-size: var(--text-base);  /* 16px - much smaller than h1 */
+  color: var(--nwestco-white);
+  opacity: 0.95;
+  max-width: 600px;
   margin: 0 auto;
   line-height: var(--leading-relaxed);
+  font-weight: var(--font-normal);
 }
 
 /* Content Sections for Subpages */
@@ -1052,20 +1075,34 @@ section h3 {
 }
 
 .content-section h2 {
-  font-size: var(--text-3xl);
+  font-family: var(--font-primary);
+  font-size: clamp(1.75rem, 3vw + 0.5rem, 2.5rem);  /* 28px → 40px responsive */
+  font-weight: var(--font-bold);
   color: var(--nwestco-blue);
   margin-bottom: var(--space-6);
+  line-height: 1.2;
 }
 
 .content-section h3 {
-  font-size: var(--text-xl);
+  font-family: var(--font-primary);
+  font-size: var(--text-xl);  /* 20px */
+  font-weight: var(--font-bold);
   color: var(--nwestco-gray);
   margin-bottom: var(--space-4);
   margin-top: var(--space-8);
 }
 
+.content-section h4 {
+  font-family: var(--font-primary);
+  font-size: var(--text-lg);  /* 18px */
+  font-weight: var(--font-semibold);
+  color: var(--nwestco-gray);
+  margin-bottom: var(--space-3);
+  margin-top: var(--space-6);
+}
+
 .content-section p {
-  font-size: var(--text-lg);
+  font-size: var(--text-base);  /* 16px - slightly smaller for better hierarchy */
   color: var(--nwestco-neutral-700);
   line-height: var(--leading-relaxed);
   margin-bottom: var(--space-4);
@@ -1077,7 +1114,7 @@ section h3 {
 }
 
 .content-section li {
-  font-size: var(--text-lg);
+  font-size: var(--text-base);  /* 16px */
   color: var(--nwestco-neutral-700);
   line-height: var(--leading-relaxed);
   margin-bottom: var(--space-2);
@@ -1108,15 +1145,19 @@ section h3 {
 
 @media (max-width: 767px) {
   .page-header {
-    padding: calc(var(--header-height) + var(--space-8)) 0 var(--space-8);
+    padding: calc(var(--header-height) + var(--space-10)) 0 var(--space-10);
   }
 
   .page-header h1 {
-    font-size: var(--text-3xl);
+    font-size: clamp(2rem, 8vw, 2.5rem);  /* Still large on mobile */
   }
 
   .page-header .subtitle {
-    font-size: var(--text-base);
+    font-size: var(--text-sm);  /* Smaller on mobile */
+  }
+
+  .content-section h2 {
+    font-size: var(--text-2xl);  /* 24px on mobile */
   }
 
   .two-column,
