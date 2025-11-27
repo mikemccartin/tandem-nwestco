@@ -851,46 +851,125 @@ body {
 
 
 /* ============================================================
-   BRAND PARTNERS SECTION
+   BRAND PARTNERS SECTION - SCROLLING CAROUSEL
    ============================================================ */
 
-.brands-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 3rem;
-  max-width: 1400px;
-  margin: 0 auto 3rem;
-  align-items: center;
-  justify-items: center;
-  padding: 3rem 1rem;
+/* Logo Carousel Container */
+.logo-carousel {
+  width: 100%;
+  overflow: hidden;
+  padding: var(--space-6) 0;
+  position: relative;
+  background: linear-gradient(
+    90deg,
+    var(--nwestco-white) 0%,
+    transparent 5%,
+    transparent 95%,
+    var(--nwestco-white) 100%
+  );
 }
 
-@media (min-width: 900px) {
-  .brands-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
+.logo-carousel::before,
+.logo-carousel::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100px;
+  z-index: 2;
+  pointer-events: none;
 }
 
-@media (min-width: 1200px) {
-  .brands-grid {
-    grid-template-columns: repeat(4, 1fr);
-  }
+.logo-carousel::before {
+  left: 0;
+  background: linear-gradient(90deg, var(--nwestco-white) 0%, transparent 100%);
 }
 
-.brand-logo {
-  width: 280px;
-  height: 180px;
+.logo-carousel::after {
+  right: 0;
+  background: linear-gradient(90deg, transparent 0%, var(--nwestco-white) 100%);
+}
+
+/* Carousel Track - holds all logos in a row */
+.logo-carousel-track {
+  display: flex;
+  gap: var(--space-10);
+  width: max-content;
+  animation: scrollLeft 60s linear infinite;
+}
+
+/* Reverse direction for second row */
+.logo-carousel-reverse .logo-carousel-track {
+  animation: scrollRight 55s linear infinite;
+}
+
+/* Pause animation on hover */
+.logo-carousel:hover .logo-carousel-track {
+  animation-play-state: paused;
+}
+
+/* Individual Logo Styling */
+.carousel-logo {
+  width: 180px;
+  height: 100px;
   object-fit: contain;
+  flex-shrink: 0;
   filter: grayscale(100%);
-  opacity: 0.7;
+  opacity: 0.6;
   transition: all var(--transition-normal);
-  padding: 1rem;
+  padding: var(--space-2);
 }
 
-.brand-logo:hover {
+.carousel-logo:hover {
   filter: grayscale(0%);
   opacity: 1;
-  transform: scale(1.05);
+  transform: scale(1.1);
+}
+
+/* Larger logos on desktop */
+@media (min-width: 768px) {
+  .carousel-logo {
+    width: 220px;
+    height: 120px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .carousel-logo {
+    width: 260px;
+    height: 140px;
+  }
+}
+
+/* Scrolling Animations */
+@keyframes scrollLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes scrollRight {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* Respect reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  .logo-carousel-track {
+    animation: none;
+  }
+
+  .logo-carousel {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
 }
 
 .brands-subtitle {
