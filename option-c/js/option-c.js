@@ -256,14 +256,18 @@
   }
 
   function initCounters() {
-    const statNumbers = document.querySelectorAll('.stat-number');
+    // Only select stat-numbers that have a data-target attribute (actual counters)
+    const statNumbers = document.querySelectorAll('.stat-number[data-target]');
     const observedStats = new Set();
 
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting && !observedStats.has(entry.target)) {
           observedStats.add(entry.target);
-          const target = parseInt(entry.target.getAttribute('data-target'));
+          const target = parseInt(entry.target.getAttribute('data-target'), 10);
+
+          // Skip if no valid target number
+          if (isNaN(target)) return;
 
           // Delay slightly for stagger effect
           const delay = Array.from(statNumbers).indexOf(entry.target) * 100;

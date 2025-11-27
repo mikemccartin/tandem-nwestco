@@ -1294,10 +1294,17 @@
   color: var(--nwestco-white);
 }
 
-/* Contact Form - Ensure labels are readable on dark background */
+/* Contact Form - Default labels for dark background */
 .contact-section .form-group label,
 .contact-section label {
   color: var(--nwestco-white);
+  font-weight: var(--font-semibold);
+}
+
+/* Contact Form - Labels on light background (form wrapper) */
+.contact-form-wrapper .form-group label,
+.contact-form-wrapper label {
+  color: var(--nwestco-neutral-700);
   font-weight: var(--font-semibold);
 }
 
