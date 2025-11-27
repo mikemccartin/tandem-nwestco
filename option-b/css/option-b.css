@@ -1631,3 +1631,118 @@ textarea:focus-visible {
   white-space: nowrap;
   border-width: 0;
 }
+
+
+/* ============================================================
+   LOGO CAROUSEL
+   ============================================================ */
+
+.logo-carousel {
+  width: 100%;
+  overflow: hidden;
+  padding: var(--space-6) 0;
+  position: relative;
+  background: linear-gradient(
+    90deg,
+    var(--nwestco-white) 0%,
+    transparent 5%,
+    transparent 95%,
+    var(--nwestco-white) 100%
+  );
+}
+
+.logo-carousel::before,
+.logo-carousel::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100px;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.logo-carousel::before {
+  left: 0;
+  background: linear-gradient(90deg, var(--nwestco-white) 0%, transparent 100%);
+}
+
+.logo-carousel::after {
+  right: 0;
+  background: linear-gradient(90deg, transparent 0%, var(--nwestco-white) 100%);
+}
+
+.logo-carousel-track {
+  display: flex;
+  gap: var(--space-10);
+  width: max-content;
+  animation: scrollLeft 60s linear infinite;
+}
+
+.logo-carousel-reverse .logo-carousel-track {
+  animation: scrollRight 55s linear infinite;
+}
+
+.logo-carousel:hover .logo-carousel-track {
+  animation-play-state: paused;
+}
+
+.carousel-logo {
+  width: 180px;
+  height: 100px;
+  object-fit: contain;
+  flex-shrink: 0;
+  filter: grayscale(100%);
+  opacity: 0.6;
+  transition: all var(--transition-normal);
+  padding: var(--space-2);
+}
+
+.carousel-logo:hover {
+  filter: grayscale(0%);
+  opacity: 1;
+  transform: scale(1.05);
+}
+
+@keyframes scrollLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes scrollRight {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.brands-subtitle {
+  color: var(--nwestco-neutral-600);
+  margin-top: var(--space-6);
+}
+
+@media (max-width: 768px) {
+  .logo-carousel-track {
+    gap: var(--space-6);
+  }
+
+  .logo-carousel {
+    padding: var(--space-4) 0;
+  }
+
+  .carousel-logo {
+    width: 140px;
+    height: 80px;
+  }
+
+  .logo-carousel::before,
+  .logo-carousel::after {
+    width: 50px;
+  }
+}
