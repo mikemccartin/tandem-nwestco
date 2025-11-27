@@ -1203,6 +1203,101 @@
   font-weight: var(--font-semibold);
 }
 
+/* Logo Carousel - Scrolling brand logos */
+.logo-carousel {
+  width: 100%;
+  overflow: hidden;
+  padding: 1.5rem 0;
+  position: relative;
+}
+
+.logo-carousel::before,
+.logo-carousel::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100px;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.logo-carousel::before {
+  left: 0;
+  background: linear-gradient(90deg, var(--nwestco-neutral-50) 0%, transparent 100%);
+}
+
+.logo-carousel::after {
+  right: 0;
+  background: linear-gradient(90deg, transparent 0%, var(--nwestco-neutral-50) 100%);
+}
+
+.logo-carousel-track {
+  display: flex;
+  gap: 3rem;
+  width: max-content;
+  animation: scrollLeft 45s linear infinite;
+}
+
+.logo-carousel-reverse .logo-carousel-track {
+  animation: scrollRight 40s linear infinite;
+}
+
+.logo-carousel:hover .logo-carousel-track {
+  animation-play-state: paused;
+}
+
+.carousel-logo {
+  width: 150px;
+  height: 80px;
+  object-fit: contain;
+  flex-shrink: 0;
+  filter: grayscale(100%);
+  opacity: 0.6;
+  transition: all 0.3s ease;
+  padding: 0.5rem;
+}
+
+.carousel-logo:hover {
+  filter: grayscale(0%);
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+@keyframes scrollLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes scrollRight {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .logo-carousel::before,
+  .logo-carousel::after {
+    width: 50px;
+  }
+
+  .carousel-logo {
+    width: 120px;
+    height: 60px;
+  }
+
+  .logo-carousel-track {
+    gap: 2rem;
+  }
+}
+
 
 /* ============================================================
    DUAL CTA SECTION
