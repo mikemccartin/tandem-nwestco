@@ -407,7 +407,7 @@
 
 .flip-card {
   perspective: 1000px;
-  height: 400px;
+  height: 480px;
 }
 
 .flip-card-inner {
@@ -429,7 +429,7 @@
   height: 100%;
   backface-visibility: hidden;
   border-radius: var(--radius-lg);
-  padding: 2rem;
+  padding: 1.5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -499,28 +499,33 @@
 }
 
 .flip-card-back h3 {
-  font-size: 1.25rem;
-  margin-bottom: 0.5rem;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  margin-bottom: 0.25rem;
+  color: var(--nwestco-green);
 }
 
 .flip-card-back h4 {
-  font-size: 1rem;
-  font-weight: 600;
-  margin-bottom: 1rem;
-  color: #1A4456;
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+  color: var(--nwestco-blue);
 }
 
 .check-list {
   list-style: none;
   padding: 0;
-  margin: 1.5rem 0;
+  margin: 0.75rem 0;
   text-align: left;
 }
 
 .check-list li {
   padding-left: 1.5rem;
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.5rem;
   position: relative;
+  font-size: 0.9rem;
+  line-height: 1.3;
 }
 
 .check-list li::before {
@@ -534,10 +539,18 @@
 .stat-highlight {
   background: var(--nwestco-blue-pale);
   color: var(--nwestco-blue-dark);
-  padding: 1rem;
+  padding: 0.75rem 1rem;
   border-radius: var(--radius-base);
   font-weight: var(--font-semibold);
-  margin: 1.5rem 0;
+  font-size: 0.9rem;
+  margin: 0.75rem 0;
+  width: 100%;
+}
+
+.flip-card-back .btn {
+  margin-top: auto;
+  padding: 0.6rem 1.25rem;
+  font-size: 0.9rem;
 }
 
 
