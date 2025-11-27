@@ -457,5 +457,86 @@ All three prototypes are complete and ready for client/stakeholder presentation:
 
 ---
 
-*Document generated: November 2024*
+## November 26, 2025 Updates
+
+### Option B - Full Page Build Out
+Built out complete content for 5 placeholder pages:
+
+| Page | Description |
+|------|-------------|
+| `pages/fuel-systems.html` | Markets, pain points, services, equipment, stats, CTAs |
+| `pages/car-wash.html` | Wash types, pain points, services, equipment, stats |
+| `pages/environmental.html` | Services, compliance, remediation, stats |
+| `pages/careers.html` | Benefits, career areas, locations, values, stats |
+| `pages/contact.html` | Emergency banner, contact form, locations list, service cards |
+
+### Environmental Messaging Consistency
+Updated all copy to consistently reference 3 markets (per project brief):
+1. Fuel Systems
+2. Car Washes
+3. Environmental Services
+
+**Files Updated:**
+- Portal index.html
+- Option A index.html
+- Option B: index.html + 15 inner pages (about, careers, contact, brands, projects, locations, 7 service pages)
+- Option C index.html
+- `nwestco-boilerplate.md` - All standard company descriptions
+- `nwestco-messaging-framework.md` - Value propositions, hero messages
+- Wireframe docs (option-a, option-b, option-c)
+
+### Project Portal Created
+Built client-facing portal to showcase all project deliverables:
+
+**Portal Features:**
+- Tandem Theory branding header
+- Nwestco client logo
+- 3 prototype cards (Option B highlighted as "Fully Built")
+- 17 discovery documents with markdown viewer
+- Project details section
+
+**Portal Structure:**
+```
+portal/
+├── index.html              # Main portal page
+├── assets/
+│   └── tandem-theory-logo.png
+└── docs/
+    ├── viewer.html         # Markdown document viewer (uses marked.js)
+    └── md/                 # All 17 discovery docs
+        ├── nwestco-project-brief.md
+        ├── nwestco-brand-guidelines.md
+        ├── nwestco-messaging-framework.md
+        ├── nwestco-boilerplate.md
+        ├── nwestco-site-audit.md
+        ├── nwestco-seo-baseline.md
+        ├── nwestco-keyword-research.md
+        ├── nwestco-seo-recommendations.md
+        ├── nwestco-content-inventory.md
+        ├── nwestco-information-architecture.md
+        ├── nwestco-sitemap.md
+        ├── nwestco-conversion-strategy.md
+        ├── nwestco-form-specifications.md
+        ├── wireframe-comparison.md
+        ├── option-a-one-page.md
+        ├── option-b-traditional.md
+        └── option-c-modern.md
+```
+
+### GitHub Deployment
+Deployed to GitHub Pages for client review:
+
+| Resource | URL |
+|----------|-----|
+| **Repository** | https://github.com/mikemccartin/tandem-nwestco |
+| **Portal** | https://mikemccartin.github.io/tandem-nwestco/portal/ |
+| **Option A** | https://mikemccartin.github.io/tandem-nwestco/option-a/ |
+| **Option B** | https://mikemccartin.github.io/tandem-nwestco/option-b/ |
+| **Option C** | https://mikemccartin.github.io/tandem-nwestco/option-c/ |
+
+**Note:** Site has `<meta name="robots" content="noindex, nofollow">` to prevent search indexing.
+
+---
+
+*Document updated: November 26, 2025*
 *Project: Nwestco Website Redesign*
