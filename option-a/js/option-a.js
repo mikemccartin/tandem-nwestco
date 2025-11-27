@@ -474,6 +474,353 @@
 
 
   /* ============================================================
+     FLIP BOX TOUCH SUPPORT
+     ============================================================ */
+
+  function initFlipBoxes() {
+    const flipBoxes = document.querySelectorAll('.flip-box');
+
+    if (flipBoxes.length === 0) return;
+
+    // Detect touch device
+    const isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+
+    flipBoxes.forEach(box => {
+      if (isTouchDevice) {
+        // Touch devices: toggle on tap
+        box.addEventListener('click', (e) => {
+          // Don't flip if clicking a link/button
+          if (e.target.tagName === 'A' || e.target.tagName === 'BUTTON') return;
+
+          // Close other open flip boxes
+          flipBoxes.forEach(otherBox => {
+            if (otherBox !== box) {
+              otherBox.classList.remove('flipped');
+            }
+          });
+
+          // Toggle this box
+          box.classList.toggle('flipped');
+        });
+      }
+    });
+
+    // Close flip boxes when clicking outside on touch devices
+    if (isTouchDevice) {
+      document.addEventListener('click', (e) => {
+        if (!e.target.closest('.flip-box')) {
+          flipBoxes.forEach(box => box.classList.remove('flipped'));
+        }
+      });
+    }
+  }
+
+
+  /* ============================================================
+     PROJECT FILTERS
+     ============================================================ */
+
+  function initProjectFilters() {
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const projectCards = document.querySelectorAll('.project-card');
+
+    if (filterButtons.length === 0 || projectCards.length === 0) return;
+
+    filterButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        const filter = button.dataset.filter;
+
+        // Update active button
+        filterButtons.forEach(btn => {
+          btn.classList.remove('active');
+          btn.setAttribute('aria-selected', 'false');
+        });
+        button.classList.add('active');
+        button.setAttribute('aria-selected', 'true');
+
+        // Filter projects
+        projectCards.forEach(card => {
+          const category = card.dataset.category;
+
+          if (filter === 'all' || category === filter) {
+            card.style.display = '';
+            card.classList.add('fade-in', 'visible');
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+    });
+  }
+
+
+  /* ============================================================
+     TESTIMONIAL CAROUSEL
+     ============================================================ */
+
+  function initTestimonialCarousel() {
+    const carousel = document.querySelector('.testimonial-carousel');
+
+    if (!carousel) return;
+
+    const slides = carousel.querySelectorAll('.testimonial-slide');
+    const dots = carousel.querySelectorAll('.carousel-dot');
+    const prevBtn = carousel.querySelector('.carousel-prev');
+    const nextBtn = carousel.querySelector('.carousel-next');
+
+    let currentSlide = 0;
+    let autoPlayInterval;
+    const autoPlayDelay = 6000; // 6 seconds
+
+    function showSlide(index) {
+      // Wrap around
+      if (index >= slides.length) index = 0;
+      if (index < 0) index = slides.length - 1;
+
+      currentSlide = index;
+
+      // Update slides
+      slides.forEach((slide, i) => {
+        slide.classList.toggle('active', i === index);
+        slide.setAttribute('aria-hidden', i !== index);
+      });
+
+      // Update dots
+      dots.forEach((dot, i) => {
+        dot.classList.toggle('active', i === index);
+        dot.setAttribute('aria-selected', i === index);
+      });
+    }
+
+    function nextSlide() {
+      showSlide(currentSlide + 1);
+    }
+
+    function prevSlide() {
+      showSlide(currentSlide - 1);
+    }
+
+    function startAutoPlay() {
+      autoPlayInterval = setInterval(nextSlide, autoPlayDelay);
+    }
+
+    function stopAutoPlay() {
+      clearInterval(autoPlayInterval);
+    }
+
+    // Button events
+    if (nextBtn) nextBtn.addEventListener('click', () => {
+      nextSlide();
+      stopAutoPlay();
+      startAutoPlay();
+    });
+
+    if (prevBtn) prevBtn.addEventListener('click', () => {
+      prevSlide();
+      stopAutoPlay();
+      startAutoPlay();
+    });
+
+    // Dot events
+    dots.forEach((dot, index) => {
+      dot.addEventListener('click', () => {
+        showSlide(index);
+        stopAutoPlay();
+        startAutoPlay();
+      });
+    });
+
+    // Touch/swipe support
+    let touchStartX = 0;
+    let touchEndX = 0;
+
+    carousel.addEventListener('touchstart', (e) => {
+      touchStartX = e.changedTouches[0].screenX;
+    }, { passive: true });
+
+    carousel.addEventListener('touchend', (e) => {
+      touchEndX = e.changedTouches[0].screenX;
+      const diff = touchStartX - touchEndX;
+
+      if (Math.abs(diff) > 50) {
+        if (diff > 0) {
+          nextSlide();
+        } else {
+          prevSlide();
+        }
+        stopAutoPlay();
+        startAutoPlay();
+      }
+    }, { passive: true });
+
+    // Pause on hover
+    carousel.addEventListener('mouseenter', stopAutoPlay);
+    carousel.addEventListener('mouseleave', startAutoPlay);
+
+    // Keyboard navigation
+    carousel.setAttribute('tabindex', '0');
+    carousel.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowLeft') {
+        prevSlide();
+        stopAutoPlay();
+        startAutoPlay();
+      } else if (e.key === 'ArrowRight') {
+        nextSlide();
+        stopAutoPlay();
+        startAutoPlay();
+      }
+    });
+
+    // Start autoplay
+    startAutoPlay();
+  }
+
+
+  /* ============================================================
+     MARKET TABS
+     ============================================================ */
+
+  function initMarketTabs() {
+    const tabContainers = document.querySelectorAll('.market-tabs');
+
+    tabContainers.forEach(container => {
+      const tabs = container.querySelectorAll('.market-tab');
+      const panels = container.parentElement.querySelectorAll('.market-tab-panel');
+
+      tabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+          const targetId = tab.dataset.tab;
+
+          // Update tabs
+          tabs.forEach(t => {
+            t.classList.remove('active');
+            t.setAttribute('aria-selected', 'false');
+          });
+          tab.classList.add('active');
+          tab.setAttribute('aria-selected', 'true');
+
+          // Update panels
+          panels.forEach(panel => {
+            panel.classList.remove('active');
+            if (panel.id === targetId) {
+              panel.classList.add('active');
+            }
+          });
+        });
+      });
+    });
+  }
+
+
+  /* ============================================================
+     EXPANDABLE LOCATION CARDS
+     ============================================================ */
+
+  function initLocationCards() {
+    const locationCards = document.querySelectorAll('.location-card');
+
+    locationCards.forEach(card => {
+      const toggle = card.querySelector('.location-toggle');
+      const details = card.querySelector('.location-details');
+
+      if (!toggle || !details) return;
+
+      // Click on toggle or entire header
+      const header = card.querySelector('.location-header');
+      header.addEventListener('click', (e) => {
+        // Don't toggle if clicking a link
+        if (e.target.tagName === 'A') return;
+
+        const isExpanded = toggle.getAttribute('aria-expanded') === 'true';
+
+        // Close other cards
+        locationCards.forEach(otherCard => {
+          if (otherCard !== card) {
+            const otherToggle = otherCard.querySelector('.location-toggle');
+            const otherDetails = otherCard.querySelector('.location-details');
+            if (otherToggle && otherDetails) {
+              otherToggle.setAttribute('aria-expanded', 'false');
+              otherDetails.setAttribute('aria-hidden', 'true');
+              otherCard.classList.remove('expanded');
+            }
+          }
+        });
+
+        // Toggle this card
+        toggle.setAttribute('aria-expanded', !isExpanded);
+        details.setAttribute('aria-hidden', isExpanded);
+        card.classList.toggle('expanded', !isExpanded);
+      });
+    });
+  }
+
+
+  /* ============================================================
+     LEGAL MODALS
+     ============================================================ */
+
+  function initLegalModals() {
+    const modalTriggers = document.querySelectorAll('[data-modal]');
+    const modals = document.querySelectorAll('.modal-overlay');
+
+    if (modalTriggers.length === 0 || modals.length === 0) return;
+
+    function openModal(modalId) {
+      const modal = document.getElementById(modalId);
+      if (!modal) return;
+
+      modal.setAttribute('aria-hidden', 'false');
+      modal.classList.add('active');
+      document.body.style.overflow = 'hidden';
+
+      // Focus first focusable element
+      const focusable = modal.querySelector('button, [href], input, select, textarea');
+      if (focusable) focusable.focus();
+    }
+
+    function closeModal(modal) {
+      modal.setAttribute('aria-hidden', 'true');
+      modal.classList.remove('active');
+      document.body.style.overflow = '';
+    }
+
+    function closeAllModals() {
+      modals.forEach(modal => closeModal(modal));
+    }
+
+    // Trigger buttons
+    modalTriggers.forEach(trigger => {
+      trigger.addEventListener('click', () => {
+        const modalId = trigger.dataset.modal;
+        openModal(modalId);
+      });
+    });
+
+    // Close buttons
+    modals.forEach(modal => {
+      const closeBtn = modal.querySelector('.modal-close');
+      if (closeBtn) {
+        closeBtn.addEventListener('click', () => closeModal(modal));
+      }
+
+      // Close on overlay click
+      modal.addEventListener('click', (e) => {
+        if (e.target === modal) {
+          closeModal(modal);
+        }
+      });
+    });
+
+    // Close on Escape key
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        closeAllModals();
+      }
+    });
+  }
+
+
+  /* ============================================================
      INITIALIZE ALL FEATURES
      ============================================================ */
 
@@ -493,6 +840,14 @@
     initContactForm();
     initScrollProgress();
     scrollToHashOnLoad();
+
+    // New widget initializations
+    initFlipBoxes();
+    initProjectFilters();
+    initTestimonialCarousel();
+    initMarketTabs();
+    initLocationCards();
+    initLegalModals();
 
     console.log('Nwestco Option A initialized successfully');
   }

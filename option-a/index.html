@@ -132,11 +132,12 @@
       </div>
     </section>
 
-    <!-- Markets Section -->
+    <!-- Markets Section with Tabbed Sub-Segments -->
     <section id="markets" class="section">
       <div class="container">
         <h2 class="section-title text-center">One Partner for All Your Needs</h2>
         <div class="markets-grid">
+          <!-- Fuel Systems Market Card -->
           <article class="market-card fade-in">
             <div class="market-image">
               <img src="https://images.unsplash.com/photo-1611735341450-74d61e660ad2?w=600&h=400&fit=crop" alt="Fuel system dispensers at retail gas station">
@@ -144,11 +145,30 @@
             <div class="market-content">
               <div class="market-icon">⛽</div>
               <h3>Fuel Systems</h3>
-              <p>Complete fuel system solutions for retail, commercial, aviation, and industrial applications. From design and permitting through installation, ongoing maintenance, and compliance testing.</p>
-              <a href="#contact" class="btn btn-outline">Explore Fuel Systems →</a>
+              <p>Complete fuel system solutions for retail, commercial, aviation, and industrial applications.</p>
+
+              <!-- Sub-segment Tabs -->
+              <div class="market-tabs" role="tablist" aria-label="Fuel system segments">
+                <button class="market-tab active" data-tab="fuel-retail" role="tab" aria-selected="true">Retail</button>
+                <button class="market-tab" data-tab="fuel-commercial" role="tab" aria-selected="false">Commercial</button>
+                <button class="market-tab" data-tab="fuel-aviation" role="tab" aria-selected="false">Aviation</button>
+              </div>
+              <div class="market-tab-panels">
+                <div class="market-tab-panel active" id="fuel-retail" role="tabpanel">
+                  <p>Gas stations, convenience stores, and truck stops. EMV-ready dispensers, canopy and lighting, and complete brand image programs.</p>
+                </div>
+                <div class="market-tab-panel" id="fuel-commercial" role="tabpanel">
+                  <p>Fleet fueling, cardlock systems, and private fuel networks. Fuel management systems and automated reporting for corporate accounts.</p>
+                </div>
+                <div class="market-tab-panel" id="fuel-aviation" role="tabpanel">
+                  <p>Aviation fueling systems for airports and private strips. AvGas and Jet-A dispensing with specialized equipment and safety systems.</p>
+                </div>
+              </div>
+              <a href="#contact" class="btn btn-outline">Get Fuel Quote</a>
             </div>
           </article>
 
+          <!-- Car Wash Market Card -->
           <article class="market-card fade-in">
             <div class="market-image">
               <img src="../shared/assets/images/02-5.jpg" alt="Automatic car wash system in operation">
@@ -156,11 +176,30 @@
             <div class="market-content">
               <div class="market-icon">🚗</div>
               <h3>Car Wash Systems</h3>
-              <p>Turn-key car wash solutions with equipment, chemicals, and expert service. We service all major brands including tunnel washes, in-bay automatics, and self-serve operations.</p>
-              <a href="#contact" class="btn btn-outline">Explore Car Wash →</a>
+              <p>Turn-key car wash solutions with equipment, chemicals, and expert service.</p>
+
+              <!-- Sub-segment Tabs -->
+              <div class="market-tabs" role="tablist" aria-label="Car wash segments">
+                <button class="market-tab active" data-tab="wash-tunnel" role="tab" aria-selected="true">Tunnel</button>
+                <button class="market-tab" data-tab="wash-inbay" role="tab" aria-selected="false">In-Bay</button>
+                <button class="market-tab" data-tab="wash-selfserve" role="tab" aria-selected="false">Self-Serve</button>
+              </div>
+              <div class="market-tab-panels">
+                <div class="market-tab-panel active" id="wash-tunnel" role="tabpanel">
+                  <p>Express exterior and full-service tunnel washes. High-volume operations with conveyors, wraps, dryers, and pay station integration.</p>
+                </div>
+                <div class="market-tab-panel" id="wash-inbay" role="tabpanel">
+                  <p>Touchless and friction in-bay automatics. Perfect for gas stations and standalone locations with lower volume requirements.</p>
+                </div>
+                <div class="market-tab-panel" id="wash-selfserve" role="tabpanel">
+                  <p>Multi-bay self-serve operations. Coin/card systems, high-pressure equipment, vacuums, and LED lighting upgrades.</p>
+                </div>
+              </div>
+              <a href="#contact" class="btn btn-outline">Get Wash Quote</a>
             </div>
           </article>
 
+          <!-- Environmental Market Card -->
           <article class="market-card fade-in">
             <div class="market-image">
               <img src="../shared/assets/images/photodune-11223654-electrician-installing-energy-saving-meter-xl-1.jpg" alt="Technician performing environmental compliance testing">
@@ -168,70 +207,165 @@
             <div class="market-content">
               <div class="market-icon">🌱</div>
               <h3>Environmental Solutions</h3>
-              <p>Tank testing, leak detection, and compliance services to protect your business from liability and fines. Stay ahead of EPA and state regulations with automated testing schedules and complete documentation.</p>
-              <a href="#contact" class="btn btn-outline">Explore Environmental →</a>
+              <p>Tank testing, leak detection, and compliance services to protect your business.</p>
+
+              <!-- Sub-segment Tabs -->
+              <div class="market-tabs" role="tablist" aria-label="Environmental segments">
+                <button class="market-tab active" data-tab="env-testing" role="tab" aria-selected="true">Testing</button>
+                <button class="market-tab" data-tab="env-monitoring" role="tab" aria-selected="false">Monitoring</button>
+                <button class="market-tab" data-tab="env-remediation" role="tab" aria-selected="false">Remediation</button>
+              </div>
+              <div class="market-tab-panels">
+                <div class="market-tab-panel active" id="env-testing" role="tabpanel">
+                  <p>EPA-certified tank testing, line testing, and annual compliance inspections. Complete documentation and regulatory reporting.</p>
+                </div>
+                <div class="market-tab-panel" id="env-monitoring" role="tabpanel">
+                  <p>Automated tank monitoring systems and leak detection. 24/7 monitoring with instant alerts and remote diagnostics.</p>
+                </div>
+                <div class="market-tab-panel" id="env-remediation" role="tabpanel">
+                  <p>Emergency spill response, contaminated soil removal, and groundwater remediation. Complete regulatory coordination.</p>
+                </div>
+              </div>
+              <a href="#contact" class="btn btn-outline">Get Compliance Quote</a>
             </div>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- Services Lifecycle Section -->
+    <!-- Services Lifecycle Section - Flip Boxes -->
     <section id="services" class="section section-blue">
       <div class="container">
         <h2 class="section-title text-center text-white">Comprehensive Services at Every Stage</h2>
-        <div class="services-wheel">
-          <div class="services-center">
-            <h3>One-Stop Shop</h3>
-            <p>Complete Lifecycle Partner</p>
+        <div class="services-center" style="margin-bottom: var(--space-10);">
+          <h3>One-Stop Shop</h3>
+          <p>Complete Lifecycle Partner - Hover or tap to learn more</p>
+        </div>
+
+        <div class="flip-box-grid">
+          <!-- Design & Engineering -->
+          <div class="flip-box" data-trigger="hover">
+            <div class="flip-box-inner">
+              <div class="flip-box-front">
+                <div class="flip-box-icon">📐</div>
+                <h4 class="flip-box-title">Design & Engineering</h4>
+                <p class="flip-box-teaser">Expert design and permitting for faster project approvals</p>
+                <span class="flip-box-touch-hint">Tap to learn more</span>
+              </div>
+              <div class="flip-box-back">
+                <h4 class="flip-box-title">Design & Engineering</h4>
+                <p class="flip-box-description">Site planning, CAD drawings, 3D renderings, and full permit coordination. 25+ years navigating Western US regulations means faster approvals and fewer surprises.</p>
+                <a href="#contact" class="btn btn-sm btn-primary flip-box-cta">Get Quote</a>
+              </div>
+            </div>
           </div>
-          <div class="services-grid">
-            <article class="service-item fade-in">
-              <div class="service-icon">📐</div>
-              <h4>Design & Engineering</h4>
-              <p>Expert design and permitting for faster project approvals</p>
-            </article>
 
-            <article class="service-item fade-in">
-              <div class="service-icon">🏗️</div>
-              <h4>Installation & Construction</h4>
-              <p>Turn-key installation from permits to final inspection</p>
-            </article>
+          <!-- Installation & Construction -->
+          <div class="flip-box" data-trigger="hover">
+            <div class="flip-box-inner">
+              <div class="flip-box-front">
+                <div class="flip-box-icon">🏗️</div>
+                <h4 class="flip-box-title">Installation & Construction</h4>
+                <p class="flip-box-teaser">Turn-key installation from permits to final inspection</p>
+                <span class="flip-box-touch-hint">Tap to learn more</span>
+              </div>
+              <div class="flip-box-back">
+                <h4 class="flip-box-title">Installation & Construction</h4>
+                <p class="flip-box-description">Complete project management from groundbreaking to ribbon-cutting. Tanks, dispensers, canopy, electrical - coordinated by one team for on-time, on-budget delivery.</p>
+                <a href="#contact" class="btn btn-sm btn-primary flip-box-cta">Start Project</a>
+              </div>
+            </div>
+          </div>
 
-            <article class="service-item fade-in">
-              <div class="service-icon">⚡</div>
-              <h4>24/7 Service & Maintenance</h4>
-              <p>Emergency response, preventative maintenance, expert repairs</p>
-            </article>
+          <!-- 24/7 Service & Maintenance -->
+          <div class="flip-box" data-trigger="hover">
+            <div class="flip-box-inner">
+              <div class="flip-box-front">
+                <div class="flip-box-icon">⚡</div>
+                <h4 class="flip-box-title">24/7 Service & Maintenance</h4>
+                <p class="flip-box-teaser">Emergency response, preventative maintenance, expert repairs</p>
+                <span class="flip-box-touch-hint">Tap to learn more</span>
+              </div>
+              <div class="flip-box-back">
+                <h4 class="flip-box-title">24/7 Service & Maintenance</h4>
+                <p class="flip-box-description">Under 4-hour emergency response. 350+ factory-certified technicians. Preventative maintenance programs that reduce downtime by up to 40%.</p>
+                <a href="tel:800-775-1892" class="btn btn-sm btn-primary flip-box-cta">Call Now</a>
+              </div>
+            </div>
+          </div>
 
-            <article class="service-item fade-in">
-              <div class="service-icon">♻️</div>
-              <h4>Remodels & Upgrades</h4>
-              <p>Modernize your facility without complete reconstruction</p>
-            </article>
+          <!-- Remodels & Upgrades -->
+          <div class="flip-box" data-trigger="hover">
+            <div class="flip-box-inner">
+              <div class="flip-box-front">
+                <div class="flip-box-icon">♻️</div>
+                <h4 class="flip-box-title">Remodels & Upgrades</h4>
+                <p class="flip-box-teaser">Modernize your facility without complete reconstruction</p>
+                <span class="flip-box-touch-hint">Tap to learn more</span>
+              </div>
+              <div class="flip-box-back">
+                <h4 class="flip-box-title">Remodels & Upgrades</h4>
+                <p class="flip-box-description">EMV upgrades, dispenser replacements, image programs, and technology updates. Minimize downtime while maximizing your facility's potential.</p>
+                <a href="#contact" class="btn btn-sm btn-primary flip-box-cta">Get Quote</a>
+              </div>
+            </div>
+          </div>
 
-            <article class="service-item fade-in">
-              <div class="service-icon">📦</div>
-              <h4>Equipment Sales & Parts</h4>
-              <p>Premium equipment and next-day parts delivery</p>
-            </article>
+          <!-- Equipment Sales & Parts -->
+          <div class="flip-box" data-trigger="hover">
+            <div class="flip-box-inner">
+              <div class="flip-box-front">
+                <div class="flip-box-icon">📦</div>
+                <h4 class="flip-box-title">Equipment Sales & Parts</h4>
+                <p class="flip-box-teaser">Premium equipment and next-day parts delivery</p>
+                <span class="flip-box-touch-hint">Tap to learn more</span>
+              </div>
+              <div class="flip-box-back">
+                <h4 class="flip-box-title">Equipment Sales & Parts</h4>
+                <p class="flip-box-description">Factory-authorized dealer for 40+ brands. Gilbarco, Wayne, Veeder-Root, Ryko, Belanger. OEM parts with next-day delivery across Western US.</p>
+                <a href="#contact" class="btn btn-sm btn-primary flip-box-cta">Order Parts</a>
+              </div>
+            </div>
+          </div>
 
-            <article class="service-item fade-in">
-              <div class="service-icon">✅</div>
-              <h4>Testing & Compliance</h4>
-              <p>Stay compliant with EPA and state regulations</p>
-            </article>
+          <!-- Testing & Compliance -->
+          <div class="flip-box" data-trigger="hover">
+            <div class="flip-box-inner">
+              <div class="flip-box-front">
+                <div class="flip-box-icon">✅</div>
+                <h4 class="flip-box-title">Testing & Compliance</h4>
+                <p class="flip-box-teaser">Stay compliant with EPA and state regulations</p>
+                <span class="flip-box-touch-hint">Tap to learn more</span>
+              </div>
+              <div class="flip-box-back">
+                <h4 class="flip-box-title">Testing & Compliance</h4>
+                <p class="flip-box-description">EPA-certified tank testing, line testing, leak detection monitoring. Automated scheduling, complete documentation, and regulatory reporting across 6 Western states.</p>
+                <a href="#contact" class="btn btn-sm btn-primary flip-box-cta">Schedule Test</a>
+              </div>
+            </div>
+          </div>
 
-            <article class="service-item fade-in">
-              <div class="service-icon">🎓</div>
-              <h4>Training & Certification</h4>
-              <p>Best-in-class technical training programs</p>
-            </article>
+          <!-- Training & Certification -->
+          <div class="flip-box" data-trigger="hover">
+            <div class="flip-box-inner">
+              <div class="flip-box-front">
+                <div class="flip-box-icon">🎓</div>
+                <h4 class="flip-box-title">Training & Certification</h4>
+                <p class="flip-box-teaser">Best-in-class technical training programs</p>
+                <span class="flip-box-touch-hint">Tap to learn more</span>
+              </div>
+              <div class="flip-box-back">
+                <h4 class="flip-box-title">Training & Certification</h4>
+                <p class="flip-box-description">Portland and Spokane training centers. Hands-on equipment training, safety certification, and management courses. Public classes, private sessions, and on-site options.</p>
+                <a href="#contact" class="btn btn-sm btn-primary flip-box-cta">View Courses</a>
+              </div>
+            </div>
           </div>
         </div>
+
         <p class="services-closing text-center text-white">From design through 24/7 maintenance, we handle every stage of your project lifecycle as your one partner</p>
         <div class="text-center">
-          <a href="#contact" class="btn btn-ghost btn-lg">View All Services →</a>
+          <a href="#contact" class="btn btn-ghost btn-lg">Get Service Now →</a>
         </div>
       </div>
     </section>
@@ -303,28 +437,361 @@
       </div>
     </section>
 
-    <!-- Geographic Coverage Section -->
+    <!-- Projects / Case Studies Section -->
+    <section id="projects" class="section projects-section">
+      <div class="container">
+        <h2 class="section-title text-center">Featured Projects</h2>
+        <p class="section-subtitle text-center">Real results from real customers across the Western US</p>
+
+        <!-- Filter Buttons -->
+        <div class="projects-filter" role="tablist" aria-label="Project category filter">
+          <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All Projects</button>
+          <button class="filter-btn" data-filter="fuel" role="tab" aria-selected="false">Fuel Systems</button>
+          <button class="filter-btn" data-filter="carwash" role="tab" aria-selected="false">Car Wash</button>
+          <button class="filter-btn" data-filter="environmental" role="tab" aria-selected="false">Environmental</button>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="projects-grid">
+          <!-- Project 1: Major Fuel Station Build -->
+          <article class="project-card" data-category="fuel">
+            <div class="project-image">
+              <img src="https://images.unsplash.com/photo-1611735341450-74d61e660ad2?w=600&h=400&fit=crop" alt="Complete fuel station installation project">
+              <div class="project-overlay">
+                <span class="project-category">Fuel Systems</span>
+              </div>
+            </div>
+            <div class="project-content">
+              <h4 class="project-title">Multi-Site Fleet Fueling Network</h4>
+              <p class="project-location">Portland Metro Area, OR</p>
+              <p class="project-description">Complete design and installation of 6 commercial fleet fueling stations with Veeder-Root monitoring systems.</p>
+              <div class="project-stats">
+                <div class="stat"><strong>6</strong> Sites</div>
+                <div class="stat"><strong>90</strong> Days</div>
+                <div class="stat"><strong>0</strong> Downtime</div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: Express Car Wash -->
+          <article class="project-card" data-category="carwash">
+            <div class="project-image">
+              <img src="../shared/assets/images/02-5.jpg" alt="Express car wash tunnel installation">
+              <div class="project-overlay">
+                <span class="project-category">Car Wash</span>
+              </div>
+            </div>
+            <div class="project-content">
+              <h4 class="project-title">Express Tunnel Wash Installation</h4>
+              <p class="project-location">Boise, ID</p>
+              <p class="project-description">Full tunnel car wash installation with Belanger equipment, water reclaim system, and payment integration.</p>
+              <div class="project-stats">
+                <div class="stat"><strong>120</strong> Cars/Day</div>
+                <div class="stat"><strong>45</strong> Days</div>
+                <div class="stat"><strong>40%</strong> Water Saved</div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: Tank Compliance -->
+          <article class="project-card" data-category="environmental">
+            <div class="project-image">
+              <img src="../shared/assets/images/photodune-11223654-electrician-installing-energy-saving-meter-xl-1.jpg" alt="Underground tank testing and compliance">
+              <div class="project-overlay">
+                <span class="project-category">Environmental</span>
+              </div>
+            </div>
+            <div class="project-content">
+              <h4 class="project-title">Regional Compliance Program</h4>
+              <p class="project-location">Montana & Wyoming</p>
+              <p class="project-description">Comprehensive tank testing and compliance program for 45-site convenience store chain across two states.</p>
+              <div class="project-stats">
+                <div class="stat"><strong>45</strong> Sites</div>
+                <div class="stat"><strong>100%</strong> Compliant</div>
+                <div class="stat"><strong>$0</strong> Fines</div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 4: C-Store Remodel -->
+          <article class="project-card" data-category="fuel">
+            <div class="project-image">
+              <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&h=400&fit=crop" alt="Convenience store fuel system remodel">
+              <div class="project-overlay">
+                <span class="project-category">Fuel Systems</span>
+              </div>
+            </div>
+            <div class="project-content">
+              <h4 class="project-title">Circle K Brand Image Upgrade</h4>
+              <p class="project-location">Spokane Region, WA</p>
+              <p class="project-description">EMV dispenser upgrades and brand image conversion for 12 locations with zero revenue loss during transition.</p>
+              <div class="project-stats">
+                <div class="stat"><strong>12</strong> Sites</div>
+                <div class="stat"><strong>EMV</strong> Ready</div>
+                <div class="stat"><strong>0</strong> Lost Days</div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 5: Self-Serve Car Wash -->
+          <article class="project-card" data-category="carwash">
+            <div class="project-image">
+              <img src="https://images.unsplash.com/photo-1520340356584-f9917d1eea6f?w=600&h=400&fit=crop" alt="Self-serve car wash bay installation">
+              <div class="project-overlay">
+                <span class="project-category">Car Wash</span>
+              </div>
+            </div>
+            <div class="project-content">
+              <h4 class="project-title">Self-Serve Bay Modernization</h4>
+              <p class="project-location">Fresno, CA</p>
+              <p class="project-description">Complete modernization of 8-bay self-serve wash including new equipment, LED lighting, and credit card acceptance.</p>
+              <div class="project-stats">
+                <div class="stat"><strong>8</strong> Bays</div>
+                <div class="stat"><strong>35%</strong> Revenue Up</div>
+                <div class="stat"><strong>24/7</strong> Operation</div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 6: Emergency Response -->
+          <article class="project-card" data-category="environmental">
+            <div class="project-image">
+              <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&h=400&fit=crop" alt="Emergency fuel spill response">
+              <div class="project-overlay">
+                <span class="project-category">Environmental</span>
+              </div>
+            </div>
+            <div class="project-content">
+              <h4 class="project-title">Emergency Leak Response</h4>
+              <p class="project-location">Kalispell, MT</p>
+              <p class="project-description">Rapid response to underground leak detection, containment, remediation planning, and regulatory coordination.</p>
+              <div class="project-stats">
+                <div class="stat"><strong>2hr</strong> Response</div>
+                <div class="stat"><strong>Full</strong> Remediation</div>
+                <div class="stat"><strong>$0</strong> Penalties</div>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="text-center" style="margin-top: var(--space-8);">
+          <a href="#contact" class="btn btn-primary btn-lg">Discuss Your Project →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Geographic Coverage Section with Expandable Location Cards -->
     <section id="coverage" class="section section-alt">
       <div class="container">
         <h2 class="section-title text-center">8 Branches Across 6 Western States</h2>
-        <div class="map-container">
-          <div class="map-placeholder">
-            <p class="map-text">Interactive Map Coming Soon</p>
-            <div class="branch-list">
-              <div class="branch-item">📍 Kalispell, MT (HQ)</div>
-              <div class="branch-item">📍 Spokane, WA</div>
-              <div class="branch-item">📍 Billings, MT</div>
-              <div class="branch-item">📍 Boise, ID</div>
-              <div class="branch-item">📍 Portland, OR</div>
-              <div class="branch-item">📍 Springdale, AR</div>
-              <div class="branch-item">📍 Fresno, CA</div>
-              <div class="branch-item">📍 Bakersfield, CA</div>
-              <div class="branch-item">📍 San Jose, CA</div>
+        <p class="section-subtitle text-center">Click any location for details. 24/7 emergency dispatch from all branches.</p>
+
+        <div class="locations-grid">
+          <!-- Kalispell HQ -->
+          <div class="location-card" data-location="kalispell">
+            <div class="location-header">
+              <span class="location-icon">📍</span>
+              <div class="location-info">
+                <h4 class="location-name">Kalispell, MT</h4>
+                <span class="location-badge">Headquarters</span>
+              </div>
+              <button class="location-toggle" aria-expanded="false" aria-label="Toggle Kalispell details">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M6 9l6 6 6-6"/>
+                </svg>
+              </button>
+            </div>
+            <div class="location-details" aria-hidden="true">
+              <p class="location-address">123 Industrial Way, Kalispell, MT 59901</p>
+              <p class="location-phone"><a href="tel:4067551892">406-755-1892</a></p>
+              <p class="location-coverage"><strong>Coverage:</strong> Montana, Northern Idaho, Eastern Washington</p>
+              <p class="location-services"><strong>Services:</strong> Full service, Training center, Parts warehouse</p>
+              <p class="location-response"><strong>Response:</strong> Under 4 hours within 100-mile radius</p>
+            </div>
+          </div>
+
+          <!-- Spokane -->
+          <div class="location-card" data-location="spokane">
+            <div class="location-header">
+              <span class="location-icon">📍</span>
+              <div class="location-info">
+                <h4 class="location-name">Spokane, WA</h4>
+                <span class="location-badge training">Training Center</span>
+              </div>
+              <button class="location-toggle" aria-expanded="false" aria-label="Toggle Spokane details">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M6 9l6 6 6-6"/>
+                </svg>
+              </button>
+            </div>
+            <div class="location-details" aria-hidden="true">
+              <p class="location-address">456 Service Drive, Spokane, WA 99201</p>
+              <p class="location-phone"><a href="tel:5097551892">509-755-1892</a></p>
+              <p class="location-coverage"><strong>Coverage:</strong> Eastern Washington, Northern Idaho</p>
+              <p class="location-services"><strong>Services:</strong> Full service, Training facility, Parts</p>
+              <p class="location-response"><strong>Response:</strong> Under 4 hours metro, same-day regional</p>
+            </div>
+          </div>
+
+          <!-- Billings -->
+          <div class="location-card" data-location="billings">
+            <div class="location-header">
+              <span class="location-icon">📍</span>
+              <div class="location-info">
+                <h4 class="location-name">Billings, MT</h4>
+              </div>
+              <button class="location-toggle" aria-expanded="false" aria-label="Toggle Billings details">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M6 9l6 6 6-6"/>
+                </svg>
+              </button>
+            </div>
+            <div class="location-details" aria-hidden="true">
+              <p class="location-address">789 Commerce Blvd, Billings, MT 59101</p>
+              <p class="location-phone"><a href="tel:4062451892">406-245-1892</a></p>
+              <p class="location-coverage"><strong>Coverage:</strong> Eastern Montana, Northern Wyoming</p>
+              <p class="location-services"><strong>Services:</strong> Full service, Environmental testing</p>
+              <p class="location-response"><strong>Response:</strong> Under 4 hours within 150-mile radius</p>
+            </div>
+          </div>
+
+          <!-- Boise -->
+          <div class="location-card" data-location="boise">
+            <div class="location-header">
+              <span class="location-icon">📍</span>
+              <div class="location-info">
+                <h4 class="location-name">Boise, ID</h4>
+              </div>
+              <button class="location-toggle" aria-expanded="false" aria-label="Toggle Boise details">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M6 9l6 6 6-6"/>
+                </svg>
+              </button>
+            </div>
+            <div class="location-details" aria-hidden="true">
+              <p class="location-address">321 Industrial Park, Boise, ID 83702</p>
+              <p class="location-phone"><a href="tel:2083751892">208-375-1892</a></p>
+              <p class="location-coverage"><strong>Coverage:</strong> Southern Idaho, Eastern Oregon</p>
+              <p class="location-services"><strong>Services:</strong> Full service, Car wash specialists</p>
+              <p class="location-response"><strong>Response:</strong> Under 4 hours Treasure Valley</p>
+            </div>
+          </div>
+
+          <!-- Portland -->
+          <div class="location-card" data-location="portland">
+            <div class="location-header">
+              <span class="location-icon">📍</span>
+              <div class="location-info">
+                <h4 class="location-name">Portland, OR</h4>
+                <span class="location-badge training">Training Center</span>
+              </div>
+              <button class="location-toggle" aria-expanded="false" aria-label="Toggle Portland details">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M6 9l6 6 6-6"/>
+                </svg>
+              </button>
+            </div>
+            <div class="location-details" aria-hidden="true">
+              <p class="location-address">555 Tech Center Way, Portland, OR 97201</p>
+              <p class="location-phone"><a href="tel:5035551892">503-555-1892</a></p>
+              <p class="location-coverage"><strong>Coverage:</strong> Oregon, SW Washington</p>
+              <p class="location-services"><strong>Services:</strong> Full service, Training facility, Large parts inventory</p>
+              <p class="location-response"><strong>Response:</strong> Under 2 hours Portland metro</p>
+            </div>
+          </div>
+
+          <!-- Springdale -->
+          <div class="location-card" data-location="springdale">
+            <div class="location-header">
+              <span class="location-icon">📍</span>
+              <div class="location-info">
+                <h4 class="location-name">Springdale, AR</h4>
+              </div>
+              <button class="location-toggle" aria-expanded="false" aria-label="Toggle Springdale details">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M6 9l6 6 6-6"/>
+                </svg>
+              </button>
+            </div>
+            <div class="location-details" aria-hidden="true">
+              <p class="location-address">999 Commerce Drive, Springdale, AR 72762</p>
+              <p class="location-phone"><a href="tel:4797561892">479-756-1892</a></p>
+              <p class="location-coverage"><strong>Coverage:</strong> Arkansas, Oklahoma, SW Missouri</p>
+              <p class="location-services"><strong>Services:</strong> Full service, Growing market expansion</p>
+              <p class="location-response"><strong>Response:</strong> Under 4 hours NW Arkansas</p>
+            </div>
+          </div>
+
+          <!-- Fresno -->
+          <div class="location-card" data-location="fresno">
+            <div class="location-header">
+              <span class="location-icon">📍</span>
+              <div class="location-info">
+                <h4 class="location-name">Fresno, CA</h4>
+              </div>
+              <button class="location-toggle" aria-expanded="false" aria-label="Toggle Fresno details">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M6 9l6 6 6-6"/>
+                </svg>
+              </button>
+            </div>
+            <div class="location-details" aria-hidden="true">
+              <p class="location-address">777 Valley Center, Fresno, CA 93721</p>
+              <p class="location-phone"><a href="tel:5592221892">559-222-1892</a></p>
+              <p class="location-coverage"><strong>Coverage:</strong> Central California, San Joaquin Valley</p>
+              <p class="location-services"><strong>Services:</strong> Full service, Agricultural fueling specialists</p>
+              <p class="location-response"><strong>Response:</strong> Under 4 hours Central Valley</p>
+            </div>
+          </div>
+
+          <!-- Bakersfield -->
+          <div class="location-card" data-location="bakersfield">
+            <div class="location-header">
+              <span class="location-icon">📍</span>
+              <div class="location-info">
+                <h4 class="location-name">Bakersfield, CA</h4>
+              </div>
+              <button class="location-toggle" aria-expanded="false" aria-label="Toggle Bakersfield details">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M6 9l6 6 6-6"/>
+                </svg>
+              </button>
+            </div>
+            <div class="location-details" aria-hidden="true">
+              <p class="location-address">444 Petroleum Way, Bakersfield, CA 93301</p>
+              <p class="location-phone"><a href="tel:6613221892">661-322-1892</a></p>
+              <p class="location-coverage"><strong>Coverage:</strong> Kern County, Southern San Joaquin</p>
+              <p class="location-services"><strong>Services:</strong> Full service, Oil field fueling experience</p>
+              <p class="location-response"><strong>Response:</strong> Under 4 hours Kern County</p>
+            </div>
+          </div>
+
+          <!-- San Jose -->
+          <div class="location-card" data-location="sanjose">
+            <div class="location-header">
+              <span class="location-icon">📍</span>
+              <div class="location-info">
+                <h4 class="location-name">San Jose, CA</h4>
+              </div>
+              <button class="location-toggle" aria-expanded="false" aria-label="Toggle San Jose details">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M6 9l6 6 6-6"/>
+                </svg>
+              </button>
+            </div>
+            <div class="location-details" aria-hidden="true">
+              <p class="location-address">222 Tech Park Blvd, San Jose, CA 95110</p>
+              <p class="location-phone"><a href="tel:4084081892">408-408-1892</a></p>
+              <p class="location-coverage"><strong>Coverage:</strong> Bay Area, Silicon Valley, Monterey</p>
+              <p class="location-services"><strong>Services:</strong> Full service, EV charging installations</p>
+              <p class="location-response"><strong>Response:</strong> Under 3 hours Bay Area</p>
             </div>
           </div>
         </div>
-        <div class="text-center">
-          <a href="#contact" class="btn btn-primary btn-lg">Find Your Nearest Branch →</a>
+
+        <div class="text-center" style="margin-top: var(--space-8);">
+          <p class="emergency-banner">24/7 Emergency Hotline: <a href="tel:8007751892" class="emergency-link">800-775-1892</a></p>
+          <a href="#contact" class="btn btn-primary btn-lg">Contact Your Nearest Branch</a>
         </div>
       </div>
     </section>
@@ -434,52 +901,119 @@
       </div>
     </section>
 
-    <!-- Testimonials Section -->
-    <section id="projects" class="section section-alt">
+    <!-- Testimonials Carousel Section -->
+    <section id="testimonials" class="section section-alt">
       <div class="container">
         <h2 class="section-title text-center">What Our Customers Say</h2>
-        <div class="testimonials-grid">
-          <article class="testimonial-card fade-in">
-            <div class="testimonial-photo">
-              <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=600&h=400&fit=crop" alt="John Smith, Regional Manager at Circle K">
-            </div>
-            <blockquote class="testimonial-quote">
-              "Nwestco upgraded our 12 locations in 90 days with zero downtime. Their project management and technical expertise are unmatched."
-            </blockquote>
-            <div class="testimonial-attribution">
-              <p class="testimonial-name">John Smith</p>
-              <p class="testimonial-title">Regional Manager, Circle K</p>
-              <p class="testimonial-location">Portland, OR</p>
-            </div>
-          </article>
 
-          <article class="testimonial-card fade-in">
-            <div class="testimonial-photo">
-              <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=600&h=400&fit=crop" alt="Maria Garcia, Owner of Sunshine Car Wash">
-            </div>
-            <blockquote class="testimonial-quote">
-              "Their 24/7 service keeps my wash running and profitable. When equipment goes down, they respond in hours, not days. That's the difference between losing money and making money."
-            </blockquote>
-            <div class="testimonial-attribution">
-              <p class="testimonial-name">Maria Garcia</p>
-              <p class="testimonial-title">Owner, Sunshine Car Wash</p>
-              <p class="testimonial-location">Boise, ID</p>
-            </div>
-          </article>
+        <div class="testimonial-carousel" aria-label="Customer testimonials">
+          <div class="testimonial-carousel-track">
+            <!-- Testimonial 1 -->
+            <article class="testimonial-slide active" aria-hidden="false">
+              <div class="testimonial-content">
+                <div class="testimonial-photo">
+                  <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=200&h=200&fit=crop" alt="John Smith">
+                </div>
+                <blockquote class="testimonial-quote">
+                  "Nwestco upgraded our 12 locations in 90 days with zero downtime. Their project management and technical expertise are unmatched."
+                </blockquote>
+                <div class="testimonial-attribution">
+                  <p class="testimonial-name">John Smith</p>
+                  <p class="testimonial-title">Regional Manager, Circle K</p>
+                  <p class="testimonial-location">Portland, OR</p>
+                </div>
+              </div>
+            </article>
 
-          <article class="testimonial-card fade-in">
-            <div class="testimonial-photo">
-              <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=600&h=400&fit=crop" alt="Tom Wilson, Fleet Manager at ABC Corporation">
-            </div>
-            <blockquote class="testimonial-quote">
-              "One-stop shop eliminated our vendor headaches. We used to coordinate between five contractors - now it's one call to Nwestco. Installation, service, compliance, parts. They handle it all."
-            </blockquote>
-            <div class="testimonial-attribution">
-              <p class="testimonial-name">Tom Wilson</p>
-              <p class="testimonial-title">Fleet Manager, ABC Corporation</p>
-              <p class="testimonial-location">Spokane, WA</p>
-            </div>
-          </article>
+            <!-- Testimonial 2 -->
+            <article class="testimonial-slide" aria-hidden="true">
+              <div class="testimonial-content">
+                <div class="testimonial-photo">
+                  <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=200&h=200&fit=crop" alt="Maria Garcia">
+                </div>
+                <blockquote class="testimonial-quote">
+                  "Their 24/7 service keeps my wash running and profitable. When equipment goes down, they respond in hours, not days. That's the difference between losing money and making money."
+                </blockquote>
+                <div class="testimonial-attribution">
+                  <p class="testimonial-name">Maria Garcia</p>
+                  <p class="testimonial-title">Owner, Sunshine Car Wash</p>
+                  <p class="testimonial-location">Boise, ID</p>
+                </div>
+              </div>
+            </article>
+
+            <!-- Testimonial 3 -->
+            <article class="testimonial-slide" aria-hidden="true">
+              <div class="testimonial-content">
+                <div class="testimonial-photo">
+                  <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=200&h=200&fit=crop" alt="Tom Wilson">
+                </div>
+                <blockquote class="testimonial-quote">
+                  "One-stop shop eliminated our vendor headaches. We used to coordinate between five contractors - now it's one call to Nwestco. Installation, service, compliance, parts. They handle it all."
+                </blockquote>
+                <div class="testimonial-attribution">
+                  <p class="testimonial-name">Tom Wilson</p>
+                  <p class="testimonial-title">Fleet Manager, ABC Corporation</p>
+                  <p class="testimonial-location">Spokane, WA</p>
+                </div>
+              </div>
+            </article>
+
+            <!-- Testimonial 4 -->
+            <article class="testimonial-slide" aria-hidden="true">
+              <div class="testimonial-content">
+                <div class="testimonial-photo">
+                  <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&h=200&fit=crop" alt="David Chen">
+                </div>
+                <blockquote class="testimonial-quote">
+                  "Their compliance team saved us from what could have been a $50,000 EPA fine. They caught a leak our previous vendor missed and handled the entire remediation process. Worth every penny."
+                </blockquote>
+                <div class="testimonial-attribution">
+                  <p class="testimonial-name">David Chen</p>
+                  <p class="testimonial-title">Operations Director, Mountain Fuel Co.</p>
+                  <p class="testimonial-location">Billings, MT</p>
+                </div>
+              </div>
+            </article>
+
+            <!-- Testimonial 5 -->
+            <article class="testimonial-slide" aria-hidden="true">
+              <div class="testimonial-content">
+                <div class="testimonial-photo">
+                  <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=200&h=200&fit=crop" alt="Sarah Thompson">
+                </div>
+                <blockquote class="testimonial-quote">
+                  "From initial design through ongoing maintenance, Nwestco has been our partner for 8 years. Their training programs keep my staff certified and our equipment running at peak performance."
+                </blockquote>
+                <div class="testimonial-attribution">
+                  <p class="testimonial-name">Sarah Thompson</p>
+                  <p class="testimonial-title">Owner, Valley Car Wash Chain</p>
+                  <p class="testimonial-location">Fresno, CA</p>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- Carousel Navigation -->
+          <button class="carousel-nav carousel-prev" aria-label="Previous testimonial">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+          <button class="carousel-nav carousel-next" aria-label="Next testimonial">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+
+          <!-- Carousel Indicators -->
+          <div class="carousel-dots" role="tablist" aria-label="Testimonial navigation">
+            <button class="carousel-dot active" data-slide="0" role="tab" aria-selected="true" aria-label="Testimonial 1"></button>
+            <button class="carousel-dot" data-slide="1" role="tab" aria-selected="false" aria-label="Testimonial 2"></button>
+            <button class="carousel-dot" data-slide="2" role="tab" aria-selected="false" aria-label="Testimonial 3"></button>
+            <button class="carousel-dot" data-slide="3" role="tab" aria-selected="false" aria-label="Testimonial 4"></button>
+            <button class="carousel-dot" data-slide="4" role="tab" aria-selected="false" aria-label="Testimonial 5"></button>
+          </div>
         </div>
       </div>
     </section>
@@ -621,9 +1155,9 @@
       </div>
 
       <div class="footer-legal">
-        <a href="#">Privacy Policy</a>
-        <a href="#">Terms of Service</a>
-        <a href="#">Accessibility Statement</a>
+        <button class="legal-link" data-modal="privacy-modal">Privacy Policy</button>
+        <button class="legal-link" data-modal="terms-modal">Terms of Service</button>
+        <button class="legal-link" data-modal="accessibility-modal">Accessibility Statement</button>
       </div>
 
       <div class="footer-copyright">
@@ -631,6 +1165,136 @@
       </div>
     </div>
   </footer>
+
+  <!-- Legal Modals -->
+  <!-- Privacy Policy Modal -->
+  <div class="modal-overlay" id="privacy-modal" aria-hidden="true" role="dialog" aria-labelledby="privacy-modal-title">
+    <div class="modal">
+      <div class="modal-header">
+        <h2 id="privacy-modal-title">Privacy Policy</h2>
+        <button class="modal-close" aria-label="Close privacy policy">&times;</button>
+      </div>
+      <div class="modal-body">
+        <p class="effective-date"><em>Last Updated: January 1, 2024</em></p>
+
+        <h3>Information We Collect</h3>
+        <p>When you interact with Nwestco, we may collect personal information including your name, contact details, business information, and service history to provide and improve our services.</p>
+
+        <h3>How We Use Your Information</h3>
+        <ul>
+          <li>Provide, maintain, and improve our services</li>
+          <li>Process service requests and transactions</li>
+          <li>Send service updates and emergency notifications</li>
+          <li>Respond to your inquiries and support needs</li>
+          <li>Comply with legal and regulatory requirements</li>
+        </ul>
+
+        <h3>Information Sharing</h3>
+        <p>We do not sell your personal information. We may share information with equipment manufacturers for warranty purposes, service partners to fulfill your requests, and as required by law.</p>
+
+        <h3>Data Security</h3>
+        <p>We implement industry-standard security measures to protect your information. However, no method of transmission over the Internet is 100% secure.</p>
+
+        <h3>Your Rights</h3>
+        <p>You may request access to, correction of, or deletion of your personal information by contacting us at <a href="mailto:info@nwestco.com">info@nwestco.com</a> or calling 800-775-1892.</p>
+
+        <h3>Cookies</h3>
+        <p>Our website uses cookies to improve your browsing experience and analyze site traffic. You can control cookie preferences through your browser settings.</p>
+
+        <h3>Contact Us</h3>
+        <p>For privacy-related questions, contact us at <a href="mailto:info@nwestco.com">info@nwestco.com</a> or 800-775-1892.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Terms of Service Modal -->
+  <div class="modal-overlay" id="terms-modal" aria-hidden="true" role="dialog" aria-labelledby="terms-modal-title">
+    <div class="modal">
+      <div class="modal-header">
+        <h2 id="terms-modal-title">Terms of Service</h2>
+        <button class="modal-close" aria-label="Close terms of service">&times;</button>
+      </div>
+      <div class="modal-body">
+        <p class="effective-date"><em>Effective Date: January 1, 2024</em></p>
+
+        <h3>Services Overview</h3>
+        <p>Nwestco provides fuel system equipment, car wash systems, environmental compliance services, and related installation, maintenance, and repair services across the Western United States.</p>
+
+        <h3>Service Agreements</h3>
+        <p>Individual projects and ongoing service relationships are governed by separate service agreements, work orders, or contracts that specify scope, pricing, and terms.</p>
+
+        <h3>Quotes and Pricing</h3>
+        <p>Quotes are estimates based on information available at the time. Final pricing may vary based on site conditions, scope changes, material costs, and permit requirements. Quotes are typically valid for 30 days.</p>
+
+        <h3>Emergency Services</h3>
+        <p>Our 24/7 emergency service is available at 800-775-1892. Emergency service rates and response times may differ from standard service.</p>
+
+        <h3>Payment Terms</h3>
+        <ul>
+          <li>Deposits may be required for equipment orders and large projects</li>
+          <li>Service calls are due upon completion unless other arrangements exist</li>
+          <li>Net 30 terms may be available for established accounts</li>
+        </ul>
+
+        <h3>Warranties</h3>
+        <p>Equipment warranties are provided by manufacturers. Nwestco workmanship warranties are specified in individual service agreements. We stand behind our work and will address any issues related to our installation or service quality.</p>
+
+        <h3>Limitation of Liability</h3>
+        <p>To the maximum extent permitted by law, Nwestco shall not be liable for indirect, incidental, special, consequential, or punitive damages arising from your use of our services.</p>
+
+        <h3>Governing Law</h3>
+        <p>These Terms are governed by the laws of the State of Oregon. Any disputes shall be resolved in the courts of Multnomah County, Oregon.</p>
+
+        <h3>Contact</h3>
+        <p>For questions about these Terms, contact us at <a href="mailto:info@nwestco.com">info@nwestco.com</a> or 800-775-1892.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Accessibility Statement Modal -->
+  <div class="modal-overlay" id="accessibility-modal" aria-hidden="true" role="dialog" aria-labelledby="accessibility-modal-title">
+    <div class="modal">
+      <div class="modal-header">
+        <h2 id="accessibility-modal-title">Accessibility Statement</h2>
+        <button class="modal-close" aria-label="Close accessibility statement">&times;</button>
+      </div>
+      <div class="modal-body">
+        <p class="effective-date"><em>Last Updated: January 1, 2024</em></p>
+
+        <h3>Our Commitment</h3>
+        <p>Nwestco is committed to ensuring digital accessibility for people with disabilities. We continually improve the user experience for everyone and apply the relevant accessibility standards.</p>
+
+        <h3>Conformance Status</h3>
+        <p>We aim to conform to the Web Content Accessibility Guidelines (WCAG) 2.1 Level AA standards.</p>
+
+        <h3>Accessibility Features</h3>
+        <ul>
+          <li><strong>Skip Navigation:</strong> Skip links for keyboard users</li>
+          <li><strong>Semantic HTML:</strong> Proper heading structure and landmarks</li>
+          <li><strong>Alt Text:</strong> Descriptive alternative text for images</li>
+          <li><strong>Color Contrast:</strong> WCAG AA contrast ratios</li>
+          <li><strong>Keyboard Navigation:</strong> All interactive elements accessible</li>
+          <li><strong>Focus Indicators:</strong> Visible focus states</li>
+          <li><strong>Resizable Text:</strong> Text resizable up to 200%</li>
+          <li><strong>Form Labels:</strong> All form fields have labels</li>
+        </ul>
+
+        <h3>Assistive Technologies</h3>
+        <p>Our website is designed to be compatible with screen readers (JAWS, NVDA, VoiceOver), screen magnification software, speech recognition software, and keyboard-only navigation.</p>
+
+        <h3>Alternative Access</h3>
+        <p>If you have difficulty accessing any content, we're happy to assist:</p>
+        <ul>
+          <li><strong>Phone:</strong> 800-775-1892 (24/7)</li>
+          <li><strong>Email:</strong> <a href="mailto:info@nwestco.com">info@nwestco.com</a></li>
+          <li><strong>In Person:</strong> Visit any of our 8 branch locations</li>
+        </ul>
+
+        <h3>Feedback</h3>
+        <p>We welcome feedback on accessibility. Please contact us with the page URL, description of the issue, and assistive technology used. We respond to accessibility feedback within 5 business days.</p>
+      </div>
+    </div>
+  </div>
 
   <!-- Scripts -->
   <script src="js/option-a.js"></script>
