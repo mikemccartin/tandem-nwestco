@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Nwestco Website Redesign | Tandem Theory</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --tandem-dark: #1a1a2e;
+      --tandem-accent: #e94560;
+      --tandem-light: #f5f5f7;
+      --tandem-white: #ffffff;
+      --tandem-gray: #6c757d;
+      --nwestco-blue: #003049;
+      --nwestco-green: #4a7c59;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Open Sans', sans-serif;
+      background-color: var(--tandem-light);
+      color: var(--tandem-dark);
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* Header */
+    header {
+      background: var(--tandem-dark);
+      padding: 40px 0;
+      text-align: center;
+    }
+
+    .tandem-logo {
+      height: 50px;
+      width: auto;
+    }
+
+    .logo-placeholder {
+      display: inline-block;
+    }
+
+    .logo-placeholder .tandem {
+      font-family: 'Lato', sans-serif;
+      font-size: 1.75rem;
+      font-weight: 900;
+      color: var(--tandem-white);
+      background: #e30613;
+      padding: 6px 16px;
+      letter-spacing: 3px;
+      display: block;
+    }
+
+    .logo-placeholder .theory {
+      font-family: 'Lato', sans-serif;
+      font-size: 1.1rem;
+      font-weight: 400;
+      color: var(--tandem-white);
+      letter-spacing: 8px;
+      display: block;
+      margin-top: 4px;
+    }
+
+    header p {
+      color: rgba(255,255,255,0.7);
+      font-size: 0.875rem;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+    }
+
+    /* Hero */
+    .hero {
+      background: linear-gradient(135deg, var(--nwestco-blue) 0%, #001F28 100%);
+      color: white;
+      padding: 60px 0;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-family: 'Lato', sans-serif;
+      font-size: 2.5rem;
+      font-weight: 900;
+      margin-bottom: 16px;
+    }
+
+    .hero p {
+      font-size: 1.125rem;
+      opacity: 0.9;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    .client-logo {
+      margin-top: 32px;
+    }
+
+    .client-logo img {
+      height: 60px;
+      filter: brightness(0) invert(1);
+    }
+
+    /* Sections */
+    section {
+      padding: 60px 0;
+    }
+
+    section h2 {
+      font-family: 'Lato', sans-serif;
+      font-size: 1.75rem;
+      font-weight: 700;
+      margin-bottom: 8px;
+      color: var(--tandem-dark);
+    }
+
+    section .section-intro {
+      color: var(--tandem-gray);
+      margin-bottom: 32px;
+      max-width: 700px;
+    }
+
+    .section-label {
+      display: inline-block;
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: var(--tandem-accent);
+      margin-bottom: 8px;
+    }
+
+    /* Prototype Cards */
+    .prototype-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      gap: 24px;
+      margin-top: 32px;
+    }
+
+    .prototype-card {
+      background: var(--tandem-white);
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .prototype-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+    }
+
+    .prototype-card.featured {
+      border: 3px solid var(--nwestco-green);
+    }
+
+    .prototype-header {
+      padding: 24px;
+      background: var(--tandem-dark);
+      color: white;
+    }
+
+    .prototype-card.featured .prototype-header {
+      background: linear-gradient(135deg, var(--nwestco-green) 0%, #3d6a4a 100%);
+    }
+
+    .prototype-header h3 {
+      font-family: 'Lato', sans-serif;
+      font-size: 1.25rem;
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+
+    .prototype-header .badge {
+      display: inline-block;
+      background: rgba(255,255,255,0.2);
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      margin-top: 8px;
+    }
+
+    .prototype-card.featured .badge {
+      background: var(--tandem-white);
+      color: var(--nwestco-green);
+    }
+
+    .prototype-body {
+      padding: 24px;
+    }
+
+    .prototype-body p {
+      color: var(--tandem-gray);
+      margin-bottom: 16px;
+      font-size: 0.9375rem;
+    }
+
+    .prototype-body ul {
+      list-style: none;
+      margin-bottom: 24px;
+    }
+
+    .prototype-body li {
+      padding: 8px 0;
+      padding-left: 24px;
+      position: relative;
+      font-size: 0.875rem;
+      color: var(--tandem-dark);
+    }
+
+    .prototype-body li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: var(--nwestco-green);
+      font-weight: bold;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 24px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.875rem;
+      transition: all 0.2s ease;
+    }
+
+    .btn-primary {
+      background: var(--nwestco-blue);
+      color: white;
+    }
+
+    .btn-primary:hover {
+      background: #002538;
+    }
+
+    .btn-featured {
+      background: var(--nwestco-green);
+      color: white;
+    }
+
+    .btn-featured:hover {
+      background: #3d6a4a;
+    }
+
+    /* Discovery Section */
+    .discovery-section {
+      background: var(--tandem-white);
+    }
+
+    .discovery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 16px;
+      margin-top: 32px;
+    }
+
+    .discovery-category {
+      background: var(--tandem-light);
+      border-radius: 8px;
+      padding: 24px;
+    }
+
+    .discovery-category h4 {
+      font-family: 'Lato', sans-serif;
+      font-size: 1rem;
+      font-weight: 700;
+      margin-bottom: 16px;
+      color: var(--tandem-dark);
+      padding-bottom: 8px;
+      border-bottom: 2px solid var(--tandem-accent);
+    }
+
+    .discovery-category ul {
+      list-style: none;
+    }
+
+    .discovery-category li {
+      margin-bottom: 8px;
+    }
+
+    .discovery-category a {
+      color: var(--nwestco-blue);
+      text-decoration: none;
+      font-size: 0.875rem;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .discovery-category a:hover {
+      color: var(--tandem-accent);
+    }
+
+    .discovery-category a::before {
+      content: "→";
+      color: var(--tandem-gray);
+    }
+
+    /* Project Info */
+    .project-info {
+      background: var(--tandem-dark);
+      color: white;
+    }
+
+    .info-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 32px;
+      margin-top: 32px;
+    }
+
+    .info-item h4 {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: var(--tandem-accent);
+      margin-bottom: 8px;
+    }
+
+    .info-item p {
+      font-size: 1rem;
+      opacity: 0.9;
+    }
+
+    /* Footer */
+    footer {
+      background: var(--tandem-dark);
+      border-top: 1px solid rgba(255,255,255,0.1);
+      padding: 24px 0;
+      text-align: center;
+    }
+
+    footer p {
+      color: rgba(255,255,255,0.5);
+      font-size: 0.8125rem;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 1.75rem;
+      }
+
+      .prototype-grid {
+        grid-template-columns: 1fr;
+      }
+
+      section {
+        padding: 40px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <img src="assets/tandem-theory-logo.png" alt="Tandem Theory" class="tandem-logo">
+      <p>Strategic Marketing Partner</p>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container">
+      <h1>Nwestco Website Redesign</h1>
+      <p>Complete website strategy, discovery, and prototype development for Nwestco's digital transformation - fuel systems, car wash, and environmental services.</p>
+      <div class="client-logo">
+        <img src="../../current-site-assets/logos/nwestco_logo_flat.png" alt="Nwestco">
+      </div>
+    </div>
+  </section>
+
+  <!-- Prototype Options -->
+  <section>
+    <div class="container">
+      <span class="section-label">Design Directions</span>
+      <h2>Prototype Options</h2>
+      <p class="section-intro">Three distinct approaches to Nwestco's new website, each optimized for different user journeys and business goals.</p>
+
+      <div class="prototype-grid">
+        <!-- Option A -->
+        <div class="prototype-card">
+          <div class="prototype-header">
+            <h3>Option A: One-Page Impact</h3>
+            <span class="badge">Structure Only</span>
+          </div>
+          <div class="prototype-body">
+            <p>Single-page design with anchor navigation. Ideal for focused storytelling and quick scanning of capabilities.</p>
+            <ul>
+              <li>Single scrolling page layout</li>
+              <li>Anchor-based navigation</li>
+              <li>Quick capability overview</li>
+              <li>Mobile-first approach</li>
+            </ul>
+            <a href="../option-a/index.html" class="btn btn-primary">View Option A</a>
+          </div>
+        </div>
+
+        <!-- Option B - Featured -->
+        <div class="prototype-card featured">
+          <div class="prototype-header">
+            <h3>Option B: Traditional Multi-Page</h3>
+            <span class="badge">Fully Built</span>
+          </div>
+          <div class="prototype-body">
+            <p>Comprehensive multi-page website with complete content across all sections. Full service pages, market pages, locations, and contact functionality.</p>
+            <ul>
+              <li>20+ fully built pages with content</li>
+              <li>Complete navigation structure</li>
+              <li>7 detailed service pages</li>
+              <li>3 market vertical pages</li>
+              <li>8 location pages</li>
+              <li>Interactive service timeline</li>
+              <li>Contact forms & CTAs</li>
+            </ul>
+            <a href="../option-b/index.html" class="btn btn-featured">View Option B</a>
+          </div>
+        </div>
+
+        <!-- Option C -->
+        <div class="prototype-card">
+          <div class="prototype-header">
+            <h3>Option C: Modern Progressive</h3>
+            <span class="badge">Structure Only</span>
+          </div>
+          <div class="prototype-body">
+            <p>Modern progressive web app approach with interactive elements, service timeline from Option C integrated into Option B's full build.</p>
+            <ul>
+              <li>PWA-ready architecture</li>
+              <li>Interactive service timeline</li>
+              <li>Modern animations</li>
+              <li>App-like experience</li>
+            </ul>
+            <a href="../option-c/index.html" class="btn btn-primary">View Option C</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Discovery Documents -->
+  <section class="discovery-section">
+    <div class="container">
+      <span class="section-label">Strategy & Research</span>
+      <h2>Discovery Documents</h2>
+      <p class="section-intro">Comprehensive discovery work informing the website strategy, content architecture, and design direction.</p>
+
+      <div class="discovery-grid">
+        <!-- Strategy -->
+        <div class="discovery-category">
+          <h4>Strategy & Brand</h4>
+          <ul>
+            <li><a href="docs/viewer.html?doc=nwestco-project-brief">Project Brief</a></li>
+            <li><a href="docs/viewer.html?doc=nwestco-brand-guidelines">Brand Guidelines</a></li>
+            <li><a href="docs/viewer.html?doc=nwestco-messaging-framework">Messaging Framework</a></li>
+            <li><a href="docs/viewer.html?doc=nwestco-boilerplate">Company Boilerplate</a></li>
+          </ul>
+        </div>
+
+        <!-- SEO & Content -->
+        <div class="discovery-category">
+          <h4>SEO & Content</h4>
+          <ul>
+            <li><a href="docs/viewer.html?doc=nwestco-site-audit">Site Audit</a></li>
+            <li><a href="docs/viewer.html?doc=nwestco-seo-baseline">SEO Baseline</a></li>
+            <li><a href="docs/viewer.html?doc=nwestco-keyword-research">Keyword Research</a></li>
+            <li><a href="docs/viewer.html?doc=nwestco-seo-recommendations">SEO Recommendations</a></li>
+            <li><a href="docs/viewer.html?doc=nwestco-content-inventory">Content Inventory</a></li>
+          </ul>
+        </div>
+
+        <!-- Architecture -->
+        <div class="discovery-category">
+          <h4>Information Architecture</h4>
+          <ul>
+            <li><a href="docs/viewer.html?doc=nwestco-information-architecture">IA Strategy</a></li>
+            <li><a href="docs/viewer.html?doc=nwestco-sitemap">Sitemap</a></li>
+            <li><a href="docs/viewer.html?doc=nwestco-conversion-strategy">Conversion Strategy</a></li>
+            <li><a href="docs/viewer.html?doc=nwestco-form-specifications">Form Specifications</a></li>
+          </ul>
+        </div>
+
+        <!-- Wireframes -->
+        <div class="discovery-category">
+          <h4>Wireframes & UX</h4>
+          <ul>
+            <li><a href="docs/viewer.html?doc=wireframe-comparison">Wireframe Comparison</a></li>
+            <li><a href="docs/viewer.html?doc=option-a-one-page">Option A Wireframe</a></li>
+            <li><a href="docs/viewer.html?doc=option-b-traditional">Option B Wireframe</a></li>
+            <li><a href="docs/viewer.html?doc=option-c-modern">Option C Wireframe</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Project Info -->
+  <section class="project-info">
+    <div class="container">
+      <span class="section-label" style="color: var(--tandem-accent);">Project Details</span>
+      <h2 style="color: white;">Project Overview</h2>
+
+      <div class="info-grid">
+        <div class="info-item">
+          <h4>Client</h4>
+          <p>Nwestco</p>
+        </div>
+        <div class="info-item">
+          <h4>Industry</h4>
+          <p>Fuel Systems, Car Wash & Environmental</p>
+        </div>
+        <div class="info-item">
+          <h4>Coverage</h4>
+          <p>8 Branches, 6 Western States</p>
+        </div>
+        <div class="info-item">
+          <h4>Project Type</h4>
+          <p>Website Redesign</p>
+        </div>
+        <div class="info-item">
+          <h4>Phase</h4>
+          <p>Discovery & Prototyping</p>
+        </div>
+        <div class="info-item">
+          <h4>Agency</h4>
+          <p>Tandem Theory</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>Confidential - For internal review and client presentation only</p>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Document Viewer | Nwestco Project</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Marked.js for Markdown rendering -->
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+  <style>
+    :root {
+      --tandem-dark: #1a1a2e;
+      --tandem-accent: #e94560;
+      --tandem-light: #f5f5f7;
+      --tandem-white: #ffffff;
+      --tandem-gray: #6c757d;
+      --nwestco-blue: #003049;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Open Sans', sans-serif;
+      background-color: var(--tandem-light);
+      color: var(--tandem-dark);
+      line-height: 1.7;
+    }
+
+    header {
+      background: var(--tandem-dark);
+      padding: 16px 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .header-container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 0 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .back-link {
+      color: white;
+      text-decoration: none;
+      font-size: 0.875rem;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .back-link:hover {
+      color: var(--tandem-accent);
+    }
+
+    .tandem-logo {
+      height: 32px;
+      width: auto;
+    }
+
+    .logo-text {
+      display: inline-block;
+    }
+
+    .logo-text .tandem {
+      font-family: 'Lato', sans-serif;
+      font-size: 0.875rem;
+      font-weight: 900;
+      color: white;
+      background: #e30613;
+      padding: 3px 8px;
+      letter-spacing: 2px;
+    }
+
+    .logo-text .theory {
+      font-family: 'Lato', sans-serif;
+      font-size: 0.875rem;
+      font-weight: 400;
+      color: white;
+      letter-spacing: 4px;
+      margin-left: 4px;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 48px 24px;
+    }
+
+    .document-content {
+      background: var(--tandem-white);
+      padding: 48px;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    }
+
+    /* Markdown Styles */
+    .document-content h1 {
+      font-family: 'Lato', sans-serif;
+      font-size: 2rem;
+      font-weight: 900;
+      color: var(--nwestco-blue);
+      margin-bottom: 24px;
+      padding-bottom: 16px;
+      border-bottom: 3px solid var(--tandem-accent);
+    }
+
+    .document-content h2 {
+      font-family: 'Lato', sans-serif;
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--tandem-dark);
+      margin-top: 48px;
+      margin-bottom: 16px;
+    }
+
+    .document-content h3 {
+      font-family: 'Lato', sans-serif;
+      font-size: 1.125rem;
+      font-weight: 700;
+      color: var(--tandem-dark);
+      margin-top: 32px;
+      margin-bottom: 12px;
+    }
+
+    .document-content h4 {
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--tandem-gray);
+      margin-top: 24px;
+      margin-bottom: 8px;
+    }
+
+    .document-content p {
+      margin-bottom: 16px;
+      color: #444;
+    }
+
+    .document-content ul, .document-content ol {
+      margin-bottom: 16px;
+      padding-left: 24px;
+    }
+
+    .document-content li {
+      margin-bottom: 8px;
+    }
+
+    .document-content blockquote {
+      border-left: 4px solid var(--tandem-accent);
+      padding-left: 20px;
+      margin: 24px 0;
+      font-style: italic;
+      color: var(--tandem-gray);
+      background: var(--tandem-light);
+      padding: 16px 20px;
+      border-radius: 0 8px 8px 0;
+    }
+
+    .document-content code {
+      background: #f0f0f0;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-size: 0.875rem;
+      font-family: 'Monaco', 'Consolas', monospace;
+    }
+
+    .document-content pre {
+      background: var(--tandem-dark);
+      color: #f0f0f0;
+      padding: 16px;
+      border-radius: 8px;
+      overflow-x: auto;
+      margin: 16px 0;
+    }
+
+    .document-content pre code {
+      background: none;
+      padding: 0;
+      color: inherit;
+    }
+
+    .document-content table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 16px 0;
+      font-size: 0.9375rem;
+    }
+
+    .document-content th, .document-content td {
+      border: 1px solid #ddd;
+      padding: 12px;
+      text-align: left;
+    }
+
+    .document-content th {
+      background: var(--tandem-light);
+      font-weight: 600;
+    }
+
+    .document-content tr:nth-child(even) {
+      background: #fafafa;
+    }
+
+    .document-content hr {
+      border: none;
+      border-top: 2px solid #eee;
+      margin: 32px 0;
+    }
+
+    .document-content a {
+      color: var(--nwestco-blue);
+    }
+
+    .document-content strong {
+      font-weight: 600;
+      color: var(--tandem-dark);
+    }
+
+    .loading {
+      text-align: center;
+      padding: 60px;
+      color: var(--tandem-gray);
+    }
+
+    .error {
+      background: #fff3f3;
+      border: 1px solid #ffcccc;
+      color: #cc0000;
+      padding: 24px;
+      border-radius: 8px;
+      text-align: center;
+    }
+
+    /* Document Navigation */
+    .doc-nav {
+      display: flex;
+      gap: 16px;
+      margin-top: 48px;
+      padding-top: 24px;
+      border-top: 1px solid #eee;
+    }
+
+    .doc-nav a {
+      display: inline-block;
+      padding: 12px 24px;
+      background: var(--tandem-light);
+      color: var(--tandem-dark);
+      text-decoration: none;
+      border-radius: 6px;
+      font-size: 0.875rem;
+      font-weight: 600;
+    }
+
+    .doc-nav a:hover {
+      background: var(--nwestco-blue);
+      color: white;
+    }
+
+    @media (max-width: 768px) {
+      .document-content {
+        padding: 24px;
+      }
+
+      .document-content h1 {
+        font-size: 1.5rem;
+      }
+
+      .document-content h2 {
+        font-size: 1.25rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <a href="../index.html" class="back-link">← Back to Project Portal</a>
+      <img src="../assets/tandem-theory-logo.png" alt="Tandem Theory" class="tandem-logo">
+    </div>
+  </header>
+
+  <main>
+    <div class="document-content" id="content">
+      <div class="loading">Loading document...</div>
+    </div>
+  </main>
+
+  <script>
+    // Get the document path from URL parameter
+    const urlParams = new URLSearchParams(window.location.search);
+    const docPath = urlParams.get('doc');
+
+    // Document paths mapping - all docs in local md folder
+    const docs = {
+      // Strategy & Brand
+      'nwestco-project-brief': 'md/nwestco-project-brief.md',
+      'nwestco-brand-guidelines': 'md/nwestco-brand-guidelines.md',
+      'nwestco-messaging-framework': 'md/nwestco-messaging-framework.md',
+      'nwestco-boilerplate': 'md/nwestco-boilerplate.md',
+
+      // SEO & Content
+      'nwestco-site-audit': 'md/nwestco-site-audit.md',
+      'nwestco-seo-baseline': 'md/nwestco-seo-baseline.md',
+      'nwestco-keyword-research': 'md/nwestco-keyword-research.md',
+      'nwestco-seo-recommendations': 'md/nwestco-seo-recommendations.md',
+      'nwestco-content-inventory': 'md/nwestco-content-inventory.md',
+
+      // Architecture
+      'nwestco-information-architecture': 'md/nwestco-information-architecture.md',
+      'nwestco-sitemap': 'md/nwestco-sitemap.md',
+      'nwestco-conversion-strategy': 'md/nwestco-conversion-strategy.md',
+      'nwestco-form-specifications': 'md/nwestco-form-specifications.md',
+
+      // Wireframes
+      'wireframe-comparison': 'md/wireframe-comparison.md',
+      'option-a-one-page': 'md/option-a-one-page.md',
+      'option-b-traditional': 'md/option-b-traditional.md',
+      'option-c-modern': 'md/option-c-modern.md'
+    };
+
+    async function loadDocument() {
+      const contentDiv = document.getElementById('content');
+
+      if (!docPath || !docs[docPath]) {
+        contentDiv.innerHTML = `
+          <div class="error">
+            <h2>Document Not Found</h2>
+            <p>Please select a document from the <a href="../index.html">project portal</a>.</p>
+          </div>
+        `;
+        return;
+      }
+
+      try {
+        const response = await fetch(docs[docPath]);
+        if (!response.ok) throw new Error('Failed to load document');
+
+        const markdown = await response.text();
+        contentDiv.innerHTML = marked.parse(markdown);
+
+        // Update page title
+        const h1 = contentDiv.querySelector('h1');
+        if (h1) {
+          document.title = h1.textContent + ' | Nwestco Project';
+        }
+
+        // Add navigation
+        const nav = document.createElement('div');
+        nav.className = 'doc-nav';
+        nav.innerHTML = `<a href="../index.html">← Back to Portal</a>`;
+        contentDiv.appendChild(nav);
+
+      } catch (error) {
+        contentDiv.innerHTML = `
+          <div class="error">
+            <h2>Error Loading Document</h2>
+            <p>${error.message}</p>
+            <p><a href="../index.html">Return to project portal</a></p>
+          </div>
+        `;
+      }
+    }
+
+    loadDocument();
+  </script>
+</body>
+</html>

@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Find your nearest Nwestco branch. Eight locations across WA, OR, ID, MT, CA, AR providing fuel systems, car wash, and environmental services. 24/7 emergency response.">
+  <title>Nwestco Locations | 8 Branches Across Six Western States</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Shared Styles -->
+  <link rel="stylesheet" href="../../../shared/css/reset.css">
+  <link rel="stylesheet" href="../../../shared/css/variables.css">
+  <link rel="stylesheet" href="../../../shared/css/base.css">
+  <link rel="stylesheet" href="../../css/option-b.css">
+
+  <style>
+    .branch-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      gap: var(--space-6);
+      margin-top: var(--space-8);
+    }
+
+    .branch-card {
+      background: var(--nwestco-white);
+      border-radius: var(--radius-lg);
+      border: 1px solid var(--nwestco-neutral-100);
+      overflow: hidden;
+      transition: all var(--transition-normal);
+    }
+
+    .branch-card:hover {
+      box-shadow: var(--shadow-lg);
+      transform: translateY(-4px);
+      border-color: var(--nwestco-blue-light);
+    }
+
+    .branch-header {
+      background: linear-gradient(135deg, var(--nwestco-blue) 0%, var(--nwestco-blue-dark) 100%);
+      color: var(--nwestco-white);
+      padding: var(--space-6);
+    }
+
+    .branch-header h3 {
+      font-size: var(--text-xl);
+      margin: 0 0 var(--space-2);
+      color: var(--nwestco-white);
+    }
+
+    .branch-header .branch-tag {
+      display: inline-block;
+      background: rgba(255, 255, 255, 0.2);
+      padding: var(--space-1) var(--space-3);
+      border-radius: var(--radius-full);
+      font-size: var(--text-sm);
+      font-weight: var(--font-semibold);
+    }
+
+    .branch-content {
+      padding: var(--space-6);
+    }
+
+    .branch-content p {
+      font-size: var(--text-base);
+      color: var(--nwestco-neutral-600);
+      margin-bottom: var(--space-4);
+    }
+
+    .branch-contact {
+      margin: var(--space-4) 0;
+    }
+
+    .branch-contact-item {
+      display: flex;
+      align-items: flex-start;
+      gap: var(--space-3);
+      margin-bottom: var(--space-3);
+      font-size: var(--text-sm);
+      color: var(--nwestco-neutral-700);
+    }
+
+    .branch-contact-item strong {
+      min-width: 80px;
+      color: var(--nwestco-gray);
+    }
+
+    .branch-coverage {
+      background: var(--nwestco-neutral-25);
+      padding: var(--space-4);
+      border-radius: var(--radius-md);
+      margin: var(--space-4) 0;
+    }
+
+    .branch-coverage h4 {
+      font-size: var(--text-sm);
+      color: var(--nwestco-gray);
+      margin-bottom: var(--space-2);
+    }
+
+    .branch-coverage p {
+      font-size: var(--text-sm);
+      margin: 0;
+    }
+
+    .branch-actions {
+      display: flex;
+      gap: var(--space-3);
+      margin-top: var(--space-4);
+    }
+
+    .branch-actions .btn {
+      flex: 1;
+      text-align: center;
+      font-size: var(--text-sm);
+    }
+
+    .state-section {
+      margin-bottom: var(--space-12);
+    }
+
+    .state-section h2 {
+      font-size: var(--text-2xl);
+      color: var(--nwestco-blue);
+      margin-bottom: var(--space-4);
+      padding-bottom: var(--space-3);
+      border-bottom: 2px solid var(--nwestco-neutral-100);
+    }
+
+    @media (max-width: 767px) {
+      .branch-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .branch-actions {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <a href="#main-content" class="skip-nav">Skip to main content</a>
+
+  <header role="banner">
+    <div class="container">
+      <nav class="main-nav" role="navigation" aria-label="Main navigation">
+        <div class="nav-brand">
+          <a href="../../index.html">
+            <img src="../../../../current-site-assets/logos/nwestco_logo_flat.png" alt="Nwestco" class="logo">
+          </a>
+        </div>
+
+        <button class="mobile-menu-toggle" aria-expanded="false" aria-label="Toggle navigation menu">
+          <span class="hamburger"></span>
+        </button>
+
+        <ul class="nav-menu" role="list">
+          <li class="nav-dropdown">
+            <a href="#markets">Markets</a>
+            <ul class="dropdown-menu">
+              <li><a href="../fuel-systems.html">Fuel Systems</a></li>
+              <li><a href="../car-wash.html">Car Wash Systems</a></li>
+              <li><a href="../environmental.html">Environmental Solutions</a></li>
+            </ul>
+          </li>
+          <li class="nav-dropdown">
+            <a href="../../index.html#services">Services</a>
+            <ul class="dropdown-menu">
+              <li><a href="../services/design-engineering.html">Design & Engineering</a></li>
+              <li><a href="../services/installation.html">Installation & Construction</a></li>
+              <li><a href="../services/service-maintenance.html">24/7 Service & Maintenance</a></li>
+              <li><a href="../services/remodels-upgrades.html">Remodels & Upgrades</a></li>
+              <li><a href="../services/equipment-parts.html">Equipment Sales & Parts</a></li>
+              <li><a href="../services/testing-compliance.html">Testing & Compliance</a></li>
+              <li><a href="../services/training.html">Training & Certification</a></li>
+            </ul>
+          </li>
+          <li><a href="../about.html">Why Nwestco</a></li>
+          <li><a href="index.html" aria-current="page">Locations</a></li>
+          <li><a href="../careers.html">Careers</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+        </ul>
+
+        <div class="nav-cta">
+          <a href="../contact.html" class="btn btn-primary">Get Service Now</a>
+          <a href="tel:800-775-1892" class="btn btn-outline">800-775-1892</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content" role="main">
+    <!-- Page Header -->
+    <section class="page-header">
+      <div class="container">
+        <h1>Our Locations</h1>
+        <p class="subtitle">Eight branches across six Western states. Local presence, regional scale. When you need fuel systems, car wash, or environmental service, Nwestco is never more than a few hours away.</p>
+      </div>
+    </section>
+
+    <!-- Coverage Overview -->
+    <section class="content-section">
+      <div class="container">
+        <span class="section-label">OUR COVERAGE</span>
+        <h2>Rapid Response Across the Western United States</h2>
+
+        <div class="cards-grid cards-grid-3" style="margin-top: var(--space-6);">
+          <article class="card">
+            <h3>Under 4 Hours</h3>
+            <p>Average emergency response time across our entire service territory. Eight branches mean the nearest technician is hours away, not days.</p>
+          </article>
+          <article class="card">
+            <h3>90%+ Same-Day</h3>
+            <p>Over 90% of service calls receive same-day dispatch. Next-day parts delivery throughout the Western US.</p>
+          </article>
+          <article class="card">
+            <h3>6 States Covered</h3>
+            <p>Washington, Oregon, Idaho, Montana, California, Arkansas - with extended coverage to Wyoming, Nevada, Utah, and Missouri.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Branch Listings -->
+    <section class="content-section">
+      <div class="container">
+        <span class="section-label">FIND YOUR BRANCH</span>
+        <h2>Contact Your Nearest Nwestco Location</h2>
+
+        <!-- Washington -->
+        <div class="state-section">
+          <h2>Washington</h2>
+          <div class="branch-grid">
+            <div class="branch-card">
+              <div class="branch-header">
+                <h3>Spokane</h3>
+                <span class="branch-tag">Corporate Headquarters</span>
+              </div>
+              <div class="branch-content">
+                <p>Corporate headquarters and primary training center serving Eastern Washington, Northern Idaho, and Western Montana.</p>
+
+                <div class="branch-contact">
+                  <div class="branch-contact-item">
+                    <strong>24/7 Service:</strong>
+                    <a href="tel:800-775-1892">800-775-1892</a>
+                  </div>
+                  <div class="branch-contact-item">
+                    <strong>Email:</strong>
+                    <a href="mailto:spokane@nwestco.com">spokane@nwestco.com</a>
+                  </div>
+                  <div class="branch-contact-item">
+                    <strong>Hours:</strong>
+                    Mon-Fri 7:00 AM - 5:00 PM Pacific
+                  </div>
+                </div>
+
+                <div class="branch-coverage">
+                  <h4>Service Coverage</h4>
+                  <p>Eastern Washington, Northern Idaho (Coeur d'Alene, Sandpoint), Western Montana (Missoula region)</p>
+                </div>
+
+                <div class="branch-actions">
+                  <a href="../contact.html" class="btn btn-primary">Contact Branch</a>
+                  <a href="tel:800-775-1892" class="btn btn-outline">Call Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Oregon -->
+        <div class="state-section">
+          <h2>Oregon</h2>
+          <div class="branch-grid">
+            <div class="branch-card">
+              <div class="branch-header">
+                <h3>Portland</h3>
+                <span class="branch-tag">Training Center</span>
+              </div>
+              <div class="branch-content">
+                <p>Western Oregon hub and premier training center with state-of-the-art 5,000+ sq ft training facility.</p>
+
+                <div class="branch-contact">
+                  <div class="branch-contact-item">
+                    <strong>24/7 Service:</strong>
+                    <a href="tel:800-775-1892">800-775-1892</a>
+                  </div>
+                  <div class="branch-contact-item">
+                    <strong>Email:</strong>
+                    <a href="mailto:portland@nwestco.com">portland@nwestco.com</a>
+                  </div>
+                  <div class="branch-contact-item">
+                    <strong>Hours:</strong>
+                    Mon-Fri 7:00 AM - 5:00 PM Pacific
+                  </div>
+                </div>
+
+                <div class="branch-coverage">
+                  <h4>Service Coverage</h4>
+                  <p>Western Oregon (Portland, Salem, Eugene), Southern Washington (Vancouver), Northern California (Redding)</p>
+                </div>
+
+                <div class="branch-actions">
+                  <a href="../contact.html" class="btn btn-primary">Contact Branch</a>
+                  <a href="tel:800-775-1892" class="btn btn-outline">Call Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Idaho -->
+        <div class="state-section">
+          <h2>Idaho</h2>
+          <div class="branch-grid">
+            <div class="branch-card">
+              <div class="branch-header">
+                <h3>Boise</h3>
+              </div>
+              <div class="branch-content">
+                <p>Serving Southern Idaho, Eastern Oregon, and Western Wyoming with comprehensive fuel systems, car wash, and environmental solutions.</p>
+
+                <div class="branch-contact">
+                  <div class="branch-contact-item">
+                    <strong>24/7 Service:</strong>
+                    <a href="tel:800-775-1892">800-775-1892</a>
+                  </div>
+                  <div class="branch-contact-item">
+                    <strong>Email:</strong>
+                    <a href="mailto:boise@nwestco.com">boise@nwestco.com</a>
+                  </div>
+                  <div class="branch-contact-item">
+                    <strong>Hours:</strong>
+                    Mon-Fri 7:00 AM - 5:00 PM Mountain
+                  </div>
+                </div>
+
+                <div class="branch-coverage">
+                  <h4>Service Coverage</h4>
+                  <p>Southern Idaho (Boise, Twin Falls, Idaho Falls), Eastern Oregon (Ontario), Western Wyoming (Jackson)</p>
+                </div>
+
+                <div class="branch-actions">
+                  <a href="../contact.html" class="btn btn-primary">Contact Branch</a>
+                  <a href="tel:800-775-1892" class="btn btn-outline">Call Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Montana -->
+        <div class="state-section">
+          <h2>Montana</h2>
+          <div class="branch-grid">
+            <div class="branch-card">
+              <div class="branch-header">
+                <h3>Kalispell</h3>
+                <span class="branch-tag">Aviation Fueling</span>
+              </div>
+              <div class="branch-content">
+                <p>Serving Northern Montana and Glacier region with specialized expertise in aviation fueling and seasonal operations.</p>
+
+                <div class="branch-contact">
+                  <div class="branch-contact-item">
+                    <strong>24/7 Service:</strong>
+                    <a href="tel:800-775-1892">800-775-1892</a>
+                  </div>
+                  <div class="branch-contact-item">
+                    <strong>Email:</strong>
+                    <a href="mailto:kalispell@nwestco.com">kalispell@nwestco.com</a>
+                  </div>
+                  <div class="branch-contact-item">
+                    <strong>Hours:</strong>
+                    Mon-Fri 7:00 AM - 5:00 PM Mountain
+                  </div>
+                </div>
+
+                <div class="branch-coverage">
+                  <h4>Service Coverage</h4>
+                  <p>Northern Montana (Flathead Valley, Glacier region), Northwestern Montana, Northern Idaho</p>
+                </div>
+
+                <div class="branch-actions">
+                  <a href="../contact.html" class="btn btn-primary">Contact Branch</a>
+                  <a href="tel:800-775-1892" class="btn btn-outline">Call Now</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="branch-card">
+              <div class="branch-header">
+                <h3>Billings</h3>
+              </div>
+              <div class="branch-content">
+                <p>Eastern Montana's fuel systems, car wash, and environmental service headquarters serving the region from Billings to North Dakota.</p>
+
+                <div class="branch-contact">
+                  <div class="branch-contact-item">
+                    <strong>24/7 Service:</strong>
+                    <a href="tel:800-775-1892">800-775-1892</a>
+                  </div>
+                  <div class="branch-contact-item">
+                    <strong>Email:</strong>
+                    <a href="mailto:billings@nwestco.com">billings@nwestco.com</a>
+                  </div>
+                  <div class="branch-contact-item">
+                    <strong>Hours:</strong>
+                    Mon-Fri 7:00 AM - 5:00 PM Mountain
+                  </div>
+                </div>
+
+                <div class="branch-coverage">
+                  <h4>Service Coverage</h4>
+                  <p>Eastern Montana (Billings, Miles City), Central Montana (Great Falls), Northern Wyoming (Sheridan)</p>
+                </div>
+
+                <div class="branch-actions">
+                  <a href="../contact.html" class="btn btn-primary">Contact Branch</a>
+                  <a href="tel:800-775-1892" class="btn btn-outline">Call Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- California -->
+        <div class="state-section">
+          <h2>California</h2>
+          <div class="branch-grid">
+            <div class="branch-card">
+              <div class="branch-header">
+                <h3>Fresno</h3>
+                <span class="branch-tag">CARB Compliance</span>
+              </div>
+              <div class="branch-content">
+                <p>Central California hub with expertise in California compliance regulations (CARB, APCD) for retail and agricultural applications.</p>
+
+                <div class="branch-contact">
+                  <div class="branch-contact-item">
+                    <strong>24/7 Service:</strong>
+                    <a href="tel:800-775-1892">800-775-1892</a>
+                  </div>
+                  <div class="branch-contact-item">
+                    <strong>Email:</strong>
+                    <a href="mailto:fresno@nwestco.com">fresno@nwestco.com</a>
+                  </div>
+                  <div class="branch-contact-item">
+                    <strong>Hours:</strong>
+                    Mon-Fri 7:00 AM - 5:00 PM Pacific
+                  </div>
+                </div>
+
+                <div class="branch-coverage">
+                  <h4>Service Coverage</h4>
+                  <p>Central California (Fresno, Visalia, Modesto), Central Valley (Stockton to Bakersfield corridor)</p>
+                </div>
+
+                <div class="branch-actions">
+                  <a href="../contact.html" class="btn btn-primary">Contact Branch</a>
+                  <a href="tel:800-775-1892" class="btn btn-outline">Call Now</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="branch-card">
+              <div class="branch-header">
+                <h3>Bakersfield</h3>
+              </div>
+              <div class="branch-content">
+                <p>Southern California service hub with expertise in high-volume fuel operations and truck stop services.</p>
+
+                <div class="branch-contact">
+                  <div class="branch-contact-item">
+                    <strong>24/7 Service:</strong>
+                    <a href="tel:800-775-1892">800-775-1892</a>
+                  </div>
+                  <div class="branch-contact-item">
+                    <strong>Email:</strong>
+                    <a href="mailto:bakersfield@nwestco.com">bakersfield@nwestco.com</a>
+                  </div>
+                  <div class="branch-contact-item">
+                    <strong>Hours:</strong>
+                    Mon-Fri 7:00 AM - 5:00 PM Pacific
+                  </div>
+                </div>
+
+                <div class="branch-coverage">
+                  <h4>Service Coverage</h4>
+                  <p>Kern County (Bakersfield, Taft), Southern Central Valley, Mojave Desert region</p>
+                </div>
+
+                <div class="branch-actions">
+                  <a href="../contact.html" class="btn btn-primary">Contact Branch</a>
+                  <a href="tel:800-775-1892" class="btn btn-outline">Call Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Arkansas -->
+        <div class="state-section">
+          <h2>Arkansas</h2>
+          <div class="branch-grid">
+            <div class="branch-card">
+              <div class="branch-header">
+                <h3>Springdale</h3>
+              </div>
+              <div class="branch-content">
+                <p>Southcentral operations hub serving Arkansas, Southern Missouri, and surrounding regions.</p>
+
+                <div class="branch-contact">
+                  <div class="branch-contact-item">
+                    <strong>24/7 Service:</strong>
+                    <a href="tel:800-775-1892">800-775-1892</a>
+                  </div>
+                  <div class="branch-contact-item">
+                    <strong>Email:</strong>
+                    <a href="mailto:springdale@nwestco.com">springdale@nwestco.com</a>
+                  </div>
+                  <div class="branch-contact-item">
+                    <strong>Hours:</strong>
+                    Mon-Fri 7:00 AM - 5:00 PM Central
+                  </div>
+                </div>
+
+                <div class="branch-coverage">
+                  <h4>Service Coverage</h4>
+                  <p>Northwest Arkansas (Fayetteville, Bentonville, Rogers), Fort Smith region, Southern Missouri (Joplin, Springfield)</p>
+                </div>
+
+                <div class="branch-actions">
+                  <a href="../contact.html" class="btn btn-primary">Contact Branch</a>
+                  <a href="tel:800-775-1892" class="btn btn-outline">Call Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Multi-Location Support -->
+    <section class="content-section section-blue">
+      <div class="container">
+        <span class="section-label" style="color: var(--nwestco-green-light);">REGIONAL ACCOUNT MANAGEMENT</span>
+        <h2>One Call Manages All Your Locations</h2>
+
+        <p>If you operate fuel stations, car washes, or environmental systems across multiple Western states, Nwestco simplifies your operations with centralized account management and local service delivery.</p>
+
+        <div class="cards-grid cards-grid-2" style="margin-top: var(--space-6);">
+          <article class="card">
+            <h3>Single Point of Contact</h3>
+            <p>Dedicated account manager coordinates service across all your locations. Consistent service standards, consolidated billing, and priority dispatch.</p>
+          </article>
+          <article class="card">
+            <h3>Any Branch, Any Location</h3>
+            <p>Any branch can dispatch for any of your locations. Emergency response coordinated across our entire network to minimize your downtime.</p>
+          </article>
+        </div>
+
+        <div style="text-align: center; margin-top: var(--space-8);">
+          <a href="../contact.html" class="btn btn-primary btn-large">Discuss Multi-Location Partnership</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+      <div class="container">
+        <h2>Find Your Nearest Branch</h2>
+        <p>Eight branches across six Western states means rapid response, local relationships, and regional capabilities. Contact your nearest location for service, parts, or emergencies.</p>
+        <div class="cta-buttons">
+          <a href="../contact.html" class="btn btn-primary btn-large">Contact Nearest Branch</a>
+          <a href="tel:800-775-1892" class="btn btn-secondary btn-large">24/7 Emergency: 800-775-1892</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-column">
+          <h3>Markets</h3>
+          <ul role="list">
+            <li><a href="../fuel-systems.html">Fuel Systems</a></li>
+            <li><a href="../car-wash.html">Car Wash Systems</a></li>
+            <li><a href="../environmental.html">Environmental Solutions</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>Services</h3>
+          <ul role="list">
+            <li><a href="../services/design-engineering.html">Design & Engineering</a></li>
+            <li><a href="../services/installation.html">Installation</a></li>
+            <li><a href="../services/service-maintenance.html">24/7 Service</a></li>
+            <li><a href="../services/equipment-parts.html">Equipment & Parts</a></li>
+            <li><a href="../services/testing-compliance.html">Testing & Compliance</a></li>
+            <li><a href="../services/training.html">Training</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>Company</h3>
+          <ul role="list">
+            <li><a href="../about.html">About Us</a></li>
+            <li><a href="../brands.html">Brand Partners</a></li>
+            <li><a href="index.html">Locations</a></li>
+            <li><a href="../careers.html">Careers</a></li>
+            <li><a href="../contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>Contact</h3>
+          <p>
+            24/7 Emergency: <a href="tel:800-775-1892">800-775-1892</a><br>
+            Email: <a href="mailto:info@nwestco.com">info@nwestco.com</a><br><br>
+            8 Branches Across 6 Western States
+          </p>
+        </div>
+      </div>
+
+      <p class="copyright">&copy; 2026 Nwestco. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="../../../shared/js/main.js"></script>
+  <script src="../../js/option-b.js"></script>
+</body>
+</html>

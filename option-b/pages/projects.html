@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Featured fuel system, car wash, and environmental projects by Nwestco. See our installation, remodel, and service work across the Western US. Case studies and project galleries.">
+  <title>Featured Projects | Fuel Systems, Car Wash & Environmental Portfolio | Nwestco</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Shared Styles -->
+  <link rel="stylesheet" href="../../shared/css/reset.css">
+  <link rel="stylesheet" href="../../shared/css/variables.css">
+  <link rel="stylesheet" href="../../shared/css/base.css">
+  <link rel="stylesheet" href="../css/option-b.css">
+
+  <style>
+    .project-filters {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-3);
+      justify-content: center;
+      margin-bottom: var(--space-8);
+    }
+
+    .filter-btn {
+      padding: var(--space-2) var(--space-4);
+      border: 2px solid var(--nwestco-neutral-200);
+      background: var(--nwestco-white);
+      color: var(--nwestco-neutral-600);
+      border-radius: var(--radius-full);
+      font-weight: var(--font-semibold);
+      cursor: pointer;
+      transition: all var(--transition-normal);
+    }
+
+    .filter-btn:hover,
+    .filter-btn.active {
+      border-color: var(--nwestco-blue);
+      background: var(--nwestco-blue);
+      color: var(--nwestco-white);
+    }
+
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      gap: var(--space-6);
+    }
+
+    .project-card {
+      background: var(--nwestco-white);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      border: 1px solid var(--nwestco-neutral-100);
+      transition: all var(--transition-normal);
+    }
+
+    .project-card:hover {
+      box-shadow: var(--shadow-lg);
+      transform: translateY(-4px);
+    }
+
+    .project-image {
+      height: 220px;
+      background-size: cover;
+      background-position: center;
+      position: relative;
+    }
+
+    .project-image::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 50%;
+      background: linear-gradient(transparent, rgba(0,0,0,0.3));
+    }
+
+    .project-tags {
+      position: absolute;
+      top: var(--space-4);
+      left: var(--space-4);
+      display: flex;
+      gap: var(--space-2);
+      z-index: 1;
+    }
+
+    .project-tag {
+      background: var(--nwestco-blue);
+      color: var(--nwestco-white);
+      padding: var(--space-1) var(--space-3);
+      border-radius: var(--radius-full);
+      font-size: var(--text-xs);
+      font-weight: var(--font-semibold);
+      text-transform: uppercase;
+    }
+
+    .project-tag.fuel {
+      background: var(--nwestco-blue);
+    }
+
+    .project-tag.carwash {
+      background: var(--nwestco-green);
+    }
+
+    .project-tag.environmental {
+      background: #8B5CF6;
+    }
+
+    .project-content {
+      padding: var(--space-6);
+    }
+
+    .project-content h3 {
+      font-size: var(--text-xl);
+      margin-bottom: var(--space-2);
+    }
+
+    .project-location {
+      color: var(--nwestco-neutral-500);
+      font-size: var(--text-sm);
+      margin-bottom: var(--space-4);
+    }
+
+    .project-content p {
+      color: var(--nwestco-neutral-600);
+      margin-bottom: var(--space-4);
+    }
+
+    .project-stats {
+      display: flex;
+      gap: var(--space-6);
+      padding-top: var(--space-4);
+      border-top: 1px solid var(--nwestco-neutral-100);
+    }
+
+    .project-stat {
+      text-align: center;
+    }
+
+    .project-stat-value {
+      font-size: var(--text-lg);
+      font-weight: var(--font-bold);
+      color: var(--nwestco-blue);
+    }
+
+    .project-stat-label {
+      font-size: var(--text-xs);
+      color: var(--nwestco-neutral-500);
+      text-transform: uppercase;
+    }
+
+    @media (max-width: 767px) {
+      .projects-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <a href="#main-content" class="skip-nav">Skip to main content</a>
+
+  <header role="banner">
+    <div class="container">
+      <nav class="main-nav" role="navigation" aria-label="Main navigation">
+        <div class="nav-brand">
+          <a href="../index.html">
+            <img src="../../../current-site-assets/logos/nwestco_logo_flat.png" alt="Nwestco" class="logo">
+          </a>
+        </div>
+
+        <button class="mobile-menu-toggle" aria-expanded="false" aria-label="Toggle navigation menu">
+          <span class="hamburger"></span>
+        </button>
+
+        <ul class="nav-menu" role="list">
+          <li class="nav-dropdown">
+            <a href="#markets">Markets</a>
+            <ul class="dropdown-menu">
+              <li><a href="fuel-systems.html">Fuel Systems</a></li>
+              <li><a href="car-wash.html">Car Wash Systems</a></li>
+              <li><a href="environmental.html">Environmental Solutions</a></li>
+            </ul>
+          </li>
+          <li class="nav-dropdown">
+            <a href="../index.html#services">Services</a>
+            <ul class="dropdown-menu">
+              <li><a href="services/design-engineering.html">Design & Engineering</a></li>
+              <li><a href="services/installation.html">Installation & Construction</a></li>
+              <li><a href="services/service-maintenance.html">24/7 Service & Maintenance</a></li>
+              <li><a href="services/remodels-upgrades.html">Remodels & Upgrades</a></li>
+              <li><a href="services/equipment-parts.html">Equipment Sales & Parts</a></li>
+              <li><a href="services/testing-compliance.html">Testing & Compliance</a></li>
+              <li><a href="services/training.html">Training & Certification</a></li>
+            </ul>
+          </li>
+          <li><a href="about.html">Why Nwestco</a></li>
+          <li><a href="locations/index.html">Locations</a></li>
+          <li><a href="careers.html">Careers</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+        <div class="nav-cta">
+          <a href="contact.html" class="btn btn-primary">Get Service Now</a>
+          <a href="tel:800-775-1892" class="btn btn-outline">800-775-1892</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content" role="main">
+    <!-- Page Header -->
+    <section class="page-header">
+      <div class="container">
+        <h1>Featured Projects</h1>
+        <p class="subtitle">From new construction to major remodels, see how Nwestco delivers complete fuel system, car wash, and environmental solutions across the Western US.</p>
+      </div>
+    </section>
+
+    <!-- Project Filters -->
+    <section class="content-section">
+      <div class="container">
+        <div class="project-filters">
+          <button class="filter-btn active">All Projects</button>
+          <button class="filter-btn">Fuel Systems</button>
+          <button class="filter-btn">Car Wash</button>
+          <button class="filter-btn">Environmental</button>
+          <button class="filter-btn">New Construction</button>
+          <button class="filter-btn">Remodels</button>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 1 -->
+          <article class="project-card">
+            <div class="project-image" style="background-image: linear-gradient(rgba(37,97,124,0.2), rgba(37,97,124,0.2)), url('https://images.unsplash.com/photo-1545262810-77515befe149?w=600');">
+              <div class="project-tags">
+                <span class="project-tag fuel">Fuel Systems</span>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>Circle K Multi-Site Upgrade</h3>
+              <p class="project-location">Portland Metro Area, OR</p>
+              <p>Complete dispenser upgrades and EMV compliance for 12 locations. Gilbarco Encore equipment with Fleet management integration.</p>
+              <div class="project-stats">
+                <div class="project-stat">
+                  <div class="project-stat-value">12</div>
+                  <div class="project-stat-label">Locations</div>
+                </div>
+                <div class="project-stat">
+                  <div class="project-stat-value">90</div>
+                  <div class="project-stat-label">Days</div>
+                </div>
+                <div class="project-stat">
+                  <div class="project-stat-value">0</div>
+                  <div class="project-stat-label">Downtime</div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="project-card">
+            <div class="project-image" style="background-image: linear-gradient(rgba(37,97,124,0.2), rgba(37,97,124,0.2)), url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600');">
+              <div class="project-tags">
+                <span class="project-tag carwash">Car Wash</span>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>Express Tunnel Installation</h3>
+              <p class="project-location">Spokane, WA</p>
+              <p>Turn-key 120-foot express tunnel installation. Belanger equipment with Turtle Wax chemistry program. Complete site development.</p>
+              <div class="project-stats">
+                <div class="project-stat">
+                  <div class="project-stat-value">120</div>
+                  <div class="project-stat-label">Feet</div>
+                </div>
+                <div class="project-stat">
+                  <div class="project-stat-value">180+</div>
+                  <div class="project-stat-label">Cars/Hour</div>
+                </div>
+                <div class="project-stat">
+                  <div class="project-stat-value">6</div>
+                  <div class="project-stat-label">Months</div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="project-card">
+            <div class="project-image" style="background-image: linear-gradient(rgba(37,97,124,0.2), rgba(37,97,124,0.2)), url('https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?w=600');">
+              <div class="project-tags">
+                <span class="project-tag environmental">Environmental</span>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>Underground Tank Replacement</h3>
+              <p class="project-location">Boise, ID</p>
+              <p>Emergency tank replacement after leak detection. Complete excavation, new double-wall tanks, and upgraded monitoring systems.</p>
+              <div class="project-stats">
+                <div class="project-stat">
+                  <div class="project-stat-value">4</div>
+                  <div class="project-stat-label">Tanks</div>
+                </div>
+                <div class="project-stat">
+                  <div class="project-stat-value">48K</div>
+                  <div class="project-stat-label">Gallons</div>
+                </div>
+                <div class="project-stat">
+                  <div class="project-stat-value">21</div>
+                  <div class="project-stat-label">Days</div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 4 -->
+          <article class="project-card">
+            <div class="project-image" style="background-image: linear-gradient(rgba(37,97,124,0.2), rgba(37,97,124,0.2)), url('https://images.unsplash.com/photo-1545262810-77515befe149?w=600');">
+              <div class="project-tags">
+                <span class="project-tag fuel">Fuel Systems</span>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>New C-Store Ground-Up</h3>
+              <p class="project-location">Fresno, CA</p>
+              <p>Complete fuel system installation for new convenience store. 8 MPDs, underground tanks, canopy, and POS integration.</p>
+              <div class="project-stats">
+                <div class="project-stat">
+                  <div class="project-stat-value">8</div>
+                  <div class="project-stat-label">Dispensers</div>
+                </div>
+                <div class="project-stat">
+                  <div class="project-stat-value">60K</div>
+                  <div class="project-stat-label">Gallons</div>
+                </div>
+                <div class="project-stat">
+                  <div class="project-stat-value">4</div>
+                  <div class="project-stat-label">Months</div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 5 -->
+          <article class="project-card">
+            <div class="project-image" style="background-image: linear-gradient(rgba(37,97,124,0.2), rgba(37,97,124,0.2)), url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600');">
+              <div class="project-tags">
+                <span class="project-tag carwash">Car Wash</span>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>In-Bay Automatic Conversion</h3>
+              <p class="project-location">Billings, MT</p>
+              <p>Converted aging self-serve bays to modern in-bay automatics. PDQ LaserWash equipment with touchless technology.</p>
+              <div class="project-stats">
+                <div class="project-stat">
+                  <div class="project-stat-value">3</div>
+                  <div class="project-stat-label">Bays</div>
+                </div>
+                <div class="project-stat">
+                  <div class="project-stat-value">40%</div>
+                  <div class="project-stat-label">Revenue Up</div>
+                </div>
+                <div class="project-stat">
+                  <div class="project-stat-value">45</div>
+                  <div class="project-stat-label">Days</div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 6 -->
+          <article class="project-card">
+            <div class="project-image" style="background-image: linear-gradient(rgba(37,97,124,0.2), rgba(37,97,124,0.2)), url('https://images.unsplash.com/photo-1545262810-77515befe149?w=600');">
+              <div class="project-tags">
+                <span class="project-tag fuel">Fuel Systems</span>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>Fleet Fueling Station</h3>
+              <p class="project-location">Kalispell, MT</p>
+              <p>Private fleet fueling installation for trucking company. High-flow diesel dispensers, DEF station, and fleet card integration.</p>
+              <div class="project-stats">
+                <div class="project-stat">
+                  <div class="project-stat-value">4</div>
+                  <div class="project-stat-label">High-Flow</div>
+                </div>
+                <div class="project-stat">
+                  <div class="project-stat-value">20K</div>
+                  <div class="project-stat-label">Gal/Week</div>
+                </div>
+                <div class="project-stat">
+                  <div class="project-stat-value">60</div>
+                  <div class="project-stat-label">Days</div>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Project Stats -->
+    <section class="stats-section content-section">
+      <div class="container">
+        <span class="section-label">PROJECT TRACK RECORD</span>
+        <h2>Delivering Results Across the Western US</h2>
+        <div class="stats-grid">
+          <div class="stat">
+            <div class="stat-number">500+</div>
+            <div class="stat-label">Projects completed annually</div>
+          </div>
+          <div class="stat">
+            <div class="stat-number">98%</div>
+            <div class="stat-label">On-time completion rate</div>
+          </div>
+          <div class="stat">
+            <div class="stat-number">25+</div>
+            <div class="stat-label">Years project experience</div>
+          </div>
+          <div class="stat">
+            <div class="stat-number">6</div>
+            <div class="stat-label">States served</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+      <div class="container">
+        <h2>Ready to Start Your Project?</h2>
+        <p>From design through installation and ongoing service, Nwestco delivers complete fuel system, car wash, and environmental solutions. Tell us about your project and get a consultation.</p>
+        <div class="cta-buttons">
+          <a href="contact.html" class="btn btn-primary btn-large">Start Your Project</a>
+          <a href="contact.html" class="btn btn-secondary btn-large">Request a Quote</a>
+          <a href="tel:800-775-1892" class="btn btn-phone btn-large">800-775-1892</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-column">
+          <h3>Markets</h3>
+          <ul role="list">
+            <li><a href="fuel-systems.html">Fuel Systems</a></li>
+            <li><a href="car-wash.html">Car Wash Systems</a></li>
+            <li><a href="environmental.html">Environmental Solutions</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>Services</h3>
+          <ul role="list">
+            <li><a href="services/design-engineering.html">Design & Engineering</a></li>
+            <li><a href="services/installation.html">Installation</a></li>
+            <li><a href="services/service-maintenance.html">24/7 Service</a></li>
+            <li><a href="services/equipment-parts.html">Equipment & Parts</a></li>
+            <li><a href="services/testing-compliance.html">Testing & Compliance</a></li>
+            <li><a href="services/training.html">Training</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>Company</h3>
+          <ul role="list">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="locations/index.html">Locations</a></li>
+            <li><a href="brands.html">Brand Partners</a></li>
+            <li><a href="careers.html">Careers</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>Contact</h3>
+          <p>
+            24/7 Emergency: <a href="tel:800-775-1892">800-775-1892</a><br>
+            Email: <a href="mailto:info@nwestco.com">info@nwestco.com</a><br><br>
+            8 Branches Across 6 Western States
+          </p>
+        </div>
+      </div>
+
+      <p class="copyright">&copy; 2026 Nwestco. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="../../shared/js/main.js"></script>
+  <script src="../js/option-b.js"></script>
+</body>
+</html>

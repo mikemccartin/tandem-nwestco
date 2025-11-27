@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact Nwestco for fuel system, car wash, and environmental services. 24/7 emergency hotline, service requests, project quotes. 8 branches across the Western US.">
+  <title>Contact Nwestco | 24/7 Service & Support</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Shared Styles -->
+  <link rel="stylesheet" href="../../shared/css/reset.css">
+  <link rel="stylesheet" href="../../shared/css/variables.css">
+  <link rel="stylesheet" href="../../shared/css/base.css">
+  <link rel="stylesheet" href="../css/option-b.css">
+</head>
+<body>
+  <a href="#main-content" class="skip-nav">Skip to main content</a>
+
+  <header role="banner">
+    <div class="container">
+      <nav class="main-nav" role="navigation" aria-label="Main navigation">
+        <div class="nav-brand">
+          <a href="../index.html">
+            <img src="../../../current-site-assets/logos/nwestco_logo_flat.png" alt="Nwestco" class="logo">
+          </a>
+        </div>
+
+        <button class="mobile-menu-toggle" aria-expanded="false" aria-label="Toggle navigation menu">
+          <span class="hamburger"></span>
+        </button>
+
+        <ul class="nav-menu" role="list">
+          <li class="nav-dropdown">
+            <a href="#markets">Markets</a>
+            <ul class="dropdown-menu">
+              <li><a href="fuel-systems.html">Fuel Systems</a></li>
+              <li><a href="car-wash.html">Car Wash Systems</a></li>
+              <li><a href="environmental.html">Environmental Solutions</a></li>
+            </ul>
+          </li>
+          <li class="nav-dropdown">
+            <a href="../index.html#services">Services</a>
+            <ul class="dropdown-menu">
+              <li><a href="services/design-engineering.html">Design & Engineering</a></li>
+              <li><a href="services/installation.html">Installation & Construction</a></li>
+              <li><a href="services/service-maintenance.html">24/7 Service & Maintenance</a></li>
+              <li><a href="services/remodels-upgrades.html">Remodels & Upgrades</a></li>
+              <li><a href="services/equipment-parts.html">Equipment Sales & Parts</a></li>
+              <li><a href="services/testing-compliance.html">Testing & Compliance</a></li>
+              <li><a href="services/training.html">Training & Certification</a></li>
+            </ul>
+          </li>
+          <li><a href="about.html">Why Nwestco</a></li>
+          <li><a href="locations/index.html">Locations</a></li>
+          <li><a href="careers.html">Careers</a></li>
+          <li><a href="contact.html" aria-current="page">Contact</a></li>
+        </ul>
+
+        <div class="nav-cta">
+          <a href="contact.html" class="btn btn-primary">Get Service Now</a>
+          <a href="tel:800-775-1892" class="btn btn-outline">800-775-1892</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content" role="main">
+    <!-- Page Header -->
+    <section class="page-header">
+      <div class="container">
+        <h1>Contact Us</h1>
+        <p class="subtitle">Need service? Have a question? Planning a project? We're here to help 24/7. Reach out by phone, email, or the form below and we'll respond promptly.</p>
+      </div>
+    </section>
+
+    <!-- Emergency Banner -->
+    <section class="content-section section-blue" style="padding: var(--space-8) 0;">
+      <div class="container">
+        <div style="text-align: center;">
+          <h2 style="margin-bottom: var(--space-4);">24/7 Emergency Service</h2>
+          <p style="margin-bottom: var(--space-6);">Equipment down? Need immediate assistance? Our emergency hotline is staffed around the clock.</p>
+          <a href="tel:800-775-1892" class="btn btn-primary btn-large">Call 800-775-1892</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Form and Info -->
+    <section class="content-section">
+      <div class="container">
+        <div class="cards-grid cards-grid-2">
+          <!-- Contact Form -->
+          <article class="card" style="padding: var(--space-8);">
+            <h2>Send Us a Message</h2>
+            <p style="margin-bottom: var(--space-6);">Fill out the form below and we'll get back to you within one business day.</p>
+
+            <form action="#" method="POST" class="contact-form">
+              <div class="form-group">
+                <label for="name">Name *</label>
+                <input type="text" id="name" name="name" required placeholder="Your name">
+              </div>
+
+              <div class="form-group">
+                <label for="company">Company</label>
+                <input type="text" id="company" name="company" placeholder="Your company name">
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email *</label>
+                <input type="email" id="email" name="email" required placeholder="your@email.com">
+              </div>
+
+              <div class="form-group">
+                <label for="phone">Phone *</label>
+                <input type="tel" id="phone" name="phone" required placeholder="(555) 555-5555">
+              </div>
+
+              <div class="form-group">
+                <label for="inquiry-type">Inquiry Type *</label>
+                <select id="inquiry-type" name="inquiry-type" required>
+                  <option value="">Select one...</option>
+                  <option value="emergency">Emergency Service</option>
+                  <option value="service">Service Request</option>
+                  <option value="quote">Project Quote</option>
+                  <option value="parts">Parts & Equipment</option>
+                  <option value="careers">Career Inquiry</option>
+                  <option value="general">General Question</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Message *</label>
+                <textarea id="message" name="message" rows="5" required placeholder="Tell us how we can help..."></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-large" style="width: 100%;">Send Message</button>
+            </form>
+          </article>
+
+          <!-- Contact Information -->
+          <div>
+            <article class="card" style="padding: var(--space-8); margin-bottom: var(--space-6);">
+              <h3>Corporate Headquarters</h3>
+              <p style="margin-bottom: var(--space-4);">
+                <strong>Nwestco</strong><br>
+                Spokane, WA
+              </p>
+              <p style="margin-bottom: var(--space-2);">
+                <strong>24/7 Emergency:</strong><br>
+                <a href="tel:800-775-1892">800-775-1892</a>
+              </p>
+              <p>
+                <strong>Email:</strong><br>
+                <a href="mailto:info@nwestco.com">info@nwestco.com</a>
+              </p>
+            </article>
+
+            <article class="card" style="padding: var(--space-8);">
+              <h3>Branch Locations</h3>
+              <p style="margin-bottom: var(--space-4);">We have 8 branches across 6 Western states to serve you.</p>
+
+              <ul style="list-style: none; padding: 0; margin: 0;">
+                <li style="padding: var(--space-2) 0; border-bottom: 1px solid var(--gray-200);">
+                  <strong>Spokane, WA</strong> - Headquarters
+                </li>
+                <li style="padding: var(--space-2) 0; border-bottom: 1px solid var(--gray-200);">
+                  <strong>Portland, OR</strong> - Training Center
+                </li>
+                <li style="padding: var(--space-2) 0; border-bottom: 1px solid var(--gray-200);">
+                  <strong>Boise, ID</strong>
+                </li>
+                <li style="padding: var(--space-2) 0; border-bottom: 1px solid var(--gray-200);">
+                  <strong>Kalispell, MT</strong>
+                </li>
+                <li style="padding: var(--space-2) 0; border-bottom: 1px solid var(--gray-200);">
+                  <strong>Billings, MT</strong>
+                </li>
+                <li style="padding: var(--space-2) 0; border-bottom: 1px solid var(--gray-200);">
+                  <strong>Fresno, CA</strong>
+                </li>
+                <li style="padding: var(--space-2) 0; border-bottom: 1px solid var(--gray-200);">
+                  <strong>Bakersfield, CA</strong>
+                </li>
+                <li style="padding: var(--space-2) 0;">
+                  <strong>Springdale, AR</strong>
+                </li>
+              </ul>
+
+              <a href="locations/index.html" class="btn btn-secondary" style="margin-top: var(--space-6); display: inline-block;">View All Locations</a>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- How We Can Help -->
+    <section class="content-section">
+      <div class="container">
+        <span class="section-label">HOW WE CAN HELP</span>
+        <h2>What Can We Help You With?</h2>
+
+        <div class="cards-grid cards-grid-3" style="margin-top: var(--space-8);">
+          <article class="card">
+            <h3>Emergency Service</h3>
+            <p>Equipment down? Call our 24/7 emergency line for immediate dispatch. Average response time under 4 hours across our coverage area.</p>
+            <a href="tel:800-775-1892" class="btn btn-primary" style="margin-top: var(--space-4);">Call Now</a>
+          </article>
+
+          <article class="card">
+            <h3>Service & Maintenance</h3>
+            <p>Schedule routine maintenance, request repairs, or set up a preventive maintenance program for your fuel, car wash, or environmental equipment.</p>
+            <a href="services/service-maintenance.html" class="btn btn-secondary" style="margin-top: var(--space-4);">Learn More</a>
+          </article>
+
+          <article class="card">
+            <h3>Project Quotes</h3>
+            <p>Planning a new installation, remodel, or equipment upgrade? Contact us for a detailed project quote and consultation.</p>
+            <a href="services/design-engineering.html" class="btn btn-secondary" style="margin-top: var(--space-4);">Learn More</a>
+          </article>
+
+          <article class="card">
+            <h3>Parts & Equipment</h3>
+            <p>Need parts or equipment? We stock all major brands with next-day delivery across our Western US coverage area.</p>
+            <a href="services/equipment-parts.html" class="btn btn-secondary" style="margin-top: var(--space-4);">Learn More</a>
+          </article>
+
+          <article class="card">
+            <h3>Training</h3>
+            <p>Train your staff at our Portland or Spokane training centers. Customized programs for fuel systems, car wash, environmental, and compliance.</p>
+            <a href="services/training.html" class="btn btn-secondary" style="margin-top: var(--space-4);">Learn More</a>
+          </article>
+
+          <article class="card">
+            <h3>Careers</h3>
+            <p>Interested in joining our team? We're always looking for talented technicians, project managers, and professionals.</p>
+            <a href="careers.html" class="btn btn-secondary" style="margin-top: var(--space-4);">View Careers</a>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-column">
+          <h3>Markets</h3>
+          <ul role="list">
+            <li><a href="fuel-systems.html">Fuel Systems</a></li>
+            <li><a href="car-wash.html">Car Wash Systems</a></li>
+            <li><a href="environmental.html">Environmental Solutions</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>Services</h3>
+          <ul role="list">
+            <li><a href="services/design-engineering.html">Design & Engineering</a></li>
+            <li><a href="services/installation.html">Installation</a></li>
+            <li><a href="services/service-maintenance.html">24/7 Service</a></li>
+            <li><a href="services/equipment-parts.html">Equipment & Parts</a></li>
+            <li><a href="services/testing-compliance.html">Testing & Compliance</a></li>
+            <li><a href="services/training.html">Training</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>Company</h3>
+          <ul role="list">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="locations/index.html">Locations</a></li>
+            <li><a href="brands.html">Brand Partners</a></li>
+            <li><a href="careers.html">Careers</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>Contact</h3>
+          <p>
+            24/7 Emergency: <a href="tel:800-775-1892">800-775-1892</a><br>
+            Email: <a href="mailto:info@nwestco.com">info@nwestco.com</a><br><br>
+            8 Branches Across 6 Western States
+          </p>
+        </div>
+      </div>
+
+      <p class="copyright">&copy; 2026 Nwestco. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="../../shared/js/main.js"></script>
+  <script src="../js/option-b.js"></script>
+</body>
+</html>
