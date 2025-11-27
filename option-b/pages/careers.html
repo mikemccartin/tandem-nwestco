@@ -19,6 +19,12 @@
 
   <!-- ClearCompany Custom Styles - Option B Professional Light Theme -->
   <style>
+    /* Force all text in ClearCompany widget to be dark */
+    #clearcompany-careers,
+    #clearcompany-careers * {
+      color: #333 !important;
+    }
+
     /* Container styling */
     #clearcompany-careers .cc-careers-container {
       background: #fff !important;
@@ -45,7 +51,7 @@
       font-family: 'Open Sans', sans-serif !important;
     }
 
-    /* Apply button */
+    /* Apply button - white text on dark background */
     #clearcompany-careers .cc-apply-button {
       background: #25617c !important;
       color: #fff !important;
@@ -59,11 +65,14 @@
 
     #clearcompany-careers .cc-apply-button:hover {
       background: #1d4d63 !important;
+      color: #fff !important;
     }
 
     /* Filter dropdowns */
     #clearcompany-careers .cc-filter-dropdown,
-    #clearcompany-careers .cc-filter-keywords {
+    #clearcompany-careers .cc-filter-keywords,
+    #clearcompany-careers input,
+    #clearcompany-careers select {
       background: #f8f9fa !important;
       border: 1px solid #ddd !important;
       color: #333 !important;
@@ -77,12 +86,19 @@
     }
 
     /* Job description text */
-    #clearcompany-careers .cc-job-description-text {
+    #clearcompany-careers .cc-job-description-text,
+    #clearcompany-careers p,
+    #clearcompany-careers span,
+    #clearcompany-careers div {
       color: #444 !important;
       line-height: 1.7 !important;
     }
 
-    #clearcompany-careers .cc-job-description-title {
+    #clearcompany-careers .cc-job-description-title,
+    #clearcompany-careers h1,
+    #clearcompany-careers h2,
+    #clearcompany-careers h3,
+    #clearcompany-careers h4 {
       color: #25617c !important;
       font-weight: 700 !important;
     }
@@ -94,6 +110,13 @@
 
     #clearcompany-careers a:hover {
       color: #709944 !important;
+    }
+
+    /* Ensure button text stays white */
+    #clearcompany-careers button,
+    #clearcompany-careers [class*="button"],
+    #clearcompany-careers [class*="btn"] {
+      color: #fff !important;
     }
   </style>
 </head>
