@@ -535,6 +535,15 @@ section h3 {
   line-height: var(--leading-relaxed);
 }
 
+/* Ensure card text is visible on blue section backgrounds */
+.section-blue .card h3 {
+  color: var(--nwestco-blue);
+}
+
+.section-blue .card p {
+  color: var(--nwestco-neutral-700);
+}
+
 .card-icon {
   font-size: var(--text-4xl);
   color: var(--nwestco-blue);
