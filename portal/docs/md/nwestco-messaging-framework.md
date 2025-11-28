@@ -40,7 +40,7 @@ This messaging framework transforms Nwestco's positioning from generic service p
 "Maximize Your Uptime Across the Western US"
 
 **Supporting Subhead:**
-Complete fuel system, car wash, and environmental solutions - from design through 24/7 service - delivered by expert technicians from eight branches
+Complete fuel system, car wash, and environmental solutions - from design through 24/7 service - delivered by expert technicians from 9 branches
 
 **Why This Works:**
 - Leads with primary customer outcome (uptime = revenue)
@@ -106,7 +106,7 @@ From design and permitting to 24/7 emergency service - comprehensive solutions d
 "Expert Solutions for Fuel Systems, Car Washes, and Environmental"
 
 **Supporting Subhead:**
-Factory-certified technicians delivering complete lifecycle services - design, installation, maintenance, and compliance - from eight branches across six states
+Factory-certified technicians delivering complete lifecycle services - design, installation, maintenance, and compliance - from 9 branches across six states
 
 **Why This Works:**
 - Emphasizes technical expertise differentiator
@@ -128,7 +128,7 @@ Factory-certified technicians delivering complete lifecycle services - design, i
 "Fast Response. Expert Service. Maximum Uptime."
 
 **Supporting Subhead:**
-Eight branches across the Western US delivering 24/7 emergency service, preventative maintenance, and turn-key installations for fuel systems and car washes
+9 branches across the Western US delivering 24/7 emergency service, preventative maintenance, and turn-key installations for fuel systems and car washes
 
 **Why This Works:**
 - Three-part value proposition (speed, expertise, outcome)
@@ -158,7 +158,7 @@ Eight branches across the Western US delivering 24/7 emergency service, preventa
 
 **Supporting Proof Points for Hero Section:**
 - 90%+ of service calls completed within 48 hours
-- Eight branches across six Western states
+- 9 branches across six Western states
 - 350+ technicians, factory-certified on 40+ brands
 - 25+ years of technical expertise
 
@@ -176,7 +176,7 @@ Eight branches across the Western US delivering 24/7 emergency service, preventa
 - **Operating performance:** Compliance, efficiency, customer satisfaction, profitability
 - **Comprehensive lifecycle solutions:** Design → Install → Service → Upgrade → Comply → Train (one-stop shop)
 - **Expert technicians:** Factory-certified, best-in-class training, 15+ years average experience
-- **Western United States:** Eight branches, six states, rapid response
+- **Western United States:** 9 branches, six states, rapid response
 
 ---
 
@@ -261,7 +261,7 @@ From Washington to Arkansas, Montana to California - our eight strategically loc
 
 **Competitive Comparison:**
 - Typical competitor: Single location or limited regional presence
-- Nwestco: Eight branches covering six Western states
+- Nwestco: 9 branches covering six Western states
 
 **Customer Quote (Suggested):**
 "When we needed emergency service at our Seattle location, Nwestco's Spokane branch had a tech on-site in 3 hours. That level of response just isn't possible with single-location contractors." - [Customer Name, Multi-Location Operator]
@@ -902,7 +902,7 @@ Better-trained staff, fewer operational errors, improved safety, ability to hand
 **Headline:** "25+ Years of Technical Excellence, Growing to Serve You Better"
 
 **The Story:**
-What started as a regional fuel equipment provider has grown into the Western United States' premier partner for fuel systems and car wash solutions. Through strategic acquisitions and organic growth, Nwestco has expanded from a single location to eight branches across six states - but our commitment to technical excellence and customer service has never wavered.
+What started as a regional fuel equipment provider has grown into the Western United States' premier partner for fuel systems and car wash solutions. Through strategic acquisitions and organic growth, Nwestco has expanded from a single location to 9 branches across six states - but our commitment to technical excellence and customer service has never wavered.
 
 **Growth Milestones:**
 - Founded: [Year] as [Original Company Name]
@@ -1071,7 +1071,7 @@ What started as a regional fuel equipment provider has grown into the Western Un
 - Lead with outcomes and benefits
 - Use proof points and social proof
 - Professional but approachable tone
-- Example: "Eight branches across the Western US means faster response when you need us most. Our average emergency response time is under 4 hours."
+- Example: "9 branches across the Western US means faster response when you need us most. Our average emergency response time is under 4 hours."
 
 **Technical Support - Knowledgeable, Patient, Helpful**
 - Explain clearly without condescension
@@ -1175,7 +1175,7 @@ What started as a regional fuel equipment provider has grown into the Western Un
 
 ### 8.1 Elevator Pitch (30 seconds spoken / 50 words written)
 
-Nwestco provides complete lifecycle solutions for fuel systems, car washes, and environmental services across the Western United States. From design and installation to 24/7 service and compliance, our 350+ factory-certified technicians deliver expert support from eight branches across six states. We maximize your uptime with one-stop-shop convenience and best-in-class technical expertise.
+Nwestco provides complete lifecycle solutions for fuel systems, car washes, and environmental services across the Western United States. From design and installation to 24/7 service and compliance, our 350+ factory-certified technicians deliver expert support from 9 branches across six states. We maximize your uptime with one-stop-shop convenience and best-in-class technical expertise.
 
 **Word Count:** 50 words
 
@@ -1208,7 +1208,7 @@ Nwestco is the Western United States' premier provider of fuel system, car wash,
 
 **Nwestco: Complete Lifecycle Solutions for Fuel Systems and Car Washes Across the Western United States**
 
-Nwestco is the Western US's leading provider of comprehensive fuel system, car wash, and environmental solutions, serving customers from eight branches across Washington, Oregon, Idaho, Montana, California, and Arkansas. With 350+ factory-certified technicians and 25+ years of industry expertise, we deliver complete lifecycle services that maximize customer uptime and operating performance.
+Nwestco is the Western US's leading provider of comprehensive fuel system, car wash, and environmental solutions, serving customers from 9 branches across Washington, Oregon, Idaho, Montana, California, and Arkansas. With 350+ factory-certified technicians and 25+ years of industry expertise, we deliver complete lifecycle services that maximize customer uptime and operating performance.
 
 **Our One-Stop-Shop Advantage**
 
@@ -1246,7 +1246,7 @@ Nwestco is committed to being best-in-class in everything we do - from technical
 
 ### Recommended Hero Message
 **"Maximize Your Uptime Across the Western US"**
-Complete fuel system, car wash, and environmental solutions - from design through 24/7 service - delivered by expert technicians from eight branches
+Complete fuel system, car wash, and environmental solutions - from design through 24/7 service - delivered by expert technicians from 9 branches
 
 ### Top 3 Pain Points to Address
 

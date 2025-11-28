@@ -22,7 +22,7 @@ These boilerplate descriptions should be used consistently across all Nwestco ma
 
 ## 50-Word Boilerplate (Elevator Pitch)
 
-Nwestco provides complete lifecycle solutions for fuel systems, car washes, and environmental services across the Western United States. From design and installation to 24/7 service and compliance, our 350+ factory-certified technicians deliver expert support from eight branches across six states. We maximize your uptime with one-stop-shop convenience and best-in-class technical expertise.
+Nwestco provides complete lifecycle solutions for fuel systems, car washes, and environmental services across the Western United States. From design and installation to 24/7 service and compliance, our 350+ factory-certified technicians deliver expert support from 9 branches across six states. We maximize your uptime with one-stop-shop convenience and best-in-class technical expertise.
 
 **Word Count:** 50 words
 
@@ -44,7 +44,7 @@ Nwestco is the Western United States' premier provider of fuel system, car wash,
 
 ### Nwestco: Complete Lifecycle Solutions for Fuel Systems, Car Washes, and Environmental Services Across the Western United States
 
-Nwestco is the Western US's leading provider of comprehensive fuel system, car wash, and environmental solutions, serving customers from eight branches across Washington, Oregon, Idaho, Montana, California, and Arkansas. With 350+ factory-certified technicians and 25+ years of industry expertise, we deliver complete lifecycle services that maximize customer uptime and operating performance.
+Nwestco is the Western US's leading provider of comprehensive fuel system, car wash, and environmental solutions, serving customers from 9 branches across Washington, Oregon, Idaho, Montana, California, and Arkansas. With 350+ factory-certified technicians and 25+ years of industry expertise, we deliver complete lifecycle services that maximize customer uptime and operating performance.
 
 **Our One-Stop-Shop Advantage**
 
@@ -112,7 +112,7 @@ Office: [Branch Main Line]
 Email: [your.email]@nwestco.com
 Website: nwestco.com
 
-Nwestco provides complete lifecycle solutions for fuel systems, car washes, and environmental services across the Western United States. From design and installation to 24/7 service and compliance, our 350+ factory-certified technicians deliver expert support from eight branches across six states.
+Nwestco provides complete lifecycle solutions for fuel systems, car washes, and environmental services across the Western United States. From design and installation to 24/7 service and compliance, our 350+ factory-certified technicians deliver expert support from 9 branches across six states.
 ```
 
 ---
@@ -132,12 +132,12 @@ Complete lifecycle solutions for fuel systems, car washes & environmental servic
 ---
 
 ### Facebook About Section (Short)
-Nwestco provides complete fuel system, car wash, and environmental solutions across the Western US. Design, installation, 24/7 service, compliance, parts, and training from eight branches. Maximize your uptime with expert technicians and one-stop-shop convenience.
+Nwestco provides complete fuel system, car wash, and environmental solutions across the Western US. Design, installation, 24/7 service, compliance, parts, and training from 9 branches. Maximize your uptime with expert technicians and one-stop-shop convenience.
 
 ---
 
 ### Instagram Bio (150 characters)
-Complete lifecycle solutions for fuel systems & car washes | 8 Western US branches | 24/7 service | Maximize your uptime | 800-775-1892
+Complete lifecycle solutions for fuel systems & car washes | 9 Western US branches | 24/7 service | Maximize your uptime | 800-775-1892
 
 **Character Count:** 148 characters
 
@@ -166,7 +166,7 @@ Nwestco delivers complete lifecycle services for fuel systems, car washes, and e
 
 **Why Choose Nwestco:**
 - Complete lifecycle solutions (design through ongoing service)
-- Eight branches across six Western states for rapid response
+- 9 branches across six Western states for rapid response
 - Factory-certified on 40+ major equipment brands
 - 90% of service calls completed within 48 hours
 - Portland and Spokane training centers
@@ -192,7 +192,7 @@ We appreciate the opportunity to propose on [PROJECT NAME]. Nwestco's combinatio
 
 **About Nwestco**
 
-Nwestco is the Western United States' leading provider of comprehensive fuel system and car wash solutions, serving customers from eight branches across Washington, Oregon, Idaho, Montana, California, and Arkansas. With 350+ factory-certified technicians and 25+ years of industry expertise, Nwestco delivers complete lifecycle services including design, installation, 24/7 emergency service, compliance testing, equipment sales, and technical training. Backed by partnerships with 40+ leading manufacturers, Nwestco maximizes customer uptime through best-in-class technical expertise, one-stop-shop convenience, and unmatched Western US geographic coverage. For more information, visit nwestco.com or call 800-775-1892.
+Nwestco is the Western United States' leading provider of comprehensive fuel system and car wash solutions, serving customers from 9 branches across Washington, Oregon, Idaho, Montana, California, and Arkansas. With 350+ factory-certified technicians and 25+ years of industry expertise, Nwestco delivers complete lifecycle services including design, installation, 24/7 emergency service, compliance testing, equipment sales, and technical training. Backed by partnerships with 40+ leading manufacturers, Nwestco maximizes customer uptime through best-in-class technical expertise, one-stop-shop convenience, and unmatched Western US geographic coverage. For more information, visit nwestco.com or call 800-775-1892.
 
 ---
 
@@ -202,7 +202,7 @@ Nwestco is the Western United States' leading provider of comprehensive fuel sys
 
 **About Nwestco**
 
-Join a growing industry leader on a path from $120M to $500M. Nwestco provides complete lifecycle solutions for fuel systems, car washes, and environmental services across the Western United States, with eight branches serving customers in Washington, Oregon, Idaho, Montana, California, and Arkansas.
+Join a growing industry leader on a path from $120M to $500M. Nwestco provides complete lifecycle solutions for fuel systems, car washes, and environmental services across the Western United States, with 9 branches serving customers in Washington, Oregon, Idaho, Montana, California, and Arkansas.
 
 We're committed to being best-in-class in everything we do - from technical expertise to customer service to employee development. Our people-first culture values hard work, respect, integrity, and genuine care for customer success. With factory-certified training programs at our Portland and Spokane training centers, comprehensive benefits, and opportunities for career advancement across our expanding footprint, Nwestco offers the stability of an established company with the growth trajectory of a startup.
 

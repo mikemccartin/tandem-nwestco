@@ -40,7 +40,7 @@ Be best-in-class in everything we do - from technical expertise to customer serv
 
 ### The 3 Uniques (Competitive Differentiators)
 1. **Cradle-to-Grave Solutions**: Complete lifecycle capabilities from installation through maintenance, remodels, compliance, and environmental services - not just point solutions
-2. **Western US Geographic Coverage**: Eight branches across six Western states providing peace of mind and rapid response
+2. **Western US Geographic Coverage**: 9 branches across six Western states providing peace of mind and rapid response
 3. **Subject Matter Expertise**: Best-in-class technical training programs producing the most knowledgeable technicians in the industry
 
 ---
@@ -447,7 +447,7 @@ a:hover, .link:hover {
 | Context | Tone Adjustment | Example |
 |---------|----------------|---------|
 | **Emergency/Service** | Urgent, reassuring, solution-focused | "We're dispatching a technician now. Expected arrival: 90 minutes." |
-| **Sales/Marketing** | Confident, benefit-driven, professional | "Eight branches across the Western US means faster response when you need us." |
+| **Sales/Marketing** | Confident, benefit-driven, professional | "9 branches across the Western US means faster response when you need us." |
 | **Technical Support** | Knowledgeable, patient, helpful | "Let's walk through the diagnostic process together to identify the issue." |
 | **About/Culture** | Warm, authentic, people-focused | "Our technicians aren't just skilled - they genuinely care about your success." |
 | **Compliance/Legal** | Precise, authoritative, thorough | "We ensure full EPA compliance with documented testing and reporting." |
@@ -482,7 +482,7 @@ a:hover, .link:hover {
 
 **For Investors/Acquisition Targets:**
 1. **Growth Trajectory**: "From $66M to $120M with clear path to $500M through strategic M&A and organic growth."
-2. **Market Position**: "Dominant presence across six Western states with eight branches and 360+ employees."
+2. **Market Position**: "Dominant presence across six Western states with 9 branches and 360+ employees."
 3. **PE-Backed Platform**: "Well-capitalized acquisition platform with proven integration capabilities."
 
 ### Writing Style Guidelines

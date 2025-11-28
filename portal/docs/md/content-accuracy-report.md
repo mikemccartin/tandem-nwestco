@@ -47,7 +47,7 @@ The current live site organizes primarily by industry (Petroleum, Car Wash, Auto
 | Company name: Nwestco | Live site |
 | Toll-free: 800-775-1892 | Live site |
 | Headquarters: Kalispell, MT | Live site footer |
-| 9 branch locations | Live site /branches/ |
+| 9 branch locations, 6 states | Live site /branches/ |
 
 ### Branch Locations & Phone Numbers
 All verified from https://nwestco.com/branches/:
