@@ -1,7 +1,7 @@
 # Nwestco Prototype Content Accuracy Report
 
 ## Overview
-This document identifies which content in the prototypes is **verified from the live site** versus **fabricated placeholder content** that requires client verification before launch.
+This document identifies which content in the prototypes is **verified from the live site** versus **placeholder content** that requires client verification before launch.
 
 ---
 
@@ -48,43 +48,43 @@ All verified from https://nwestco.com/branches/:
 
 ---
 
-## FABRICATED CONTENT (Needs Client Verification)
+## PLACEHOLDER CONTENT (Needs Client Verification)
 
 ### Financial & Growth Claims
 | Claim | Status | Action Required |
 |-------|--------|-----------------|
-| "$120M revenue" | **MADE UP** | Get actual revenue or remove |
-| "$500M goal" | **MADE UP** | Verify growth target or remove |
-| "360+ employees" | **MADE UP** | Get actual headcount |
-| "350+ team members" | **MADE UP** | Get actual headcount |
+| "$120M revenue" | **PLACEHOLDER** | Get actual revenue or remove |
+| "$500M goal" | **PLACEHOLDER** | Verify growth target or remove |
+| "360+ employees" | **PLACEHOLDER** | Get actual headcount |
+| "350+ team members" | **PLACEHOLDER** | Get actual headcount |
 
 ### Performance Metrics
 | Claim | Status | Action Required |
 |-------|--------|-----------------|
-| "4-hour emergency response" | **MADE UP** | Verify SLA or remove |
-| "98% uptime" | **MADE UP** | Verify metric or remove |
+| "4-hour emergency response" | **PLACEHOLDER** | Verify SLA or remove |
+| "98% uptime" | **PLACEHOLDER** | Verify metric or remove |
 | "24/7 service" | **UNVERIFIED** | Confirm with client |
-| "40+ years combined experience" | **MADE UP** | Verify or remove |
-| "25+ years" | **MADE UP** | Verify founding date |
+| "40+ years combined experience" | **PLACEHOLDER** | Verify or remove |
+| "25+ years" | **PLACEHOLDER** | Verify founding date |
 
 ### Company Culture & Taglines
 | Content | Status |
 |---------|--------|
-| "Work hard, be nice, have fun" | **MADE UP** |
-| "People-first culture" | **MADE UP** |
-| "Western US's most trusted partner" | **MADE UP** |
-| "Maximize your uptime" | **MADE UP** |
+| "Work hard, be nice, have fun" | **PLACEHOLDER** |
+| "People-first culture" | **PLACEHOLDER** |
+| "Western US's most trusted partner" | **PLACEHOLDER** |
+| "Maximize your uptime" | **PLACEHOLDER** |
 
 ### Training Claims
 | Claim | Status | Action Required |
 |-------|--------|-----------------|
 | "2 training centers" | **PARTIALLY VERIFIED** | Portland & Spokane mentioned on live site, but "training center" designation unverified |
-| "Best-in-class training" | **MADE UP** | Marketing claim - verify or soften |
+| "Best-in-class training" | **PLACEHOLDER** | Marketing claim - verify or soften |
 | "Factory certification programs" | **UNVERIFIED** | Confirm they offer this |
-| Specific certification names | **MADE UP** | Get actual certifications |
+| Specific certification names | **PLACEHOLDER** | Get actual certifications |
 
 ### Service Descriptions
-All detailed service descriptions are **MADE UP** placeholder copy, including:
+All detailed service descriptions are **PLACEHOLDER** placeholder copy, including:
 - Specific capabilities listed
 - Process descriptions
 - Technical specifications
@@ -97,10 +97,10 @@ All detailed service descriptions are **MADE UP** placeholder copy, including:
 | careers@nwestco.com | **UNVERIFIED** - not found on live site |
 
 ### Project Examples
-Any specific project descriptions, case studies, or client references are **COMPLETELY FABRICATED**.
+Any specific project descriptions, case studies, or client references are **PLACEHOLDER CONTENT**.
 
 ### Testimonials
-Any quotes or testimonials are **COMPLETELY FABRICATED** and should not be used.
+Any quotes or testimonials are **PLACEHOLDER CONTENT** and should not be used.
 
 ---
 
