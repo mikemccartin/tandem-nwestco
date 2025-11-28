@@ -21,107 +21,6 @@
 
   <!-- Option A Specific Styles -->
   <link rel="stylesheet" href="css/option-a.css">
-
-  <!-- ClearCompany Custom Styles - Option A Clean Theme -->
-  <style>
-    /* Force all text dark since ClearCompany uses light backgrounds */
-    #clearcompany-careers,
-    #clearcompany-careers * {
-      color: #333 !important;
-    }
-
-    /* Container styling */
-    #clearcompany-careers .cc-careers-container {
-      background: #fff !important;
-      font-family: 'Open Sans', sans-serif !important;
-      border-radius: 8px !important;
-      box-shadow: 0 2px 12px rgba(0,0,0,0.1) !important;
-      padding: 2rem !important;
-    }
-
-    /* Job cards */
-    #clearcompany-careers .cc-job-title {
-      color: #25617c !important;
-      font-family: 'Lato', sans-serif !important;
-      font-weight: 700 !important;
-      font-size: 1.1rem !important;
-    }
-
-    #clearcompany-careers .cc-job-title:hover {
-      color: #709944 !important;
-    }
-
-    #clearcompany-careers .cc-secondary-label {
-      color: #666 !important;
-    }
-
-    /* Apply button */
-    #clearcompany-careers .cc-apply-button {
-      background: #25617c !important;
-      color: #fff !important;
-      border: none !important;
-      border-radius: 6px !important;
-      padding: 12px 28px !important;
-      font-family: 'Lato', sans-serif !important;
-      font-weight: 700 !important;
-      transition: all 0.2s ease !important;
-    }
-
-    #clearcompany-careers .cc-apply-button:hover {
-      background: #1d4d63 !important;
-      color: #fff !important;
-    }
-
-    /* Filter dropdowns */
-    #clearcompany-careers .cc-filter-dropdown,
-    #clearcompany-careers .cc-filter-keywords,
-    #clearcompany-careers input,
-    #clearcompany-careers select {
-      background: #f8f9fa !important;
-      border: 1px solid #ddd !important;
-      color: #333 !important;
-      border-radius: 6px !important;
-    }
-
-    #clearcompany-careers .cc-submit-search-button {
-      background: #709944 !important;
-      color: #fff !important;
-      border-radius: 6px !important;
-    }
-
-    /* Text elements */
-    #clearcompany-careers .cc-job-description-text,
-    #clearcompany-careers p,
-    #clearcompany-careers span,
-    #clearcompany-careers div {
-      color: #444 !important;
-    }
-
-    #clearcompany-careers .cc-job-description-title,
-    #clearcompany-careers h1,
-    #clearcompany-careers h2,
-    #clearcompany-careers h3,
-    #clearcompany-careers h4 {
-      color: #25617c !important;
-      font-weight: 700 !important;
-    }
-
-    /* Links */
-    #clearcompany-careers a {
-      color: #25617c !important;
-    }
-
-    #clearcompany-careers a:hover {
-      color: #709944 !important;
-    }
-
-    /* Ensure button text stays white */
-    #clearcompany-careers button,
-    #clearcompany-careers [class*="button"],
-    #clearcompany-careers [class*="btn"] {
-      color: #fff !important;
-    }
-  </style>
 </head>
 <body>
   <!-- Skip Navigation for Accessibility -->
@@ -152,7 +51,7 @@
           </li>
           <li><a href="#services">Services</a></li>
           <li><a href="#why-nwestco">Why Nwestco</a></li>
-          <li><a href="#careers">Careers</a></li>
+          <li><a href="careers.html">Careers</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
 
@@ -685,212 +584,158 @@
     <section id="coverage" class="section section-alt">
       <div class="container">
         <h2 class="section-title text-center">9 Branches Across 6 Western States</h2>
-        <p class="section-subtitle text-center">Click any location for details. 24/7 emergency dispatch from all branches.</p>
+        <p class="section-subtitle text-center">Hover or tap any location for details. 24/7 emergency dispatch from all branches.</p>
 
-        <div class="locations-grid">
+        <div class="branch-flip-grid">
           <!-- Kalispell HQ -->
-          <div class="location-card" data-location="kalispell">
-            <div class="location-header">
-              <span class="location-icon">📍</span>
-              <div class="location-info">
-                <h4 class="location-name">Kalispell, MT</h4>
-                <span class="location-badge">Headquarters</span>
+          <div class="branch-flip">
+            <div class="branch-flip-inner">
+              <div class="branch-flip-front hq">
+                <span class="branch-state">Montana</span>
+                <h4>Kalispell</h4>
+                <span class="branch-badge">Headquarters</span>
               </div>
-              <button class="location-toggle" aria-expanded="false" aria-label="Toggle Kalispell details">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M6 9l6 6 6-6"/>
-                </svg>
-              </button>
-            </div>
-            <div class="location-details" aria-hidden="true">
-              <p class="location-address">123 Industrial Way, Kalispell, MT 59901</p>
-              <p class="location-phone"><a href="tel:4067554343">406-755-4343</a> | Toll Free: <a href="tel:8007751892">800-775-1892</a></p>
-              <p class="location-coverage"><strong>Coverage:</strong> Montana, Northern Idaho, Eastern Washington</p>
-              <p class="location-services"><strong>Services:</strong> Full service, Training center, Parts warehouse</p>
-              <p class="location-response"><strong>Response:</strong> Under 4 hours within 100-mile radius</p>
+              <div class="branch-flip-back">
+                <h4>Kalispell, MT</h4>
+                <a href="tel:8007751892" class="branch-phone">800-775-1892</a>
+                <p class="branch-coverage">Coverage: NW Montana, Glacier region</p>
+                <p class="branch-services">Full service • Parts warehouse</p>
+              </div>
             </div>
           </div>
 
           <!-- Spokane -->
-          <div class="location-card" data-location="spokane">
-            <div class="location-header">
-              <span class="location-icon">📍</span>
-              <div class="location-info">
-                <h4 class="location-name">Spokane, WA</h4>
-                <span class="location-badge training">Training Center</span>
+          <div class="branch-flip">
+            <div class="branch-flip-inner">
+              <div class="branch-flip-front training">
+                <span class="branch-state">Washington</span>
+                <h4>Spokane</h4>
+                <span class="branch-badge">Training Center</span>
               </div>
-              <button class="location-toggle" aria-expanded="false" aria-label="Toggle Spokane details">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M6 9l6 6 6-6"/>
-                </svg>
-              </button>
-            </div>
-            <div class="location-details" aria-hidden="true">
-              <p class="location-address">456 Service Drive, Spokane, WA 99201</p>
-              <p class="location-phone"><a href="tel:5095343206">509-534-3206</a> | Toll Free: <a href="tel:8887477560">888-747-7560</a></p>
-              <p class="location-coverage"><strong>Coverage:</strong> Eastern Washington, Northern Idaho</p>
-              <p class="location-services"><strong>Services:</strong> Full service, Training facility, Parts</p>
-              <p class="location-response"><strong>Response:</strong> Under 4 hours metro, same-day regional</p>
-            </div>
-          </div>
-
-          <!-- Billings -->
-          <div class="location-card" data-location="billings">
-            <div class="location-header">
-              <span class="location-icon">📍</span>
-              <div class="location-info">
-                <h4 class="location-name">Billings, MT</h4>
+              <div class="branch-flip-back">
+                <h4>Spokane, WA</h4>
+                <a href="tel:8887477560" class="branch-phone">888-747-7560</a>
+                <p class="branch-coverage">Coverage: Eastern WA, N. Idaho</p>
+                <p class="branch-services">Full service • Training facility</p>
               </div>
-              <button class="location-toggle" aria-expanded="false" aria-label="Toggle Billings details">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M6 9l6 6 6-6"/>
-                </svg>
-              </button>
-            </div>
-            <div class="location-details" aria-hidden="true">
-              <p class="location-address">789 Commerce Blvd, Billings, MT 59101</p>
-              <p class="location-phone"><a href="tel:4068961099">406-896-1099</a> | Toll Free: <a href="tel:8663161099">866-316-1099</a></p>
-              <p class="location-coverage"><strong>Coverage:</strong> Eastern Montana, Northern Wyoming</p>
-              <p class="location-services"><strong>Services:</strong> Full service, Environmental testing</p>
-              <p class="location-response"><strong>Response:</strong> Under 4 hours within 150-mile radius</p>
-            </div>
-          </div>
-
-          <!-- Boise -->
-          <div class="location-card" data-location="boise">
-            <div class="location-header">
-              <span class="location-icon">📍</span>
-              <div class="location-info">
-                <h4 class="location-name">Boise, ID</h4>
-              </div>
-              <button class="location-toggle" aria-expanded="false" aria-label="Toggle Boise details">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M6 9l6 6 6-6"/>
-                </svg>
-              </button>
-            </div>
-            <div class="location-details" aria-hidden="true">
-              <p class="location-address">321 Industrial Park, Boise, ID 83702</p>
-              <p class="location-phone"><a href="tel:2083446483">208-344-6483</a> | Toll Free: <a href="tel:8004733558">800-473-3558</a></p>
-              <p class="location-coverage"><strong>Coverage:</strong> Southern Idaho, Eastern Oregon</p>
-              <p class="location-services"><strong>Services:</strong> Full service, Car wash specialists</p>
-              <p class="location-response"><strong>Response:</strong> Under 4 hours Treasure Valley</p>
             </div>
           </div>
 
           <!-- Portland -->
-          <div class="location-card" data-location="portland">
-            <div class="location-header">
-              <span class="location-icon">📍</span>
-              <div class="location-info">
-                <h4 class="location-name">Portland, OR</h4>
-                <span class="location-badge training">Training Center</span>
+          <div class="branch-flip">
+            <div class="branch-flip-inner">
+              <div class="branch-flip-front training">
+                <span class="branch-state">Oregon</span>
+                <h4>Portland</h4>
+                <span class="branch-badge">Training Center</span>
               </div>
-              <button class="location-toggle" aria-expanded="false" aria-label="Toggle Portland details">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M6 9l6 6 6-6"/>
-                </svg>
-              </button>
+              <div class="branch-flip-back">
+                <h4>Portland, OR</h4>
+                <a href="tel:8002623369" class="branch-phone">800-262-3369</a>
+                <p class="branch-coverage">Coverage: Oregon, SW Washington</p>
+                <p class="branch-services">Full service • Training • Parts</p>
+              </div>
             </div>
-            <div class="location-details" aria-hidden="true">
-              <p class="location-address">555 Tech Center Way, Portland, OR 97201</p>
-              <p class="location-phone"><a href="tel:5032549455">503-254-9455</a> | Toll Free: <a href="tel:8002623369">800-262-3369</a></p>
-              <p class="location-coverage"><strong>Coverage:</strong> Oregon, SW Washington</p>
-              <p class="location-services"><strong>Services:</strong> Full service, Training facility, Large parts inventory</p>
-              <p class="location-response"><strong>Response:</strong> Under 2 hours Portland metro</p>
+          </div>
+
+          <!-- Billings -->
+          <div class="branch-flip">
+            <div class="branch-flip-inner">
+              <div class="branch-flip-front">
+                <span class="branch-state">Montana</span>
+                <h4>Billings</h4>
+              </div>
+              <div class="branch-flip-back">
+                <h4>Billings, MT</h4>
+                <a href="tel:8663161099" class="branch-phone">866-316-1099</a>
+                <p class="branch-coverage">Coverage: Eastern MT, N. Wyoming</p>
+                <p class="branch-services">Full service • Environmental</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Boise -->
+          <div class="branch-flip">
+            <div class="branch-flip-inner">
+              <div class="branch-flip-front">
+                <span class="branch-state">Idaho</span>
+                <h4>Boise</h4>
+              </div>
+              <div class="branch-flip-back">
+                <h4>Boise, ID</h4>
+                <a href="tel:8004733558" class="branch-phone">800-473-3558</a>
+                <p class="branch-coverage">Coverage: S. Idaho, E. Oregon</p>
+                <p class="branch-services">Full service • Car wash specialists</p>
+              </div>
             </div>
           </div>
 
           <!-- Springdale -->
-          <div class="location-card" data-location="springdale">
-            <div class="location-header">
-              <span class="location-icon">📍</span>
-              <div class="location-info">
-                <h4 class="location-name">Springdale, AR</h4>
+          <div class="branch-flip">
+            <div class="branch-flip-inner">
+              <div class="branch-flip-front">
+                <span class="branch-state">Arkansas</span>
+                <h4>Springdale</h4>
               </div>
-              <button class="location-toggle" aria-expanded="false" aria-label="Toggle Springdale details">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M6 9l6 6 6-6"/>
-                </svg>
-              </button>
-            </div>
-            <div class="location-details" aria-hidden="true">
-              <p class="location-address">999 Commerce Drive, Springdale, AR 72762</p>
-              <p class="location-phone"><a href="tel:4797566851">479-756-6851</a> | Toll Free: <a href="tel:8006320031">800-632-0031</a></p>
-              <p class="location-coverage"><strong>Coverage:</strong> Arkansas, Oklahoma, SW Missouri</p>
-              <p class="location-services"><strong>Services:</strong> Full service, Growing market expansion</p>
-              <p class="location-response"><strong>Response:</strong> Under 4 hours NW Arkansas</p>
+              <div class="branch-flip-back">
+                <h4>Springdale, AR</h4>
+                <a href="tel:8006320031" class="branch-phone">800-632-0031</a>
+                <p class="branch-coverage">Coverage: AR, OK, SW Missouri</p>
+                <p class="branch-services">Full service • Growing region</p>
+              </div>
             </div>
           </div>
 
           <!-- Fresno -->
-          <div class="location-card" data-location="fresno">
-            <div class="location-header">
-              <span class="location-icon">📍</span>
-              <div class="location-info">
-                <h4 class="location-name">Fresno, CA</h4>
+          <div class="branch-flip">
+            <div class="branch-flip-inner">
+              <div class="branch-flip-front">
+                <span class="branch-state">California</span>
+                <h4>Fresno</h4>
               </div>
-              <button class="location-toggle" aria-expanded="false" aria-label="Toggle Fresno details">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M6 9l6 6 6-6"/>
-                </svg>
-              </button>
-            </div>
-            <div class="location-details" aria-hidden="true">
-              <p class="location-address">777 Valley Center, Fresno, CA 93721</p>
-              <p class="location-phone"><a href="tel:5594853456">559-485-3456</a></p>
-              <p class="location-coverage"><strong>Coverage:</strong> Central California, San Joaquin Valley</p>
-              <p class="location-services"><strong>Services:</strong> Full service, Agricultural fueling specialists</p>
-              <p class="location-response"><strong>Response:</strong> Under 4 hours Central Valley</p>
+              <div class="branch-flip-back">
+                <h4>Fresno, CA</h4>
+                <a href="tel:5594853456" class="branch-phone">559-485-3456</a>
+                <p class="branch-coverage">Coverage: Central CA, San Joaquin</p>
+                <p class="branch-services">Full service • Agricultural</p>
+              </div>
             </div>
           </div>
 
           <!-- Bakersfield -->
-          <div class="location-card" data-location="bakersfield">
-            <div class="location-header">
-              <span class="location-icon">📍</span>
-              <div class="location-info">
-                <h4 class="location-name">Bakersfield, CA</h4>
+          <div class="branch-flip">
+            <div class="branch-flip-inner">
+              <div class="branch-flip-front">
+                <span class="branch-state">California</span>
+                <h4>Bakersfield</h4>
               </div>
-              <button class="location-toggle" aria-expanded="false" aria-label="Toggle Bakersfield details">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M6 9l6 6 6-6"/>
-                </svg>
-              </button>
-            </div>
-            <div class="location-details" aria-hidden="true">
-              <p class="location-address">444 Petroleum Way, Bakersfield, CA 93301</p>
-              <p class="location-phone"><a href="tel:6616313870">661-631-3870</a> | Toll Free: <a href="tel:8003399930">800-339-9930</a></p>
-              <p class="location-coverage"><strong>Coverage:</strong> Kern County, Southern San Joaquin</p>
-              <p class="location-services"><strong>Services:</strong> Full service, Oil field fueling experience</p>
-              <p class="location-response"><strong>Response:</strong> Under 4 hours Kern County</p>
+              <div class="branch-flip-back">
+                <h4>Bakersfield, CA</h4>
+                <a href="tel:8003399930" class="branch-phone">800-339-9930</a>
+                <p class="branch-coverage">Coverage: Kern County, S. Valley</p>
+                <p class="branch-services">Full service • Oil field experience</p>
+              </div>
             </div>
           </div>
 
           <!-- San Jose -->
-          <div class="location-card" data-location="sanjose">
-            <div class="location-header">
-              <span class="location-icon">📍</span>
-              <div class="location-info">
-                <h4 class="location-name">San Jose, CA</h4>
+          <div class="branch-flip">
+            <div class="branch-flip-inner">
+              <div class="branch-flip-front">
+                <span class="branch-state">California</span>
+                <h4>San Jose</h4>
               </div>
-              <button class="location-toggle" aria-expanded="false" aria-label="Toggle San Jose details">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M6 9l6 6 6-6"/>
-                </svg>
-              </button>
-            </div>
-            <div class="location-details" aria-hidden="true">
-              <p class="location-address">222 Tech Park Blvd, San Jose, CA 95110</p>
-              <p class="location-phone"><a href="tel:6692000678">669-200-0678</a> | Toll Free: <a href="tel:8003399930">800-339-9930</a></p>
-              <p class="location-coverage"><strong>Coverage:</strong> Bay Area, Silicon Valley, Monterey</p>
-              <p class="location-services"><strong>Services:</strong> Full service, EV charging installations</p>
-              <p class="location-response"><strong>Response:</strong> Under 3 hours Bay Area</p>
+              <div class="branch-flip-back">
+                <h4>San Jose, CA</h4>
+                <a href="tel:8003399930" class="branch-phone">800-339-9930</a>
+                <p class="branch-coverage">Coverage: Bay Area, Silicon Valley</p>
+                <p class="branch-services">Full service • EV charging</p>
+              </div>
             </div>
           </div>
         </div>
 
-        <div class="text-center" style="margin-top: var(--space-8);">
+        <div class="text-center" style="margin-top: var(--space-10);">
           <p class="emergency-banner">24/7 Emergency Hotline: <a href="tel:8007751892" class="emergency-link">800-775-1892</a></p>
           <a href="#contact" class="btn btn-primary btn-lg">Contact Your Nearest Branch</a>
         </div>
@@ -1007,92 +852,90 @@
         <h2 class="section-title text-center">What Our Customers Say</h2>
 
         <div class="testimonial-carousel" aria-label="Customer testimonials">
-          <div class="testimonial-carousel-track">
-            <!-- Testimonial 1 -->
-            <article class="testimonial-slide active" aria-hidden="false">
-              <div class="testimonial-content">
-                <div class="testimonial-photo">
-                  <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=200&h=200&fit=crop" alt="John Smith">
-                </div>
-                <blockquote class="testimonial-quote">
-                  "Nwestco upgraded our 12 locations in 90 days with zero downtime. Their project management and technical expertise are unmatched."
-                </blockquote>
-                <div class="testimonial-attribution">
-                  <p class="testimonial-name">John Smith</p>
-                  <p class="testimonial-title">Regional Manager, Circle K</p>
-                  <p class="testimonial-location">Portland, OR</p>
-                </div>
+          <!-- Testimonial 1 -->
+          <article class="testimonial-slide active" aria-hidden="false">
+            <div class="testimonial-content">
+              <div class="testimonial-photo">
+                <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=200&h=200&fit=crop" alt="John Smith">
               </div>
-            </article>
+              <blockquote class="testimonial-quote">
+                "Nwestco upgraded our 12 locations in 90 days with zero downtime. Their project management and technical expertise are unmatched."
+              </blockquote>
+              <div class="testimonial-attribution">
+                <p class="testimonial-name">John Smith</p>
+                <p class="testimonial-title">Regional Manager, Circle K</p>
+                <p class="testimonial-location">Portland, OR</p>
+              </div>
+            </div>
+          </article>
 
-            <!-- Testimonial 2 -->
-            <article class="testimonial-slide" aria-hidden="true">
-              <div class="testimonial-content">
-                <div class="testimonial-photo">
-                  <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=200&h=200&fit=crop" alt="Maria Garcia">
-                </div>
-                <blockquote class="testimonial-quote">
-                  "Their 24/7 service keeps my wash running and profitable. When equipment goes down, they respond in hours, not days. That's the difference between losing money and making money."
-                </blockquote>
-                <div class="testimonial-attribution">
-                  <p class="testimonial-name">Maria Garcia</p>
-                  <p class="testimonial-title">Owner, Sunshine Car Wash</p>
-                  <p class="testimonial-location">Boise, ID</p>
-                </div>
+          <!-- Testimonial 2 -->
+          <article class="testimonial-slide" aria-hidden="true">
+            <div class="testimonial-content">
+              <div class="testimonial-photo">
+                <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=200&h=200&fit=crop" alt="Maria Garcia">
               </div>
-            </article>
+              <blockquote class="testimonial-quote">
+                "Their 24/7 service keeps my wash running and profitable. When equipment goes down, they respond in hours, not days. That's the difference between losing money and making money."
+              </blockquote>
+              <div class="testimonial-attribution">
+                <p class="testimonial-name">Maria Garcia</p>
+                <p class="testimonial-title">Owner, Sunshine Car Wash</p>
+                <p class="testimonial-location">Boise, ID</p>
+              </div>
+            </div>
+          </article>
 
-            <!-- Testimonial 3 -->
-            <article class="testimonial-slide" aria-hidden="true">
-              <div class="testimonial-content">
-                <div class="testimonial-photo">
-                  <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=200&h=200&fit=crop" alt="Tom Wilson">
-                </div>
-                <blockquote class="testimonial-quote">
-                  "One-stop shop eliminated our vendor headaches. We used to coordinate between five contractors - now it's one call to Nwestco. Installation, service, compliance, parts. They handle it all."
-                </blockquote>
-                <div class="testimonial-attribution">
-                  <p class="testimonial-name">Tom Wilson</p>
-                  <p class="testimonial-title">Fleet Manager, ABC Corporation</p>
-                  <p class="testimonial-location">Spokane, WA</p>
-                </div>
+          <!-- Testimonial 3 -->
+          <article class="testimonial-slide" aria-hidden="true">
+            <div class="testimonial-content">
+              <div class="testimonial-photo">
+                <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=200&h=200&fit=crop" alt="Tom Wilson">
               </div>
-            </article>
+              <blockquote class="testimonial-quote">
+                "One-stop shop eliminated our vendor headaches. We used to coordinate between five contractors - now it's one call to Nwestco. Installation, service, compliance, parts. They handle it all."
+              </blockquote>
+              <div class="testimonial-attribution">
+                <p class="testimonial-name">Tom Wilson</p>
+                <p class="testimonial-title">Fleet Manager, ABC Corporation</p>
+                <p class="testimonial-location">Spokane, WA</p>
+              </div>
+            </div>
+          </article>
 
-            <!-- Testimonial 4 -->
-            <article class="testimonial-slide" aria-hidden="true">
-              <div class="testimonial-content">
-                <div class="testimonial-photo">
-                  <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&h=200&fit=crop" alt="David Chen">
-                </div>
-                <blockquote class="testimonial-quote">
-                  "Their compliance team saved us from what could have been a $50,000 EPA fine. They caught a leak our previous vendor missed and handled the entire remediation process. Worth every penny."
-                </blockquote>
-                <div class="testimonial-attribution">
-                  <p class="testimonial-name">David Chen</p>
-                  <p class="testimonial-title">Operations Director, Mountain Fuel Co.</p>
-                  <p class="testimonial-location">Billings, MT</p>
-                </div>
+          <!-- Testimonial 4 -->
+          <article class="testimonial-slide" aria-hidden="true">
+            <div class="testimonial-content">
+              <div class="testimonial-photo">
+                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&h=200&fit=crop" alt="David Chen">
               </div>
-            </article>
+              <blockquote class="testimonial-quote">
+                "Their compliance team saved us from what could have been a $50,000 EPA fine. They caught a leak our previous vendor missed and handled the entire remediation process. Worth every penny."
+              </blockquote>
+              <div class="testimonial-attribution">
+                <p class="testimonial-name">David Chen</p>
+                <p class="testimonial-title">Operations Director, Mountain Fuel Co.</p>
+                <p class="testimonial-location">Billings, MT</p>
+              </div>
+            </div>
+          </article>
 
-            <!-- Testimonial 5 -->
-            <article class="testimonial-slide" aria-hidden="true">
-              <div class="testimonial-content">
-                <div class="testimonial-photo">
-                  <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=200&h=200&fit=crop" alt="Sarah Thompson">
-                </div>
-                <blockquote class="testimonial-quote">
-                  "From initial design through ongoing maintenance, Nwestco has been our partner for 8 years. Their training programs keep my staff certified and our equipment running at peak performance."
-                </blockquote>
-                <div class="testimonial-attribution">
-                  <p class="testimonial-name">Sarah Thompson</p>
-                  <p class="testimonial-title">Owner, Valley Car Wash Chain</p>
-                  <p class="testimonial-location">Fresno, CA</p>
-                </div>
+          <!-- Testimonial 5 -->
+          <article class="testimonial-slide" aria-hidden="true">
+            <div class="testimonial-content">
+              <div class="testimonial-photo">
+                <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=200&h=200&fit=crop" alt="Sarah Thompson">
               </div>
-            </article>
-          </div>
+              <blockquote class="testimonial-quote">
+                "From initial design through ongoing maintenance, Nwestco has been our partner for 8 years. Their training programs keep my staff certified and our equipment running at peak performance."
+              </blockquote>
+              <div class="testimonial-attribution">
+                <p class="testimonial-name">Sarah Thompson</p>
+                <p class="testimonial-title">Owner, Valley Car Wash Chain</p>
+                <p class="testimonial-location">Fresno, CA</p>
+              </div>
+            </div>
+          </article>
 
           <!-- Carousel Navigation -->
           <button class="carousel-nav carousel-prev" aria-label="Previous testimonial">
@@ -1131,7 +974,7 @@
           <article class="about-card fade-in">
             <h3>Build Your Career</h3>
             <p>Join us on our journey from $120M to $500M. Best-in-class training programs at our Portland and Spokane training centers. Career advancement opportunities as we expand across the Western United States.</p>
-            <a href="#contact" class="btn btn-outline">View Open Positions →</a>
+            <a href="careers.html" class="btn btn-outline">View Open Positions →</a>
           </article>
         </div>
       </div>
@@ -1173,22 +1016,6 @@
             <h3>Best-in-Class</h3>
             <p>We pursue excellence in training, equipment, service, and results.</p>
           </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Careers Section -->
-    <section id="careers" class="section">
-      <div class="container">
-        <h2 class="section-title text-center">Join Our Team</h2>
-        <p class="section-subtitle text-center">Build your career with a growing industry leader. 9 branches, 6 states, endless opportunity.</p>
-
-        <!-- ClearCompany Career Site Widget -->
-        <div id="clearcompany-careers" style="margin-top: 2rem; min-height: 400px;">
-          <script type="text/javascript" src="https://careers-content.clearcompany.com/js/v1/career-site.js?siteId=e51ad273-a922-475a-2abf-f489aa861bbb&contentSelector=%23clearcompany-careers"></script>
-          <noscript>
-            <p style="text-align: center; padding: 2rem;">Please enable JavaScript to view job listings, or visit <a href="https://nwestco.com/careers/">nwestco.com/careers</a></p>
-          </noscript>
         </div>
       </div>
     </section>
@@ -1261,7 +1088,7 @@
           <ul>
             <li><a href="#about">About Us</a></li>
             <li><a href="#why-nwestco">Why Nwestco</a></li>
-            <li><a href="#about">Careers</a></li>
+            <li><a href="careers.html">Careers</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
         </div>

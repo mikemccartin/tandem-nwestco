@@ -478,22 +478,25 @@
      ============================================================ */
 
   function initFlipBoxes() {
-    const flipBoxes = document.querySelectorAll('.flip-box');
+    // Support both service flip boxes and branch flip cards
+    const serviceFlipBoxes = document.querySelectorAll('.flip-box');
+    const branchFlipCards = document.querySelectorAll('.branch-flip');
+    const allFlipElements = [...serviceFlipBoxes, ...branchFlipCards];
 
-    if (flipBoxes.length === 0) return;
+    if (allFlipElements.length === 0) return;
 
     // Detect touch device
     const isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
 
-    flipBoxes.forEach(box => {
+    allFlipElements.forEach(box => {
       if (isTouchDevice) {
         // Touch devices: toggle on tap
         box.addEventListener('click', (e) => {
           // Don't flip if clicking a link/button
           if (e.target.tagName === 'A' || e.target.tagName === 'BUTTON') return;
 
-          // Close other open flip boxes
-          flipBoxes.forEach(otherBox => {
+          // Close other open flip elements
+          allFlipElements.forEach(otherBox => {
             if (otherBox !== box) {
               otherBox.classList.remove('flipped');
             }
@@ -505,11 +508,11 @@
       }
     });
 
-    // Close flip boxes when clicking outside on touch devices
+    // Close flip elements when clicking outside on touch devices
     if (isTouchDevice) {
       document.addEventListener('click', (e) => {
-        if (!e.target.closest('.flip-box')) {
-          flipBoxes.forEach(box => box.classList.remove('flipped'));
+        if (!e.target.closest('.flip-box') && !e.target.closest('.branch-flip')) {
+          allFlipElements.forEach(box => box.classList.remove('flipped'));
         }
       });
     }
@@ -555,7 +558,7 @@
 
 
   /* ============================================================
-     TESTIMONIAL CAROUSEL
+     TESTIMONIAL CAROUSEL - Single Slide Display
      ============================================================ */
 
   function initTestimonialCarousel() {
@@ -568,9 +571,11 @@
     const prevBtn = carousel.querySelector('.carousel-prev');
     const nextBtn = carousel.querySelector('.carousel-next');
 
+    if (slides.length === 0) return;
+
     let currentSlide = 0;
     let autoPlayInterval;
-    const autoPlayDelay = 6000; // 6 seconds
+    const autoPlayDelay = 8000; // 8 seconds for longer quotes
 
     function showSlide(index) {
       // Wrap around
@@ -579,16 +584,26 @@
 
       currentSlide = index;
 
-      // Update slides
+      // Update slides - show one at a time
       slides.forEach((slide, i) => {
-        slide.classList.toggle('active', i === index);
-        slide.setAttribute('aria-hidden', i !== index);
+        if (i === index) {
+          slide.classList.add('active');
+          slide.setAttribute('aria-hidden', 'false');
+        } else {
+          slide.classList.remove('active');
+          slide.setAttribute('aria-hidden', 'true');
+        }
       });
 
       // Update dots
       dots.forEach((dot, i) => {
-        dot.classList.toggle('active', i === index);
-        dot.setAttribute('aria-selected', i === index);
+        if (i === index) {
+          dot.classList.add('active');
+          dot.setAttribute('aria-selected', 'true');
+        } else {
+          dot.classList.remove('active');
+          dot.setAttribute('aria-selected', 'false');
+        }
       });
     }
 
@@ -601,30 +616,39 @@
     }
 
     function startAutoPlay() {
+      stopAutoPlay(); // Clear any existing interval
       autoPlayInterval = setInterval(nextSlide, autoPlayDelay);
     }
 
     function stopAutoPlay() {
-      clearInterval(autoPlayInterval);
+      if (autoPlayInterval) {
+        clearInterval(autoPlayInterval);
+        autoPlayInterval = null;
+      }
     }
 
-    // Button events
-    if (nextBtn) nextBtn.addEventListener('click', () => {
-      nextSlide();
-      stopAutoPlay();
-      startAutoPlay();
-    });
+    // Navigation button events
+    if (prevBtn) {
+      prevBtn.addEventListener('click', () => {
+        prevSlide();
+        stopAutoPlay();
+        startAutoPlay();
+      });
+    }
 
-    if (prevBtn) prevBtn.addEventListener('click', () => {
-      prevSlide();
-      stopAutoPlay();
-      startAutoPlay();
-    });
+    if (nextBtn) {
+      nextBtn.addEventListener('click', () => {
+        nextSlide();
+        stopAutoPlay();
+        startAutoPlay();
+      });
+    }
 
-    // Dot events
-    dots.forEach((dot, index) => {
+    // Dot navigation events
+    dots.forEach((dot) => {
       dot.addEventListener('click', () => {
-        showSlide(index);
+        const slideIndex = parseInt(dot.dataset.slide, 10);
+        showSlide(slideIndex);
         stopAutoPlay();
         startAutoPlay();
       });
@@ -636,6 +660,7 @@
 
     carousel.addEventListener('touchstart', (e) => {
       touchStartX = e.changedTouches[0].screenX;
+      stopAutoPlay();
     }, { passive: true });
 
     carousel.addEventListener('touchend', (e) => {
@@ -648,12 +673,11 @@
         } else {
           prevSlide();
         }
-        stopAutoPlay();
-        startAutoPlay();
       }
+      startAutoPlay();
     }, { passive: true });
 
-    // Pause on hover
+    // Pause on hover (desktop)
     carousel.addEventListener('mouseenter', stopAutoPlay);
     carousel.addEventListener('mouseleave', startAutoPlay);
 
@@ -670,6 +694,9 @@
         startAutoPlay();
       }
     });
+
+    // Initialize: ensure first slide is shown
+    showSlide(0);
 
     // Start autoplay
     startAutoPlay();
