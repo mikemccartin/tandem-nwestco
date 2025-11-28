@@ -109,9 +109,6 @@
     const header = document.querySelector('.site-header');
     if (!header) return;
 
-    let lastScroll = 0;
-    const scrollThreshold = 100;
-
     const handleScroll = debounce(() => {
       const currentScroll = window.pageYOffset;
 
@@ -122,18 +119,8 @@
         header.classList.remove('scrolled');
       }
 
-      // Hide/show header on scroll
-      if (currentScroll > scrollThreshold) {
-        if (currentScroll > lastScroll && !header.classList.contains('hidden')) {
-          // Scrolling down
-          header.classList.add('hidden');
-        } else if (currentScroll < lastScroll && header.classList.contains('hidden')) {
-          // Scrolling up
-          header.classList.remove('hidden');
-        }
-      }
-
-      lastScroll = currentScroll;
+      // Header stays persistent (always visible)
+      // Removed hide/show behavior for better UX
     }, 10);
 
     window.addEventListener('scroll', handleScroll, { passive: true });

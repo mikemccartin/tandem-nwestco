@@ -298,6 +298,7 @@
   text-align: center;
   color: var(--nwestco-white);
   padding: 2rem;
+  padding-top: 4rem;
   max-width: 1200px;
 }
 
@@ -1452,10 +1453,14 @@
 
 .contact-section .form-group input,
 .contact-section .form-group select,
-.contact-section .form-group textarea {
-  background: rgba(255, 255, 255, 0.95);
+.contact-section .form-group textarea,
+.contact-section input,
+.contact-section select,
+.contact-section textarea {
+  background: #ffffff;
+  background-color: #ffffff;
   color: var(--nwestco-neutral-900);
-  border: 2px solid rgba(255, 255, 255, 0.3);
+  border: 2px solid var(--nwestco-neutral-300);
 }
 
 .contact-section .form-group input:focus,
