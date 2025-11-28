@@ -96,7 +96,7 @@ select {
   padding: var(--input-padding-y) var(--input-padding-x);
 
   /* Visual */
-  background-color: var(--nwestco-white);
+  background-color: #ffffff;
   border: var(--input-border-width) solid var(--input-border-color);
   border-radius: var(--input-border-radius);
   box-shadow: var(--shadow-xs);
@@ -126,7 +126,7 @@ select:focus {
   outline: none;
   border-color: var(--input-border-color-focus);
   box-shadow: var(--shadow-focus);
-  background-color: var(--nwestco-white);
+  background-color: #ffffff;
 }
 
 /* Hover state */
