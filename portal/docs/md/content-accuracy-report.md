@@ -5,6 +5,40 @@ This document identifies which content in the prototypes is **verified from the 
 
 ---
 
+## INFORMATION ARCHITECTURE DECISIONS
+
+Based on the confusing experience with the current live site and using the CEO's M&A Strategy deck as a guide, we developed a simplified information architecture for the prototypes:
+
+**3 Markets:**
+- Fuel Systems
+- Car Wash
+- Environmental
+
+**7 Services:**
+- Design & Engineering
+- Installation & Construction
+- 24/7 Service & Maintenance
+- Remodels & Upgrades
+- Equipment Sales & Parts
+- Testing & Compliance
+- Training & Certification
+
+### How This Differs From Other Sources
+
+| Decision | Our Prototypes | CEO Deck | Current Live Site |
+|----------|---------------|----------|-------------------|
+| **Environmental** | Market | Service (in lifecycle wheel) | Mixed/unclear |
+| **Design & Engineering** | Service | Not shown | Not prominent |
+| **Training & Certification** | Service | Not shown | Has training page |
+| **Chemistry** | Not shown | Service | Not shown |
+| **Navigation Structure** | Market + Service based | Lifecycle wheel | Industry/market based (Petroleum, Car Wash, Automotive, Aviation, etc.) |
+
+The current live site organizes primarily by industry (Petroleum, Car Wash, Automotive, Aviation, Electrical, Industrial, Tanks), which creates confusion about what services are available for each market. Our prototype structure simplifies this by clearly separating **what markets they serve** from **what services they provide**.
+
+> **Client Decision Needed:** Validate that the 3 Markets + 7 Services structure aligns with business goals, or discuss adjustments based on the CEO deck's lifecycle wheel (which includes Chemistry and Environmental Solutions as services).
+
+---
+
 ## VERIFIED CONTENT (Safe to Use)
 
 ### Company Information
@@ -30,15 +64,16 @@ All verified from https://nwestco.com/branches/:
 | San Jose, CA | 800-339-9930 | 669-200-0678 | — |
 | Springdale, AR | 800-632-0031 | 479-756-6851 | 479-756-6963 |
 
-### Markets (from live site navigation)
+### Markets (prototype structure - see Information Architecture section above)
 - Fuel Systems
 - Car Wash
 - Environmental
 
-### Services (from live site navigation)
+### Services (prototype structure - see Information Architecture section above)
 - Design & Engineering
 - Installation & Construction
-- Service & Maintenance
+- 24/7 Service & Maintenance
+- Remodels & Upgrades
 - Equipment Sales & Parts
 - Testing & Compliance
 - Training & Certification
