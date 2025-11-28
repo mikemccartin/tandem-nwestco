@@ -21,6 +21,107 @@
 
   <!-- Option A Specific Styles -->
   <link rel="stylesheet" href="css/option-a.css">
+
+  <!-- ClearCompany Custom Styles - Option A Clean Theme -->
+  <style>
+    /* Force all text dark since ClearCompany uses light backgrounds */
+    #clearcompany-careers,
+    #clearcompany-careers * {
+      color: #333 !important;
+    }
+
+    /* Container styling */
+    #clearcompany-careers .cc-careers-container {
+      background: #fff !important;
+      font-family: 'Open Sans', sans-serif !important;
+      border-radius: 8px !important;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.1) !important;
+      padding: 2rem !important;
+    }
+
+    /* Job cards */
+    #clearcompany-careers .cc-job-title {
+      color: #25617c !important;
+      font-family: 'Lato', sans-serif !important;
+      font-weight: 700 !important;
+      font-size: 1.1rem !important;
+    }
+
+    #clearcompany-careers .cc-job-title:hover {
+      color: #709944 !important;
+    }
+
+    #clearcompany-careers .cc-secondary-label {
+      color: #666 !important;
+    }
+
+    /* Apply button */
+    #clearcompany-careers .cc-apply-button {
+      background: #25617c !important;
+      color: #fff !important;
+      border: none !important;
+      border-radius: 6px !important;
+      padding: 12px 28px !important;
+      font-family: 'Lato', sans-serif !important;
+      font-weight: 700 !important;
+      transition: all 0.2s ease !important;
+    }
+
+    #clearcompany-careers .cc-apply-button:hover {
+      background: #1d4d63 !important;
+      color: #fff !important;
+    }
+
+    /* Filter dropdowns */
+    #clearcompany-careers .cc-filter-dropdown,
+    #clearcompany-careers .cc-filter-keywords,
+    #clearcompany-careers input,
+    #clearcompany-careers select {
+      background: #f8f9fa !important;
+      border: 1px solid #ddd !important;
+      color: #333 !important;
+      border-radius: 6px !important;
+    }
+
+    #clearcompany-careers .cc-submit-search-button {
+      background: #709944 !important;
+      color: #fff !important;
+      border-radius: 6px !important;
+    }
+
+    /* Text elements */
+    #clearcompany-careers .cc-job-description-text,
+    #clearcompany-careers p,
+    #clearcompany-careers span,
+    #clearcompany-careers div {
+      color: #444 !important;
+    }
+
+    #clearcompany-careers .cc-job-description-title,
+    #clearcompany-careers h1,
+    #clearcompany-careers h2,
+    #clearcompany-careers h3,
+    #clearcompany-careers h4 {
+      color: #25617c !important;
+      font-weight: 700 !important;
+    }
+
+    /* Links */
+    #clearcompany-careers a {
+      color: #25617c !important;
+    }
+
+    #clearcompany-careers a:hover {
+      color: #709944 !important;
+    }
+
+    /* Ensure button text stays white */
+    #clearcompany-careers button,
+    #clearcompany-careers [class*="button"],
+    #clearcompany-careers [class*="btn"] {
+      color: #fff !important;
+    }
+  </style>
 </head>
 <body>
   <!-- Skip Navigation for Accessibility -->
@@ -1032,6 +1133,22 @@
             <p>Join us on our journey from $120M to $500M. Best-in-class training programs at our Portland and Spokane training centers. Career advancement opportunities as we expand across the Western United States.</p>
             <a href="#contact" class="btn btn-outline">View Open Positions →</a>
           </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Careers Section -->
+    <section id="careers" class="section">
+      <div class="container">
+        <h2 class="section-title text-center">Join Our Team</h2>
+        <p class="section-subtitle text-center">Build your career with a growing industry leader. 9 branches, 6 states, endless opportunity.</p>
+
+        <!-- ClearCompany Career Site Widget -->
+        <div id="clearcompany-careers" style="margin-top: 2rem; min-height: 400px;">
+          <script type="text/javascript" src="https://careers-content.clearcompany.com/js/v1/career-site.js?siteId=e51ad273-a922-475a-2abf-f489aa861bbb&contentSelector=%23clearcompany-careers"></script>
+          <noscript>
+            <p style="text-align: center; padding: 2rem;">Please enable JavaScript to view job listings, or visit <a href="https://nwestco.com/careers/">nwestco.com/careers</a></p>
+          </noscript>
         </div>
       </div>
     </section>
