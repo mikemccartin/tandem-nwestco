@@ -151,7 +151,7 @@ Instead of leading with "We're great," lead with "We understand your problems"
 │  │          24/7 Emergency Response                         │        │
 │  │                                                          │        │
 │  │       ✓ 2-4 hour average response time                   │        │
-│  │       ✓ 8 branches across Western US                     │        │
+│  │       ✓ 9 branches across Western US                     │        │
 │  │       ✓ Factory-certified technicians                    │        │
 │  │       ✓ Next-day parts delivery                          │        │
 │  │                                                          │        │
@@ -313,7 +313,7 @@ Instead of leading with "We're great," lead with "We understand your problems"
 │  │                      │  │  │  │  2. WESTERN US         │  │      │
 │  │                      │  │  │  │     COVERAGE           │  │      │
 │  │                      │  │  │  │                        │  │      │
-│  │                      │  │  │  │  8 branches across     │  │      │
+│  │                      │  │  │  │  9 branches across     │  │      │
 │  │                      │  │  │  │  6 states              │  │      │
 │  │                      │  │  │  │                        │  │      │
 │  │                      │  │  │  │  [Fade in on scroll]   │  │      │
@@ -434,7 +434,7 @@ Instead of leading with "We're great," lead with "We understand your problems"
 │  │  $120M company on path to    │  │  Join us on our journey from │ │
 │  │  $500M across Western US     │  │  $120M to $500M              │ │
 │  │                              │  │                              │ │
-│  │  360+ employees, 8 branches  │  │  Best-in-class training      │ │
+│  │  360+ employees, 9 branches  │  │  Best-in-class training      │ │
 │  │  across 6 states             │  │  programs                    │ │
 │  │                              │  │                              │ │
 │  │  [LEARN MORE ABOUT US →]     │  │  [VIEW OPEN POSITIONS →]     │ │
@@ -508,7 +508,7 @@ Instead of leading with "We're great," lead with "We understand your problems"
 │  ────────────────────────────────────────────────────────────────   │
 │                                                                       │
 │  📞 24/7 Emergency: 800-775-1892   |   📧 info@nwestco.com           │
-│  📍 8 Branches Across 6 Western States                               │
+│  📍 9 Branches Across 6 Western States                               │
 │                                                                       │
 │  🔗 LinkedIn  Facebook  YouTube                                      │
 │                                                                       │
@@ -756,7 +756,7 @@ Instead of leading with "We're great," lead with "We understand your problems"
 │ ├─────────────────────────────────┤│
 │ │ WESTERN US COVERAGE             ││
 │ │                                 ││
-│ │ 8 branches across 6 states for  ││
+│ │ 9 branches across 6 states for  ││
 │ │ rapid response                  ││
 │ └─────────────────────────────────┘│
 │                                     │
@@ -916,7 +916,7 @@ Instead of leading with "We're great," lead with "We understand your problems"
 │                                     │
 │ 📞 800-775-1892                      │
 │ 📧 info@nwestco.com                  │
-│ 📍 8 Branches, 6 States              │
+│ 📍 9 Branches, 6 States              │
 │                                     │
 │ 🔗 LinkedIn Facebook YouTube         │
 │                                     │
@@ -966,7 +966,7 @@ Instead of leading with "We're great," lead with "We understand your problems"
 **Format:** Comma separators for large numbers (360+, not 360)
 
 **Example:**
-- 8 Branches: Counts 0 → 8 (whole numbers)
+- 9 Branches: Counts 0 → 8 (whole numbers)
 - 360+ Employees: Counts 0 → 360 (whole numbers, + appears at end)
 - 90%: Counts 0 → 90 (percentage symbol appears at end)
 - 48 Hours: Counts 0 → 48 (whole numbers)

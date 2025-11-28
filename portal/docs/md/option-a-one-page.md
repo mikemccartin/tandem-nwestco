@@ -68,7 +68,7 @@ A modern single-page scrolling experience with anchor navigation. All major cont
 ║                      Western United States                           ║
 ║                                                                       ║
 ║  Complete lifecycle solutions delivered by expert technicians        ║
-║              from 8 branches spanning 6 states                       ║
+║              from 9 branches spanning 6 states                       ║
 ║                                                                       ║
 ║            [GET SERVICE NOW]  [BROWSE SERVICES]                      ║
 ║                                                                       ║
@@ -197,7 +197,7 @@ A modern single-page scrolling experience with anchor navigation. All major cont
 ║  │  CRADLE-TO-GRAVE     │ │  WESTERN US          │ │  TECHNICAL   │  ║
 ║  │  SOLUTIONS           │ │  COVERAGE            │ │  EXPERTISE   │  ║
 ║  │                      │ │                      │ │              │  ║
-║  │ Complete lifecycle   │ │ 8 branches across    │ │ Factory-     │  ║
+║  │ Complete lifecycle   │ │ 9 branches across    │ │ Factory-     │  ║
 ║  │ capabilities from    │ │ 6 states for rapid   │ │ certified    │  ║
 ║  │ design through       │ │ response             │ │ technicians  │  ║
 ║  │ maintenance          │ │                      │ │ on all major │  ║
@@ -241,13 +241,13 @@ A modern single-page scrolling experience with anchor navigation. All major cont
 ║ Background: Light gray (Neutral 50)                                  ║
 ╠══════════════════════════════════════════════════════════════════════╣
 ║                                                                       ║
-║              8 Branches Across 6 Western States                      ║
+║              9 Branches Across 6 Western States                      ║
 ║                                                                       ║
 ║  ┌───────────────────────────────────────────────────────────┐      ║
 ║  │                                                           │      ║
 ║  │               [INTERACTIVE MAP]                           │      ║
 ║  │                                                           │      ║
-║  │  Shows Western US with 8 branch pins:                    │      ║
+║  │  Shows Western US with 9 branch pins:                    │      ║
 ║  │  • Kalispell, MT (HQ)        • Boise, ID                 │      ║
 ║  │  • Spokane, WA               • Portland, OR              │      ║
 ║  │  • Billings, MT              • Fresno, CA                │      ║
@@ -326,7 +326,7 @@ A modern single-page scrolling experience with anchor navigation. All major cont
 │  │  $120M company on path to    │  │  Join us on our journey from │ │
 │  │  $500M across Western US     │  │  $120M to $500M              │ │
 │  │                              │  │                              │ │
-│  │  360+ employees, 8 branches  │  │  Best-in-class training      │ │
+│  │  360+ employees, 9 branches  │  │  Best-in-class training      │ │
 │  │  across 6 states             │  │  programs                    │ │
 │  │                              │  │                              │ │
 │  │  People-first culture        │  │  Career advancement          │ │
@@ -392,7 +392,7 @@ A modern single-page scrolling experience with anchor navigation. All major cont
 │  ────────────────────────────────────────────────────────────────   │
 │                                                                       │
 │  📞 24/7 Emergency: 800-775-1892   |   📧 info@nwestco.com           │
-│  📍 8 Branches Across 6 Western States                               │
+│  📍 9 Branches Across 6 Western States                               │
 │                                                                       │
 │  🔗 LinkedIn  Facebook  YouTube                                      │
 │                                                                       │
@@ -467,7 +467,7 @@ A modern single-page scrolling experience with anchor navigation. All major cont
 │ Western United States               │
 │                                     │
 │ Complete lifecycle solutions        │
-│ from 8 branches across 6 states     │
+│ from 9 branches across 6 states     │
 │                                     │
 │ [GET SERVICE NOW]                   │
 │ (Full-width button)                 │
@@ -629,7 +629,7 @@ A modern single-page scrolling experience with anchor navigation. All major cont
 │ │                                 ││
 │ │ WESTERN US COVERAGE             ││
 │ │                                 ││
-│ │ 8 branches across 6 states for  ││
+│ │ 9 branches across 6 states for  ││
 │ │ rapid response                  ││
 │ │                                 ││
 │ │ Average emergency response:     ││
@@ -889,7 +889,7 @@ A modern single-page scrolling experience with anchor navigation. All major cont
 
 ### Section 7: Geographic Coverage
 **Purpose:** Demonstrate regional presence and rapid response
-**Content:** Interactive map with 8 branch locations
+**Content:** Interactive map with 9 branch locations
 **Visual:** Map with pins, coverage area shading
 
 ### Section 8: Brand Partners

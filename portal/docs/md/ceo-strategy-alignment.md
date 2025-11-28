@@ -23,7 +23,7 @@ This document confirms how the CEO's M&A Strategy deck content has been incorpor
 | **Mission** | "Be Best-In-Class in everything we do" | "Best-in-class" language used for technicians, training, equipment, and service delivery |
 | **Proven Process** | Understand customers' real needs, Data-driven solutions, Flawless execution and "wow" experience | Pain point flip cards demonstrate understanding of customer challenges with data-driven solutions |
 | **Guarantee** | "Solutions that maximize customers' uptime and operating performance" | "90%+ of calls completed within 48 hours", "48-hour service guarantee", uptime-focused messaging |
-| **Supporting Elements** | Response times, Technical capabilities, Industry-leading brands, Coverage/geography | Stats sections: "2-4 hour average response time", "360+ factory-certified technicians", "8 branches across 6 Western states" |
+| **Supporting Elements** | Response times, Technical capabilities, Industry-leading brands, Coverage/geography | Stats sections: "2-4 hour average response time", "360+ factory-certified technicians", "9 branches across 6 Western states" |
 | **Customer Segmentation** | National/Regional/Local, Retail/Commercial/Industrial, Various verticals (C-Store, Gas Station, Car Wash, etc.) | Market pages address segment-specific needs; Service pages speak to different customer types |
 
 ---
@@ -74,7 +74,7 @@ All 3 prototype options incorporate:
 - [x] Core values in culture/careers content
 - [x] Proven Process in customer journey
 - [x] Guarantee messaging (response times, completion rates)
-- [x] Geographic coverage emphasis (8 branches, 6 states)
+- [x] Geographic coverage emphasis (9 branches, 6 states)
 - [x] Customer segment awareness in market pages
 
 ---

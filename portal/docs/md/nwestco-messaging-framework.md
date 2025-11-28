@@ -187,7 +187,7 @@ Eight branches across the Western US delivering 24/7 emergency service, preventa
 
 **Breakdown:**
 - **Target Audience:** Fuel retailers, car wash operators, and environmental compliance managers
-- **Geography:** Western United States (6 states, 8 branches)
+- **Geography:** Western United States (6 states, 9 branches)
 - **Point of Difference:** Complete lifecycle (not point solutions), geographic coverage, technical expertise
 - **Category:** Best-in-class partner (not "vendor" or "contractor")
 
@@ -242,7 +242,7 @@ From initial design and permitting to installation, ongoing maintenance, and eve
 From Washington to Arkansas, Montana to California - our eight strategically located branches provide rapid response across the Western United States. When your pumps go down or your car wash stops running, we're not three states away. We're local.
 
 **Geographic Footprint:**
-- **8 Branches:** Kalispell MT (HQ), Spokane WA, Billings MT, Boise ID, Portland OR, Springdale AR, Fresno CA, Bakersfield CA, San Jose CA
+- **9 Branches:** Kalispell MT (HQ), Spokane WA, Billings MT, Boise ID, Portland OR, Springdale AR, Fresno CA, Bakersfield CA, San Jose CA
 - **6 States Covered:** Washington, Oregon, Idaho, Montana, California, Arkansas
 - **Coverage Area:** Entire Western United States
 - **Response Time:** Average emergency response under 4 hours
@@ -909,7 +909,7 @@ What started as a regional fuel equipment provider has grown into the Western Un
 - First acquisition: [Year and Company]
 - Expansion to car wash services: [Year]
 - Training centers established: Portland [Year], Spokane [Year]
-- Current: $120M revenue, 350+ employees, 8 branches, 6 states
+- Current: $120M revenue, 350+ employees, 9 branches, 6 states
 - Vision: $500M in next 10 years through continued expansion
 
 **What Hasn't Changed:**
@@ -996,7 +996,7 @@ What started as a regional fuel equipment provider has grown into the Western Un
 **Scale & Coverage:**
 - $120M in annual revenue
 - 350+ technicians and support staff
-- 8 branches across 6 Western states
+- 9 branches across 6 Western states
 - 25+ years of industry experience
 - 500+ stations designed and built (if accurate)
 - 10,000+ service calls annually (estimate)
@@ -1274,7 +1274,7 @@ Complete fuel system, car wash, and environmental solutions - from design throug
 - **Operating performance:** Compliance, efficiency, customer satisfaction, profitability
 - **Comprehensive lifecycle:** Design → Install → Service → Upgrade → Comply → Train (one-stop shop)
 - **Expert technicians:** Factory-certified, 15+ years average experience, best-in-class training
-- **Western United States:** 8 branches, 6 states, rapid response, local presence
+- **Western United States:** 9 branches, 6 states, rapid response, local presence
 
 ### The Three Uniques (Non-Negotiable Differentiators)
 
@@ -1284,7 +1284,7 @@ Complete fuel system, car wash, and environmental solutions - from design throug
    - Single point of accountability from project start through 25+ years of ongoing service
 
 2. **Western US Geographic Coverage**
-   - 8 branches across 6 states (WA, OR, ID, MT, CA, AR)
+   - 9 branches across 6 states (WA, OR, ID, MT, CA, AR)
    - Average emergency response under 4 hours
    - Next-day parts delivery throughout Western US
    - Local presence with regional scale

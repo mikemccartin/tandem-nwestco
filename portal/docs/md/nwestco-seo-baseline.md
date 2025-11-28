@@ -46,7 +46,7 @@ Nwestco's current website suffers from fundamental technical SEO deficiencies th
 **Recommendations:**
 - Homepage: "Fuel System & Car Wash Equipment | Western US Service | Nwestco"
 - Petroleum: "Petroleum Equipment Installation & Service | WA, OR, ID, MT | Nwestco"
-- Car Wash: "Car Wash Equipment Sales & Service | 8 Locations | Nwestco"
+- Car Wash: "Car Wash Equipment Sales & Service | 9 Locations | Nwestco"
 
 #### Meta Descriptions (Score: 1/10)
 **Critical Gap:** Meta descriptions missing or not visible on:
@@ -59,7 +59,7 @@ Nwestco's current website suffers from fundamental technical SEO deficiencies th
 
 **Recommendation:** Write compelling 150-160 character descriptions emphasizing:
 - Service lifecycle coverage
-- Geographic reach (6 states, 8 branches)
+- Geographic reach (6 states, 9 branches)
 - Uptime guarantee
 - 24/7 availability
 
@@ -84,7 +84,7 @@ Nwestco's current website suffers from fundamental technical SEO deficiencies th
 
 **Missing Critical Schemas:**
 - LocalBusiness schema for headquarters (Spokane, WA)
-- LocalBusiness schemas for 8 branch locations
+- LocalBusiness schemas for 9 branch locations
 - Service schema for each service offering
 - Organization schema with aggregate ratings
 - Review schema (if applicable)
@@ -187,7 +187,7 @@ Nwestco's current website suffers from fundamental technical SEO deficiencies th
 
 #### Multi-Location Structure (Score: 1/10)
 **Major Issues:**
-- No individual landing pages for 8 branch locations
+- No individual landing pages for 9 branch locations
 - No LocalBusiness schema for any location
 - Branches page appears to be generic list (not indexed separately)
 
@@ -201,7 +201,7 @@ Nwestco's current website suffers from fundamental technical SEO deficiencies th
 
 #### Google Business Profile Management
 **Assessment:** Unable to verify from website audit, but recommend:
-- Verify all 8 locations have claimed GBP listings
+- Verify all 9 locations have claimed GBP listings
 - Ensure NAP consistency across all directories
 - Implement review generation strategy per location
 - Add service menus to each GBP listing
@@ -459,7 +459,7 @@ Nwestco's current website suffers from fundamental technical SEO deficiencies th
 
 ### Where Nwestco Has Advantages
 
-1. **Multi-Location Footprint:** 8 branches vs. competitors' single locations (untapped local SEO opportunity)
+1. **Multi-Location Footprint:** 9 branches vs. competitors' single locations (untapped local SEO opportunity)
 2. **Service Breadth:** Petroleum + car wash + industrial + aviation vs. competitors' narrower focus
 3. **Geographic Coverage:** 6-state Western US reach
 4. **Revenue Scale:** $120M company (should leverage size for credibility)
@@ -499,7 +499,7 @@ Nwestco's current website suffers from fundamental technical SEO deficiencies th
 - Generate dynamic XML sitemap including:
   - Homepage
   - All service pages
-  - All 8 location pages
+  - All 9 location pages
   - Brand/partner pages
   - Resources/blog posts
   - Submit to Google Search Console and Bing Webmaster Tools
@@ -533,7 +533,7 @@ Nwestco's current website suffers from fundamental technical SEO deficiencies th
 **Link Building Opportunities:**
 - Manufacturer partnerships (Gilbarco, OPW, Xerxes) should link to dealer/distributor pages
 - Industry associations (PEI, NACS)
-- Local chambers of commerce (8 locations)
+- Local chambers of commerce (9 locations)
 - Regional business directories
 - Press releases for acquisitions/expansion
 - Guest posts on industry blogs
@@ -545,7 +545,7 @@ Nwestco's current website suffers from fundamental technical SEO deficiencies th
 
 **To complete SEO baseline, request access to:**
 1. Google Search Console (current site)
-2. Google Business Profile (all 8 locations)
+2. Google Business Profile (all 9 locations)
 3. Google Analytics 4 (traffic and conversion data)
 4. Any previous SEO audit reports
 
@@ -585,7 +585,7 @@ Nwestco's current website suffers from fundamental technical SEO deficiencies th
 - Position 2-3: Directory listings
 - Good brand protection
 
-**Opportunity:** Nwestco should own local + service combinations for all 8 branch cities.
+**Opportunity:** Nwestco should own local + service combinations for all 9 branch cities.
 
 ---
 
@@ -600,7 +600,7 @@ Nwestco's current website suffers from fundamental technical SEO deficiencies th
 6. Remove Lorem ipsum placeholder text from About page
 
 ### High Priority (Launch Week)
-1. Implement LocalBusiness schema for all 8 locations
+1. Implement LocalBusiness schema for all 9 locations
 2. Add Service schema for each service offering
 3. Create geographic service pages (service + city combinations)
 4. Optimize Core Web Vitals (lazy loading, CDN, minification)
@@ -619,7 +619,7 @@ Nwestco's current website suffers from fundamental technical SEO deficiencies th
 1. Monthly content additions (blog posts, case studies)
 2. Quarterly competitor keyword monitoring
 3. Monthly Core Web Vitals monitoring
-4. Weekly review response management (8 locations)
+4. Weekly review response management (9 locations)
 5. Quarterly backlink acquisition campaigns
 6. Continuous conversion rate optimization
 
@@ -655,7 +655,7 @@ Despite current deficiencies, Nwestco has EXCEPTIONAL SEO opportunity due to:
 6. Clean slate with new website redesign
 
 **With proper SEO implementation, Nwestco could achieve:**
-- Top 3 rankings for [service] + [city] in all 8 branch markets
+- Top 3 rankings for [service] + [city] in all 9 branch markets
 - Page 1 visibility for "Western US" + [service] queries
 - 300-500% organic traffic increase within 12 months
 - 50-100 qualified leads per month from organic search
@@ -673,7 +673,7 @@ Despite current deficiencies, Nwestco has EXCEPTIONAL SEO opportunity due to:
 
 ### Highly Recommended
 - Ahrefs or SEMrush ($99-199/month) - Keyword research, competitor analysis, backlink monitoring
-- BrightLocal ($39-79/month) - Local SEO and citation management for 8 locations
+- BrightLocal ($39-79/month) - Local SEO and citation management for 9 locations
 - Schema.org Markup Generator (free)
 - GTmetrix (free/premium) - Performance monitoring
 
@@ -711,7 +711,7 @@ Despite current deficiencies, Nwestco has EXCEPTIONAL SEO opportunity due to:
    - Monitor for indexation issues
 
 5. **Post-Launch:**
-   - Local citation building for all 8 locations
+   - Local citation building for all 9 locations
    - Content marketing campaign launch
    - Review generation for all GBP listings
    - Monthly performance monitoring and optimization

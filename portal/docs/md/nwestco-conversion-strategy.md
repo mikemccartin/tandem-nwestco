@@ -1050,7 +1050,7 @@ New → Contacted → Qualified → Quote Sent → Won/Lost
 **Stats Bar (Mid-Page):**
 ```
 ┌─────────────────────────────────────────────────────┐
-│   360+              8 Branches        500+          │
+│   360+              9 Branches        500+          │
 │   Expert Techs      6 Western States  Projects      │
 │                                       Completed      │
 └─────────────────────────────────────────────────────┘
@@ -1239,7 +1239,7 @@ New → Contacted → Qualified → Quote Sent → Won/Lost
 
 **Company Scale:**
 - "360+ expert technicians"
-- "8 branches across 6 Western states"
+- "9 branches across 6 Western states"
 - "$120M in annual revenue"
 - "25+ years of combined experience"
 
@@ -2137,7 +2137,7 @@ DOWNLOAD RESOURCES:
 
 ─────────────────────────────────────────────────
 Nwestco | 800-775-1892 | info@nwestco.com
-8 Branches Across 6 Western States
+9 Branches Across 6 Western States
 Unsubscribe | Privacy Policy
 ─────────────────────────────────────────────────
 ```

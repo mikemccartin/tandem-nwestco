@@ -877,7 +877,7 @@ This task breakdown follows Tandem Theory's 5D Web Development Process. Each pha
 - [x] Build about us page
 - [x] Build careers page
 - [x] Build contact page
-- [x] Build 8 location pages
+- [x] Build 9 location pages
 - [x] Build footer (appears on all pages)
 - [x] Implement page templates for consistency
 - [x] Implement all forms with validation

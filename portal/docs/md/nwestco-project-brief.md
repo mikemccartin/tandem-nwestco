@@ -58,7 +58,7 @@ Logo and image files extracted from current site: `./current-site-assets/`
 - **Business**: Equipment/parts distributor and service provider for fuel systems and car washes
 - **Revenue**: $66M → $120M (current), targeting $500M in 10 years
 - **Structure**: PE-backed, acquisition-focused (6 acquisitions to date)
-- **Footprint**: 8 branches, 6 states (Western US)
+- **Footprint**: 9 branches, 6 states (Western US)
 - **Employees**: 360+
 - **Leadership**: New CEO Mike Ochoa (6 months in role)
 - **Referral**: Adam from Petro West

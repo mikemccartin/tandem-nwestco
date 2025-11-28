@@ -130,7 +130,7 @@ HOMEPAGE
 ║                      Western United States                           ║
 ║                                                                       ║
 ║  Complete lifecycle solutions delivered by expert technicians        ║
-║              from 8 branches spanning 6 states                       ║
+║              from 9 branches spanning 6 states                       ║
 ║                                                                       ║
 ║            [GET SERVICE NOW]  [BROWSE SERVICES]                      ║
 ║                                                                       ║
@@ -225,7 +225,7 @@ HOMEPAGE
 │  │  CRADLE-TO-GRAVE     │ │  WESTERN US          │ │  TECHNICAL   │  │
 │  │  SOLUTIONS           │ │  COVERAGE            │ │  EXPERTISE   │  │
 │  │                      │ │                      │ │              │  │
-│  │ Complete lifecycle   │ │ 8 branches across    │ │ Factory-     │  │
+│  │ Complete lifecycle   │ │ 9 branches across    │ │ Factory-     │  │
 │  │ capabilities from    │ │ 6 states for rapid   │ │ certified    │  │
 │  │ design through       │ │ response             │ │ technicians  │  │
 │  │ maintenance          │ │                      │ │              │  │
@@ -336,7 +336,7 @@ HOMEPAGE
 ║  │  $120M company on path to    │  │  Join us on our journey from │ ║
 ║  │  $500M across Western US     │  │  $120M to $500M              │ ║
 ║  │                              │  │                              │ ║
-║  │  360+ employees, 8 branches  │  │  Best-in-class training      │ ║
+║  │  360+ employees, 9 branches  │  │  Best-in-class training      │ ║
 ║  │  across 6 states             │  │  programs                    │ ║
 ║  │                              │  │                              │ ║
 ║  │  [LEARN MORE ABOUT US →]     │  │  [VIEW OPEN POSITIONS →]     │ ║
@@ -377,7 +377,7 @@ HOMEPAGE
 │                                 Training                             │
 │                                                                       │
 │  📞 24/7 Emergency: 800-775-1892   |   📧 info@nwestco.com           │
-│  📍 8 Branches Across 6 Western States                               │
+│  📍 9 Branches Across 6 Western States                               │
 │                                                                       │
 │  🔗 LinkedIn  Facebook  YouTube                                      │
 │                                                                       │
@@ -593,7 +593,7 @@ HOMEPAGE
 │  ┌──────────────────┐ ┌──────────────────┐ ┌──────────────────┐    │
 │  │ One-Stop Shop    │ │ Rapid Response   │ │ Expert Technicians│    │
 │  │                  │ │                  │ │                   │    │
-│  │ No vendor        │ │ 8 branches,      │ │ Factory-certified │    │
+│  │ No vendor        │ │ 9 branches,      │ │ Factory-certified │    │
 │  │ coordination     │ │ fast service     │ │ on all brands     │    │
 │  └──────────────────┘ └──────────────────┘ └──────────────────┘    │
 │                                                                       │
@@ -606,7 +606,7 @@ HOMEPAGE
 ║                                                                       ║
 ║        Serving Fuel Systems Across 6 Western States                  ║
 ║                                                                       ║
-║  [Map with 8 branches highlighted]                                   ║
+║  [Map with 9 branches highlighted]                                   ║
 ║                                                                       ║
 ║                 [FIND YOUR NEAREST BRANCH →]                         ║
 ║                                                                       ║
@@ -737,7 +737,7 @@ HOMEPAGE
 │        What Makes Nwestco's Service & Maintenance Best-in-Class     │
 │                                                                       │
 │  ┌──────────────────┐ ┌──────────────────┐ ┌──────────────────┐    │
-│  │ 8 Branches       │ │ Factory-Certified│ │ Next-Day Parts   │    │
+│  │ 9 Branches       │ │ Factory-Certified│ │ Next-Day Parts   │    │
 │  │                  │ │ Technicians      │ │                  │    │
 │  │ Average response │ │ Trained on all   │ │ Extensive parts  │    │
 │  │ under 4 hours    │ │ major brands     │ │ inventory        │    │

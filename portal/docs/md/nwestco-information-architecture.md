@@ -256,7 +256,7 @@ NWESTCO.COM
 │    ├─ Section: Lifecycle Service Wheel
 │    ├─ Section: Why Nwestco (3 Uniques)
 │    ├─ Section: 48-Hour Service Commitment
-│    ├─ Section: 8 Branches Across 6 States (Map)
+│    ├─ Section: 9 Branches Across 6 States (Map)
 │    ├─ Section: 40+ Premium Brand Partners
 │    ├─ Section: Customer Success Stories (3 testimonials)
 │    └─ CTA: Get Service Now / Request Quote
@@ -341,7 +341,7 @@ NWESTCO.COM
 │    │    ├─ Emergency Service: 24/7 hotline, 2-hour response target, rapid dispatch
 │    │    ├─ Preventative Maintenance: Scheduled programs, reduce downtime, extend equipment life
 │    │    ├─ Repair Services: Troubleshooting, parts replacement, system optimization
-│    │    ├─ Coverage: 8 branches across Western US for fast response
+│    │    ├─ Coverage: 9 branches across Western US for fast response
 │    │    ├─ Technician Expertise: Factory-certified, manufacturer-trained
 │    │    ├─ Response Commitment: 48-hour completion for 90%+ of service calls
 │    │    └─ CTA: Request Service / Emergency Hotline
@@ -390,7 +390,7 @@ NWESTCO.COM
 │    ├─ Overview: What makes Nwestco different
 │    ├─ The 3 Uniques:
 │    │   ├─ 1. Cradle-to-Grave Solutions (lifecycle capabilities)
-│    │   ├─ 2. Western US Coverage (8 branches, 6 states, fast response)
+│    │   ├─ 2. Western US Coverage (9 branches, 6 states, fast response)
 │    │   └─ 3. Technical Expertise (best-in-class training, certified techs)
 │    ├─ 48-Hour Service Commitment (90%+ calls completed within 48 hours)
 │    ├─ 40+ Premium Brand Partnerships (authorized service, factory training)
@@ -420,7 +420,7 @@ NWESTCO.COM
 │    └─ CTA: Start Your Project
 │
 ├─── ABOUT (/about/)
-│    ├─ Company Overview: $120M company, 8 branches, 360+ employees
+│    ├─ Company Overview: $120M company, 9 branches, 360+ employees
 │    ├─ Mission & Values: Best-in-class, people-first, customer-focus
 │    ├─ Company History:
 │    │   ├─ Growth story: $66M → $120M → targeting $500M
@@ -433,7 +433,7 @@ NWESTCO.COM
 │    │   └─ Board/investor relationships (PE-backed platform)
 │    ├─ Company Culture: Work hard, be nice, have fun
 │    ├─ Industry Recognition: Awards, certifications, partnerships
-│    ├─ Community Involvement: Local presence in 8 branch communities
+│    ├─ Community Involvement: Local presence in 9 branch communities
 │    └─ CTA: Join Our Team / Partner With Us
 │
 ├─── CAREERS (/careers/)
@@ -463,7 +463,7 @@ NWESTCO.COM
 │    └─ CTA: Apply Now / Submit Resume
 │
 ├─── BRANCHES (/branches/)
-│    ├─ Overview: "8 Branches Across 6 Western States - We're Where You Need Us"
+│    ├─ Overview: "9 Branches Across 6 Western States - We're Where You Need Us"
 │    ├─ Interactive Map: Coverage area visualization with branch locations
 │    ├─ Branch Listings:
 │    │   ├─ Kalispell, Montana (Headquarters)
@@ -562,7 +562,7 @@ NWESTCO.COM
 │    │   ├─ Main Hotline: 800-775-1892 (24/7 Service Available)
 │    │   ├─ Email: info@nwestco.com
 │    │   ├─ Hours: Monday-Friday 8am-5pm (Emergency service 24/7)
-│    │   └─ Branches: [Link to Branches page with all 8 locations]
+│    │   └─ Branches: [Link to Branches page with all 9 locations]
 │    │
 │    └─ Alternative Contact Methods: Email, phone, branch locations
 │
@@ -598,7 +598,7 @@ NWESTCO.COM
      ├─ Contact Strip:
      │   ├─ Emergency: 800-775-1892 (24/7)
      │   ├─ Email: info@nwestco.com
-     │   └─ 8 Branches Across 6 Western States
+     │   └─ 9 Branches Across 6 Western States
      │
      ├─ Social Media: LinkedIn, Facebook, YouTube (if applicable)
      │
@@ -1086,7 +1086,7 @@ SUCCESS METRICS:
 
 **Conversion Barriers to Remove:**
 - Uncertainty about capabilities (solved with detailed service pages, lifecycle wheel)
-- Lack of geographic coverage (solved with branch map, "8 branches across 6 states")
+- Lack of geographic coverage (solved with branch map, "9 branches across 6 states")
 - Price concerns (solved with "affordable" positioning, but no specific pricing - requires quote)
 - Trust deficit (solved with manufacturer partnerships, certifications, client logos)
 
@@ -1158,7 +1158,7 @@ SUCCESS METRICS:
 | **Service Page** | 7 lifecycle services | 7 pages | High |
 | **Standard Content** | About, Why Nwestco, Resources | 3 pages | High |
 | **Projects/Portfolio** | Projects gallery, Case Studies | 2-8 pages | High |
-| **Branch Location** | 8 branch detail pages | 8 pages | Medium |
+| **Branch Location** | 9 branch detail pages | 8 pages | Medium |
 | **Careers** | Careers landing + job listings | 1-2 pages | High |
 | **Contact/Forms** | Contact page, form confirmations | 2 pages | Critical |
 
@@ -1178,7 +1178,7 @@ SUCCESS METRICS:
    - Full-width background image (real photography: technicians, trucks, or facilities)
    - Dark overlay for text legibility
    - Headline: "Maximize Your Uptime - Fuel Systems & Car Wash Solutions Across the Western US"
-   - Subheadline: "Complete lifecycle solutions delivered by expert technicians from 8 branches"
+   - Subheadline: "Complete lifecycle solutions delivered by expert technicians from 9 branches"
    - Primary CTA: [GET SERVICE NOW] (blue)
    - Secondary CTA: [BROWSE SERVICES] (outline)
    - Tertiary: "24/7 Emergency: 800-775-1892" (text link)
@@ -1231,7 +1231,7 @@ SUCCESS METRICS:
        - "One partner eliminates vendor coordination headaches"
        - "Turn-key projects delivered on time and on budget"
      - Column 2: Western US Coverage (icon: map pin)
-       - "8 branches across 6 states for rapid response"
+       - "9 branches across 6 states for rapid response"
        - "Average emergency response: under 4 hours"
        - "Local presence with regional scale"
      - Column 3: Technical Expertise (icon: certification badge)
@@ -1253,7 +1253,7 @@ SUCCESS METRICS:
    - Background: Nwestco Blue with white text
 
 7. **Geographic Coverage Section**
-   - Headline: "8 Branches Across 6 Western States"
+   - Headline: "9 Branches Across 6 Western States"
    - Interactive map showing branch locations (or static map with pins)
    - States covered: Washington, Oregon, Idaho, Montana, California, Arkansas
    - CTA: [FIND YOUR NEAREST BRANCH →]
@@ -1431,7 +1431,7 @@ SUCCESS METRICS:
     - Headline: "Why {Market} Operators Choose Nwestco"
     - Three-column benefits:
       - Column 1: One-Stop Shop (no vendor coordination)
-      - Column 2: Rapid Response (8 branches, fast service)
+      - Column 2: Rapid Response (9 branches, fast service)
       - Column 3: Expert Technicians (factory-certified, experienced)
     - Market-specific benefit examples
     - Background: Nwestco Blue with white text
@@ -1511,7 +1511,7 @@ SUCCESS METRICS:
    - Three-column differentiators
    - Examples:
      - Design: "25+ years regulatory expertise means faster permit approvals"
-     - Service: "8 branches across Western US means under 4-hour response"
+     - Service: "9 branches across Western US means under 4-hour response"
      - Training: "Portland and Spokane training centers with hands-on equipment"
    - Background: White
 
@@ -1735,7 +1735,7 @@ SUCCESS METRICS:
 **Purpose:** Detail page for each branch location
 
 **Use Cases:**
-- 8 branch detail pages (Kalispell, Spokane, Billings, Boise, Portland, Springdale, Fresno, Bakersfield, San Jose)
+- 9 branch detail pages (Kalispell, Spokane, Billings, Boise, Portland, Springdale, Fresno, Bakersfield, San Jose)
 
 **Sections:**
 
@@ -1829,7 +1829,7 @@ SUCCESS METRICS:
 6. **Open Positions**
    - Headline: "Open Positions"
    - Filter options:
-     - By Location: All / {8 branch locations}
+     - By Location: All / {9 branch locations}
      - By Department: All / Technicians / Sales / Operations / Admin
      - By Job Type: All / Full-Time / Part-Time / Apprentice
    - Job listing cards:
@@ -1920,7 +1920,7 @@ SUCCESS METRICS:
    - CTA: [VIEW ALL BRANCH LOCATIONS]
 
 5. **Map (optional)**
-   - Coverage area map with 8 branch locations
+   - Coverage area map with 9 branch locations
    - Links to branch detail pages
 
 **Confirmation Page Sections:**

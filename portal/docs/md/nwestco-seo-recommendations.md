@@ -66,7 +66,7 @@ Service Detail Pages:
 ├── /car-wash-equipment/service/
 ├── /car-wash-equipment/chemicals/
 
-Location Pages (8 Branch Locations):
+Location Pages (9 Branch Locations):
 ├── /locations/spokane-wa/
 ├── /locations/seattle-wa/
 ├── /locations/portland-or/
@@ -119,7 +119,7 @@ Resources:
 
 **Priority 1: LocalBusiness Schema (CRITICAL)**
 
-Implement LocalBusiness schema for all 8 branch locations:
+Implement LocalBusiness schema for all 9 branch locations:
 
 ```json
 {
@@ -194,7 +194,7 @@ Implement at organization level (homepage):
   "alternateName": "Northwest Equipment Company",
   "url": "https://nwestco.com",
   "logo": "https://nwestco.com/images/nwestco-logo.png",
-  "description": "Full-service petroleum equipment and car wash solutions across Western US. 8 locations providing installation, maintenance, and compliance services.",
+  "description": "Full-service petroleum equipment and car wash solutions across Western US. 9 locations providing installation, maintenance, and compliance services.",
   "foundingDate": "[YEAR]",
   "numberOfEmployees": "360+",
   "slogan": "Maximize Your Uptime",
@@ -584,7 +584,7 @@ Based on technical audit, predicted performance:
    - Each service page links back to hub and related services
 
 2. **Location Hub Model**
-   - `/locations/` page links to all 8 branch pages
+   - `/locations/` page links to all 9 branch pages
    - Each branch page links to service pages with location-specific anchors
    - Example: "Learn more about [fuel system installation in Spokane](/fuel-systems/spokane-wa/)"
 
@@ -598,7 +598,7 @@ Based on technical audit, predicted performance:
    "Our fuel system installation services include ground-up construction
    of new convenience stores, equipment upgrades for existing stations,
    and compliance testing to meet EPA requirements. We serve the Western
-   US from 8 locations including Spokane, Seattle, and Portland."
+   US from 9 locations including Spokane, Seattle, and Portland."
 
    Links in above:
    - "fuel system installation services" → /fuel-systems/installation/
@@ -619,7 +619,7 @@ Based on technical audit, predicted performance:
    - Example: Home > Fuel Systems > Installation > Spokane WA
 
 6. **Site-Wide Footer Links**
-   - All 8 locations linked in footer
+   - All 9 locations linked in footer
    - All primary services linked in footer
    - Important pages: About, Careers, Contact, Blog
 
@@ -702,7 +702,7 @@ Based on technical audit, predicted performance:
 
 **Multiple Sitemaps (Optional for Large Sites):**
 - pages-sitemap.xml (service and company pages)
-- locations-sitemap.xml (8 location pages)
+- locations-sitemap.xml (9 location pages)
 - blog-sitemap.xml (blog posts)
 - index-sitemap.xml (master sitemap linking to others)
 
@@ -957,7 +957,7 @@ Emphasize unique value proposition
 **Title:** `Fuel System & Car Wash Equipment | Western US | Nwestco`
 (56 characters)
 
-**Meta Description:** `Turnkey petroleum equipment & car wash solutions across 6 Western states. 8 locations, 24/7 service, maximize your uptime. Request service today.`
+**Meta Description:** `Turnkey petroleum equipment & car wash solutions across 6 Western states. 9 locations, 24/7 service, maximize your uptime. Request service today.`
 (158 characters)
 
 ---
@@ -969,7 +969,7 @@ Emphasize unique value proposition
 **Title:** `Fuel System Installation & Service | Western US | Nwestco`
 (58 characters)
 
-**Meta Description:** `Complete fuel system lifecycle solutions: installation, maintenance, compliance testing. Serving WA, OR, ID, MT, AK from 8 locations. Call 800-775-1892.`
+**Meta Description:** `Complete fuel system lifecycle solutions: installation, maintenance, compliance testing. Serving WA, OR, ID, MT, AK from 9 locations. Call 800-775-1892.`
 (156 characters)
 
 ---
@@ -1018,7 +1018,7 @@ Emphasize unique value proposition
 
 ---
 
-**Template for All 8 Location Pages:**
+**Template for All 9 Location Pages:**
 
 ```
 Title: [City] Fuel System & Car Wash Service | Nwestco [City]
@@ -1049,7 +1049,7 @@ Description: Full-service petroleum equipment & car wash contractor in [City], [
 ```html
 <h1>Western US Fuel System & Car Wash Equipment Solutions</h1>
 
-<h2>Turnkey Lifecycle Services from 8 Locations</h2>
+<h2>Turnkey Lifecycle Services from 9 Locations</h2>
 [Content about service breadth and geographic coverage]
 
 <h2>Fuel System Installation, Service & Compliance</h2>
@@ -1063,7 +1063,7 @@ Description: Full-service petroleum equipment & car wash contractor in [City], [
   <h3>Maintenance Programs</h3>
   <h3>Chemical Delivery</h3>
 
-<h2>Serving Western US from 8 Branch Locations</h2>
+<h2>Serving Western US from 9 Branch Locations</h2>
   <h3>Washington | Oregon | Idaho | Montana | Alaska</h3>
 
 <h2>Maximize Your Uptime with Nwestco</h2>
@@ -1483,7 +1483,7 @@ TOTAL: 600-800 words (all unique per location)
    Answer: UST installation costs vary based on tank size, site conditions, and location. Typical range: $50,000-$150,000 for complete systems. Request a detailed quote for your specific project.
 
 5. **What is your service area for fuel system installation?**
-   Answer: We serve the Western US from 8 locations: Spokane, Seattle, Portland, Boise, and 4 Montana branches. Our service reach covers WA, OR, ID, MT, AK, and portions of WY.
+   Answer: We serve the Western US from 9 locations: Spokane, Seattle, Portland, Boise, and 4 Montana branches. Our service reach covers WA, OR, ID, MT, AK, and portions of WY.
 
 [Continue with 10-15 FAQs per service page]
 
@@ -1698,8 +1698,8 @@ TOTAL: 600-800 words (all unique per location)
    **Placement:** Header, service pages, location pages
 
 5. **Geographic Coverage**
-   - Map of 8 branch locations
-   - "6 states, 8 locations" messaging
+   - Map of 9 branch locations
+   - "6 states, 9 locations" messaging
    - Service area visualization
 
    **Placement:** Homepage, Locations page
@@ -1823,7 +1823,7 @@ TOTAL: 600-800 words (all unique per location)
 
 ### 3.1 Google Business Profile Optimization
 
-#### Recommendation: Comprehensive GBP Management for All 8 Locations
+#### Recommendation: Comprehensive GBP Management for All 9 Locations
 
 **Priority:** CRITICAL (Launch Week)
 
@@ -2025,7 +2025,7 @@ Phone: (509) XXX-XXXX or 800-775-1892
 Website: https://nwestco.com/locations/spokane-wa/
 ```
 
-**Priority Directories (Submit All 8 Locations):**
+**Priority Directories (Submit All 9 Locations):**
 
 **Tier 1 - Essential (Do First):**
 1. Google Business Profile (completed above)
@@ -2069,7 +2069,7 @@ Website: https://nwestco.com/locations/spokane-wa/
 - Automated citation building and monitoring
 - NAP consistency tracking
 - Multi-location management
-- Best for: DIY management of 8 locations
+- Best for: DIY management of 9 locations
 
 **Option 2: Yext ($500-1,000/month)**
 - Enterprise citation management
@@ -2088,7 +2088,7 @@ Website: https://nwestco.com/locations/spokane-wa/
 
 **Citation Audit Checklist:**
 
-- [ ] All 8 locations have consistent NAP format
+- [ ] All 9 locations have consistent NAP format
 - [ ] Phone numbers are click-to-call format where possible
 - [ ] Website URLs point to specific location pages
 - [ ] Business categories are consistent across directories
@@ -2115,7 +2115,7 @@ Website: https://nwestco.com/locations/spokane-wa/
 
 **Local Link Opportunities:**
 
-1. **Local Chambers of Commerce (8 locations)**
+1. **Local Chambers of Commerce (9 locations)**
    - Join chamber in each branch city
    - Get listed on chamber member directory (usually dofollow link)
    - Participate in chamber events
@@ -2140,7 +2140,7 @@ Website: https://nwestco.com/locations/spokane-wa/
    - Local news coverage for expansions/acquisitions
 
 5. **Sponsorships & Community Involvement**
-   - Sponsor local events in 8 branch cities
+   - Sponsor local events in 9 branch cities
    - Little league teams, 5K runs, community festivals
    - Trade show participation
    - Industry conference sponsorships
@@ -2187,7 +2187,7 @@ Subject: Nwestco Dealer Locator Listing Request
 
 Hi [Manufacturer Contact],
 
-Nwestco is an authorized distributor of [Brand] petroleum equipment serving the Western US from 8 locations. We'd like to request that all our branch locations be added to the [Brand] dealer locator on [website].
+Nwestco is an authorized distributor of [Brand] petroleum equipment serving the Western US from 9 locations. We'd like to request that all our branch locations be added to the [Brand] dealer locator on [website].
 
 Our locations:
 • Spokane, WA: https://nwestco.com/locations/spokane-wa/
@@ -2317,7 +2317,7 @@ Thank you,
 - fuel system service [city]
 - petroleum equipment [city]
 - car wash equipment [city]
-(x8 locations = 24 keywords)
+(x9 locations = 24 keywords)
 
 **Regional Keywords (10):**
 - fuel system service western us
@@ -2476,7 +2476,7 @@ Evaluate all pages for:
 1. URL structure planning
 2. Meta titles and descriptions for all pages
 3. Heading structure optimization
-4. LocalBusiness schema for 8 locations
+4. LocalBusiness schema for 9 locations
 5. Organization schema on homepage
 6. Image alt text for all images
 7. Core Web Vitals optimization
@@ -2546,7 +2546,7 @@ Evaluate all pages for:
 - Includes: content, local SEO, technical optimization, reporting
 
 ### Photography
-- Professional photos of all 8 locations: $2,000-4,000 one-time
+- Professional photos of all 9 locations: $2,000-4,000 one-time
 - Ongoing project photography: $500/month or use internal team
 
 ---
@@ -2587,7 +2587,7 @@ Based on the comprehensive analysis, here are the THREE most impactful recommend
 **Why:** Nwestco's 8-branch footprint is an untapped competitive advantage. Competitors are mostly single-location businesses. By dominating local search in all 8 markets, Nwestco can capture high-intent, high-value leads that competitors can't reach.
 
 **Implementation:**
-- Create unique, locally-optimized location pages for all 8 branches
+- Create unique, locally-optimized location pages for all 9 branches
 - Implement LocalBusiness schema with location-specific NAP
 - Optimize Google Business Profiles aggressively (50+ reviews per location goal)
 - Build 200+ local citations with consistent NAP

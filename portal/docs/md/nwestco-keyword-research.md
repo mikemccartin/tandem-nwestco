@@ -16,7 +16,7 @@ This keyword research identifies 250+ keyword opportunities across Nwestco's ser
 **Tier 1 - High Value, Achievable (Target First 6 Months):**
 - 40 keywords with local intent and moderate competition
 - Estimated combined monthly searches: 8,000-12,000
-- Focus: [Service] + [City] combinations for 8 branch locations
+- Focus: [Service] + [City] combinations for 9 branch locations
 
 **Tier 2 - Medium Value, Competitive (Months 6-12):**
 - 80 keywords with regional intent and higher competition
@@ -549,7 +549,7 @@ Due to limitations in accessing proprietary keyword tools during this audit, est
 - "Las Vegas fuel training" (could offer Spokane training)
 
 **Nwestco Unique Positioning Keywords (Untapped):**
-- "8 location fuel service" ✓ Unique advantage
+- "9 location fuel service" ✓ Unique advantage
 - "multi-state petroleum contractor western us" ✓ Geographic differentiation
 - "lifecycle fuel solutions" ✓ Service breadth
 - "cradle to grave fuel system service" ✓ Unique value prop
@@ -622,7 +622,7 @@ Due to limitations in accessing proprietary keyword tools during this audit, est
 5. UST testing [city] (8 variations)
 6. car wash installation [city] (8 variations)
 
-**Total: 48 location-specific keywords (6 services × 8 cities)**
+**Total: 49 location-specific keywords (6 services × 8 cities)**
 
 ### Short-Term Focus (Months 4-6)
 
@@ -661,7 +661,7 @@ Due to limitations in accessing proprietary keyword tools during this audit, est
 - multi-location fuel equipment service
 
 **Secondary Keywords:**
-- 8 locations western us
+- 9 locations western us
 - fuel and car wash combined services
 - petroleum equipment installation maintenance
 
@@ -773,7 +773,7 @@ Due to limitations in accessing proprietary keyword tools during this audit, est
 
 **NAP Consistency Across 200+ Directories:**
 Business Name: Nwestco
-Address: [Specific to each of 8 locations]
+Address: [Specific to each of 9 locations]
 Phone: [Location-specific or toll-free]
 Website: nwestco.com/locations/[city-state]
 
@@ -781,10 +781,10 @@ Website: nwestco.com/locations/[city-state]
 - Petroleum Equipment Institute (PEI) directory
 - NACS (National Association of Convenience Stores)
 - State petroleum associations
-- Local chambers of commerce (8 locations)
-- BBB listings (8 locations)
-- Google Business Profile (8 locations)
-- Yelp for Business (8 locations)
+- Local chambers of commerce (9 locations)
+- BBB listings (9 locations)
+- Google Business Profile (9 locations)
+- Yelp for Business (9 locations)
 - Industry-specific directories (Western Petroleum Marketers Association, etc.)
 
 ---
@@ -848,7 +848,7 @@ Website: nwestco.com/locations/[city-state]
 | fuel system service spokane | Low | 10 | Local HQ advantage, weak competition |
 | petroleum contractor idaho | Low | 9 | Limited Idaho competitors |
 | car wash installation montana | Low | 9 | Very low competition in Montana |
-| 8 location fuel service western us | Low | 9 | Unique differentiator, no competition |
+| 9 location fuel service western us | Low | 9 | Unique differentiator, no competition |
 | turnkey fuel and car wash | Low | 10 | Combined service = unique position |
 | lifecycle petroleum services | Low | 9 | Strategic messaging, untapped term |
 | cradle to grave fuel system | Low | 9 | Value prop differentiation |
@@ -930,21 +930,21 @@ Website: nwestco.com/locations/[city-state]
 
 Based on business value, achievability, and search volume, here are the TOP 10 keyword opportunities Nwestco should target immediately:
 
-### 1. Fuel System Service + [8 Branch Cities]
+### 1. Fuel System Service + [9 Branch Cities]
 **Example:** "fuel system service spokane"
 - **Volume:** 160-320 combined (20-40 each)
 - **Competition:** Low
 - **Business Value:** 10/10
 - **Rationale:** Direct service inquiry, local intent, weak competition, aligns with 8-location advantage
 
-### 2. Petroleum Equipment + [8 Branch Cities]
+### 2. Petroleum Equipment + [9 Branch Cities]
 **Example:** "petroleum equipment spokane"
 - **Volume:** 80-240 combined (10-30 each)
 - **Competition:** Low
 - **Business Value:** 9/10
 - **Rationale:** Sales + service intent, establishes local supplier authority
 
-### 3. Car Wash Installation + [8 Branch Cities]
+### 3. Car Wash Installation + [9 Branch Cities]
 **Example:** "car wash installation spokane"
 - **Volume:** 80-160 combined (10-20 each)
 - **Competition:** Low
@@ -1033,4 +1033,4 @@ Based on business value, achievability, and search volume, here are the TOP 10 k
 
 **End of Keyword Research Document**
 
-*This keyword research provides 250+ opportunities organized by priority, geography, and business value. Implementation should begin with Tier 1 local keywords for immediate competitive advantage in 8 branch markets.*
+*This keyword research provides 250+ opportunities organized by priority, geography, and business value. Implementation should begin with Tier 1 local keywords for immediate competitive advantage in 9 branch markets.*
