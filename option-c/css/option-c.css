@@ -1457,10 +1457,10 @@
 .contact-section input,
 .contact-section select,
 .contact-section textarea {
-  background: #ffffff;
-  background-color: #ffffff;
-  color: var(--nwestco-neutral-900);
-  border: 2px solid var(--nwestco-neutral-300);
+  background: #ffffff !important;
+  background-color: #ffffff !important;
+  color: var(--nwestco-neutral-900) !important;
+  border: 2px solid var(--nwestco-neutral-300) !important;
 }
 
 .contact-section .form-group input:focus,
