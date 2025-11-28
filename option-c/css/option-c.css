@@ -1456,11 +1456,20 @@
 .contact-section .form-group textarea,
 .contact-section input,
 .contact-section select,
-.contact-section textarea {
+.contact-section textarea,
+.contact-section .contact-form-wrapper input,
+.contact-section .contact-form-wrapper select,
+.contact-section .contact-form-wrapper textarea,
+#contact input,
+#contact select,
+#contact textarea,
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
   background: #ffffff !important;
   background-color: #ffffff !important;
-  color: var(--nwestco-neutral-900) !important;
-  border: 2px solid var(--nwestco-neutral-300) !important;
+  color: #1a1a1a !important;
+  border: 2px solid #d1d5db !important;
 }
 
 .contact-section .form-group input:focus,
