@@ -1111,6 +1111,79 @@ body {
 
 
 /* ============================================================
+   CORE VALUES SECTION
+   ============================================================ */
+
+.values-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-6);
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@media (min-width: 640px) {
+  .values-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .values-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1280px) {
+  .values-grid {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+.value-item {
+  background: var(--nwestco-white);
+  padding: var(--space-8);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  text-align: center;
+  transition: all var(--transition-normal);
+}
+
+.value-item:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-xl);
+}
+
+.value-number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  background: var(--nwestco-green);
+  color: var(--nwestco-white);
+  border-radius: 50%;
+  font-size: var(--text-xl);
+  font-weight: var(--font-bold);
+  margin-bottom: var(--space-4);
+}
+
+.value-item h3 {
+  font-size: var(--text-lg);
+  color: var(--nwestco-neutral-700);
+  margin-bottom: var(--space-3);
+  font-weight: var(--font-bold);
+}
+
+.value-item p {
+  color: var(--nwestco-neutral-600);
+  line-height: var(--leading-relaxed);
+  font-size: var(--text-sm);
+  margin: 0;
+}
+
+
+/* ============================================================
    CONTACT SECTION
    ============================================================ */
 
