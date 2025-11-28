@@ -135,6 +135,27 @@ Any quotes or testimonials are **COMPLETELY FABRICATED** and should not be used.
 
 ---
 
+## PROTOTYPE LIMITATIONS
+
+> **Note:** These prototypes are for design review purposes. Some functionality will not work in the prototype environment.
+
+### Contact Forms Do Not Work
+All contact forms in the prototypes are **non-functional**. They are HTML/CSS only and are not connected to any backend or email system. In production, forms will need to be connected to:
+- Email notification system
+- CRM integration (if applicable)
+- Form validation and spam protection
+
+### Careers Page Has Known Bugs
+The careers pages integrate with Nwestco's actual **ClearCompany** job listing system. In the prototype environment:
+- Job listings load but may display inconsistently
+- The "Virtual Recruiter" chatbot appears but **will not function** (domain-restricted)
+- Styling may not fully apply to all ClearCompany elements
+- Apply buttons may not work correctly outside production domain
+
+**In production:** Once deployed to the live nwestco.com domain, the ClearCompany integration should work fully as it does on the current live site.
+
+---
+
 ## SAFE TO PUBLISH AS-IS
 
 - Navigation structure
