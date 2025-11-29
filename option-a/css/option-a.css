@@ -585,11 +585,6 @@ body {
   flex-grow: 1;
 }
 
-.market-icon {
-  font-size: 3rem;
-  margin-bottom: var(--space-4);
-}
-
 .market-card h3 {
   font-size: var(--text-xl);
   color: var(--nwestco-neutral-700);
