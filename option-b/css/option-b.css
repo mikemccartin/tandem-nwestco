@@ -544,12 +544,6 @@ section h3 {
   color: var(--nwestco-neutral-700);
 }
 
-.card-icon {
-  font-size: var(--text-4xl);
-  color: var(--nwestco-blue);
-  margin-bottom: var(--space-4);
-}
-
 .card-link {
   color: var(--nwestco-blue);
   text-decoration: none;
